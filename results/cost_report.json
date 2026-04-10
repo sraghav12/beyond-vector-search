@@ -1,0 +1,77 @@
+{
+  "generated_utc": "2026-04-10T04:20:44.739241+00:00",
+  "by_run": [
+    {
+      "file": "results/raw/naive_llm_gpt-4o-mini_10.jsonl",
+      "judge_cost_usd": 0.0
+    },
+    {
+      "file": "results/raw/pageindex_gpt-4o-mini_10.jsonl",
+      "judge_cost_usd": 0.008817600000000002
+    },
+    {
+      "file": "results/raw/pageindex_gpt-4o-mini_100.jsonl",
+      "judge_cost_usd": 0.0060624
+    },
+    {
+      "file": "results/raw/pageindex_gpt-4o-mini_150.jsonl",
+      "judge_cost_usd": 0.0060552
+    },
+    {
+      "file": "results/raw/pageindex_gpt-4o-mini_25.jsonl",
+      "judge_cost_usd": 0.0046224
+    },
+    {
+      "file": "results/raw/pageindex_gpt-4o-mini_50.jsonl",
+      "judge_cost_usd": 0.005538400000000001
+    },
+    {
+      "file": "results/raw/rlm_gpt-4o-mini_10.jsonl",
+      "judge_cost_usd": 0.0
+    },
+    {
+      "file": "results/raw/vector_rag_claude-sonnet-4-6_10.jsonl",
+      "judge_cost_usd": 0.0074528
+    },
+    {
+      "file": "results/raw/vector_rag_claude-sonnet-4-6_100.jsonl",
+      "judge_cost_usd": 0.008063200000000001
+    },
+    {
+      "file": "results/raw/vector_rag_claude-sonnet-4-6_150.jsonl",
+      "judge_cost_usd": 0.0093976
+    },
+    {
+      "file": "results/raw/vector_rag_claude-sonnet-4-6_25.jsonl",
+      "judge_cost_usd": 0.006852800000000001
+    },
+    {
+      "file": "results/raw/vector_rag_claude-sonnet-4-6_50.jsonl",
+      "judge_cost_usd": 0.0087616
+    },
+    {
+      "file": "results/raw/vector_rag_gpt-4o-mini_10.jsonl",
+      "judge_cost_usd": 0.006576800000000001
+    },
+    {
+      "file": "results/raw/vector_rag_gpt-4o-mini_100.jsonl",
+      "judge_cost_usd": 0.0073704
+    },
+    {
+      "file": "results/raw/vector_rag_gpt-4o-mini_150.jsonl",
+      "judge_cost_usd": 0.0074232
+    },
+    {
+      "file": "results/raw/vector_rag_gpt-4o-mini_25.jsonl",
+      "judge_cost_usd": 0.0026216000000000004
+    },
+    {
+      "file": "results/raw/vector_rag_gpt-4o-mini_50.jsonl",
+      "judge_cost_usd": 0.0035064000000000007
+    }
+  ],
+  "totals": {
+    "pipeline_cost_usd": 0,
+    "judge_cost_usd": 0.099122
+  }
+}

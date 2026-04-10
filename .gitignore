@@ -1,0 +1,72 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data — raw filings and large corpus files (too big for git)
+data/raw/
+data/processed/
+
+# Results — generated outputs, not source
+results/raw/
+results/metrics/
+results/trajectories/
+
+# Vector index artifacts
+chroma_db/
+*.index
+*.faiss
+
+# Cache — embeddings, query results, LLM logs (large, regenerable)
+.cache/
+
+# Plots — generated, not source
+plots/
+results/plots/
+
+# Claude results (raw pipeline outputs)
+results/raw_claude/
+results/raw_v2/
+
+# Configs with secrets
+configs/secrets.yaml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/

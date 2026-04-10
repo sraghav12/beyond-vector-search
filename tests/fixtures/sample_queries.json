@@ -1,0 +1,22 @@
+[
+  {
+    "id": "q_smoke_001",
+    "text": "How many paid members did Costco report in 2025?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "gold_answer": "81 million",
+    "answer_type": "numeric",
+    "difficulty": "easy",
+    "evidence_docs": ["COST_10K_2025"]
+  },
+  {
+    "id": "q_smoke_002",
+    "text": "What were Home Depot's net sales in 2025?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "gold_answer": "$159.5 billion",
+    "answer_type": "numeric",
+    "difficulty": "easy",
+    "evidence_docs": ["HD_10K_2025"]
+  }
+]

@@ -1,0 +1,1056 @@
+[
+  {
+    "id": "q001",
+    "text": "What was Apple's total net sales (revenue) for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "AAPL_10K_2025"
+    ],
+    "gold_answer": "$391.0 billion ($391,035 million)",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "Apple FY2024 ends Sept 28, 2024. Found in Consolidated Statements of Operations."
+  },
+  {
+    "id": "q002",
+    "text": "How much did NVIDIA spend on research and development in its most recent fiscal year reported in its 10-K?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "NVDA_10K_2025"
+    ],
+    "gold_answer": "R&D was part of $16.4 billion total operating expenses for FY2025 (ending Jan 26, 2025). NVIDIA reported $12.893 billion in R&D specifically.",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "NVIDIA FY2025 ends Jan 2025. R&D is broken out in the financial statements."
+  },
+  {
+    "id": "q003",
+    "text": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "JPM_10K_2025"
+    ],
+    "gold_answer": "$177.6 billion ($177,556 million)",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "JPM FY2024 ends Dec 31, 2024."
+  },
+  {
+    "id": "q004",
+    "text": "What was ExxonMobil's total revenue for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "XOM_10K_2025"
+    ],
+    "gold_answer": "Approximately $339.2 billion. Verify from 10-K Consolidated Statements of Income.",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "XOM FY2024 ends Dec 31, 2024."
+  },
+  {
+    "id": "q005",
+    "text": "What was Pfizer's total revenue for fiscal year 2023?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "PFE_10K_2024"
+    ],
+    "gold_answer": "$58.496 billion ($58,496 million)",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "PFE FY2023 ends Dec 31, 2023. Revenue dropped significantly from FY2022 ($100.3B) due to COVID product decline."
+  },
+  {
+    "id": "q006",
+    "text": "How many employees did Walmart report in its most recent 10-K filing?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "WMT_10K_2025"
+    ],
+    "gold_answer": "Approximately 2.1 million associates worldwide. Verify exact number from Item 1 of 10-K.",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "Walmart FY2025 ends Jan 31, 2025. Employee count in Item 1: Business."
+  },
+  {
+    "id": "q007",
+    "text": "What was Boeing's total revenue for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "BA_10K_2025"
+    ],
+    "gold_answer": "Approximately $66.5 billion. Verify from Consolidated Statements of Operations.",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "BA FY2024 ends Dec 31, 2024."
+  },
+  {
+    "id": "q008",
+    "text": "What is Meta Platforms' primary source of revenue according to its most recent 10-K?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "META_10K_2025"
+    ],
+    "gold_answer": "Advertising revenue, which constitutes the vast majority of Meta's total revenue (approximately 96-98%).",
+    "difficulty": "easy",
+    "answer_type": "descriptive",
+    "notes": "Found in Item 1: Business and revenue breakdown in financials."
+  },
+  {
+    "id": "q009",
+    "text": "What was Caterpillar's operating profit margin for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "CAT_10K_2025"
+    ],
+    "gold_answer": "Verify from 10-K. Calculate as operating income / total revenue. Historically ~20%.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Requires reading operating income and revenue from the income statement."
+  },
+  {
+    "id": "q010",
+    "text": "What was Goldman Sachs' provision for credit losses in fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "GS_10K_2025"
+    ],
+    "gold_answer": "Verify from 10-K Consolidated Statements of Earnings.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Found in income statement under provision for credit losses."
+  },
+  {
+    "id": "q011",
+    "text": "What are the main business segments reported by Johnson & Johnson in its most recent 10-K?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "JNJ_10K_2025"
+    ],
+    "gold_answer": "After the Kenvue consumer health spinoff, JNJ reports two segments: Innovative Medicine and MedTech.",
+    "difficulty": "easy",
+    "answer_type": "descriptive",
+    "notes": "JNJ spun off its consumer health business as Kenvue in 2023. Segment info in Item 1 and Note to financials."
+  },
+  {
+    "id": "q012",
+    "text": "What was Chevron's capital and exploratory expenditures for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "CVX_10K_2025"
+    ],
+    "gold_answer": "Verify from 10-K. Historically ~$15-17 billion range.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Found in MD&A section under Capital and Exploratory Expenditures."
+  },
+  {
+    "id": "q013",
+    "text": "What was BlackRock's total assets under management (AUM) as reported in its most recent 10-K?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "BLK_10K_2023"
+    ],
+    "gold_answer": "Over $11.5 trillion in AUM as of December 31, 2024. Verify exact figure from 10-K.",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "AUM is prominently featured in Item 1 and MD&A."
+  },
+  {
+    "id": "q014",
+    "text": "What was Home Depot's comparable sales (comp sales) growth rate for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "HD_10K_2025"
+    ],
+    "gold_answer": "Verify from 10-K MD&A section. Comp sales have been slightly negative in recent periods.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Found in the MD&A section discussing comparable sales performance."
+  },
+  {
+    "id": "q015",
+    "text": "What was Coca-Cola's net revenue for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "KO_10K_2025"
+    ],
+    "gold_answer": "Approximately $46-47 billion. Verify from Consolidated Statements of Income.",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "KO FY2024 ends Dec 31, 2024."
+  },
+  {
+    "id": "q016",
+    "text": "How many operating segments does Alphabet (Google) report in its most recent 10-K?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "GOOGL_10K_2025"
+    ],
+    "gold_answer": "Three segments: Google Services, Google Cloud, and Other Bets.",
+    "difficulty": "easy",
+    "answer_type": "descriptive",
+    "notes": "Segment reporting in Note to financials and Item 1."
+  },
+  {
+    "id": "q017",
+    "text": "What was AMD's gross margin percentage for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "AMD_10K_2025"
+    ],
+    "gold_answer": "Approximately 49-52%. Verify from 10-K income statement.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Calculate from gross profit / revenue in income statement."
+  },
+  {
+    "id": "q018",
+    "text": "What was Procter & Gamble's net sales for fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "PG_10K_2025"
+    ],
+    "gold_answer": "Approximately $84 billion. Verify from 10-K. Note: P&G FY2024 ends June 30, 2024.",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "P&G has a June fiscal year end."
+  },
+  {
+    "id": "q019",
+    "text": "What percentage of Apple's total net sales came from the Services segment in fiscal year 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "AAPL_10K_2025"
+    ],
+    "gold_answer": "Services revenue was $96,169M out of $391,035M total = approximately 24.6%.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Requires reading Products vs Services split from income statement."
+  },
+  {
+    "id": "q020",
+    "text": "What was the total stockholders' equity for JPMorgan Chase as of December 31, 2024?",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "evidence_docs": [
+      "JPM_10K_2025"
+    ],
+    "gold_answer": "$344.8 billion (approximately $345 billion)",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "notes": "Found on the Consolidated Balance Sheet."
+  },
+  {
+    "id": "q021",
+    "text": "Which company had higher total revenue in their most recent fiscal year: Apple or NVIDIA?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "NVDA_10K_2025"
+    ],
+    "gold_answer": "Apple had higher revenue ($391.0B) compared to NVIDIA ($130.5B). Note: different fiscal year end dates.",
+    "difficulty": "easy",
+    "answer_type": "comparative",
+    "notes": "Requires reading revenue from two different 10-K filings."
+  },
+  {
+    "id": "q022",
+    "text": "Which company spent more on R&D as a percentage of revenue: NVIDIA or AMD in their most recent fiscal years?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "NVDA_10K_2025",
+      "AMD_10K_2025"
+    ],
+    "gold_answer": "Verify from both 10-Ks. NVIDIA R&D ~10% of revenue; AMD R&D typically ~22-25% of revenue. AMD likely spends more as a percentage.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Requires computing R&D/revenue ratio for both companies."
+  },
+  {
+    "id": "q023",
+    "text": "Did JPMorgan Chase or Bank of America report higher net income in fiscal year 2024?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "JPM_10K_2025",
+      "BAC_10K_2025"
+    ],
+    "gold_answer": "JPMorgan Chase reported higher net income ($58.5B) vs Bank of America (approximately $27-28B).",
+    "difficulty": "easy",
+    "answer_type": "comparative",
+    "notes": "Straightforward comparison of net income figures."
+  },
+  {
+    "id": "q024",
+    "text": "Compare ExxonMobil and Chevron's capital expenditures for fiscal year 2024. Which company invested more?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "XOM_10K_2025",
+      "CVX_10K_2025"
+    ],
+    "gold_answer": "Verify from both 10-Ks. Historically ExxonMobil has higher capex than Chevron.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Capital expenditures found in cash flow statement and MD&A."
+  },
+  {
+    "id": "q025",
+    "text": "Which company has a higher gross margin percentage: Eli Lilly or Pfizer, based on their most recent fiscal year?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "LLY_10K_2025",
+      "PFE_10K_2025"
+    ],
+    "gold_answer": "Eli Lilly typically has higher gross margins (~80%) compared to Pfizer (~60-65%). Verify from 10-Ks.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Calculate gross margin = gross profit / revenue for each."
+  },
+  {
+    "id": "q026",
+    "text": "How did Apple's total revenue change from fiscal year 2023 to fiscal year 2024?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "AAPL_10K_2024"
+    ],
+    "gold_answer": "Revenue increased from $383.3B (FY2023) to $391.0B (FY2024), an increase of approximately $7.7B or 2.0%.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Requires data from two filings for the same company, different years."
+  },
+  {
+    "id": "q027",
+    "text": "Compare Walmart and Costco's net sales for their most recent fiscal years. What is the ratio of Walmart's sales to Costco's?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "COST_10K_2025"
+    ],
+    "gold_answer": "Walmart revenue (~$648B) is roughly 2.6-2.8x Costco revenue (~$242-254B). Verify exact figures from 10-Ks.",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "notes": "Walmart FY ends Jan 31, Costco FY ends early September."
+  },
+  {
+    "id": "q028",
+    "text": "Which company reported higher total assets: JPMorgan Chase or Bank of America in fiscal year 2024?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "JPM_10K_2025",
+      "BAC_10K_2025"
+    ],
+    "gold_answer": "JPMorgan Chase ($4.0 trillion) reported higher total assets than Bank of America (~$3.3 trillion).",
+    "difficulty": "easy",
+    "answer_type": "comparative",
+    "notes": "Both from consolidated balance sheets."
+  },
+  {
+    "id": "q029",
+    "text": "How did NVIDIA's revenue growth rate compare to AMD's revenue growth rate in their most recent fiscal years?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "NVDA_10K_2025",
+      "NVDA_10K_2025",
+      "AMD_10K_2025",
+      "AMD_10K_2024"
+    ],
+    "gold_answer": "NVIDIA grew 114% YoY (FY2025 vs FY2024). AMD growth was much lower. Verify AMD growth rate from 10-Ks.",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "notes": "Requires year-over-year calculation for both companies."
+  },
+  {
+    "id": "q030",
+    "text": "Did Caterpillar or Deere & Company report higher operating income in their most recent fiscal years?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "CAT_10K_2025",
+      "DE_10K_2025"
+    ],
+    "gold_answer": "Verify from both 10-Ks. Note: Deere FY ends Oct 31.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Different fiscal year ends complicate direct comparison."
+  },
+  {
+    "id": "q031",
+    "text": "Compare the dividend per share paid by Coca-Cola and Procter & Gamble in their most recent fiscal years.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "KO_10K_2025",
+      "PG_10K_2025"
+    ],
+    "gold_answer": "Verify from both 10-Ks. Both are Dividend Aristocrats with 60+ year streaks.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Dividend info found in financial statements and shareholder equity section."
+  },
+  {
+    "id": "q032",
+    "text": "Which company had a higher return on equity (ROE) in fiscal year 2024: Goldman Sachs or JPMorgan Chase?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "GS_10K_2025",
+      "JPM_10K_2025"
+    ],
+    "gold_answer": "JPMorgan Chase reported ROE of 17-18%. Goldman Sachs typically reports 10-14%. Verify from 10-Ks.",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "notes": "ROE may be explicitly stated in MD&A or need to be calculated."
+  },
+  {
+    "id": "q033",
+    "text": "How did Meta Platforms' Reality Labs segment operating loss change from fiscal year 2023 to 2024?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "META_10K_2025",
+      "META_10K_2024"
+    ],
+    "gold_answer": "Reality Labs has been reporting significant operating losses ($13-16B range). Verify trend from both 10-Ks.",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "notes": "Segment operating results found in segment reporting note."
+  },
+  {
+    "id": "q034",
+    "text": "Compare the long-term debt of ExxonMobil and ConocoPhillips as of their most recent fiscal year ends.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "XOM_10K_2025",
+      "COP_10K_2025"
+    ],
+    "gold_answer": "ExxonMobil carries significantly more long-term debt than ConocoPhillips. Verify exact figures from balance sheets.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Found on consolidated balance sheets."
+  },
+  {
+    "id": "q035",
+    "text": "Did Linde or Freeport-McMoRan have a higher operating profit margin in their most recent fiscal year?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "LIN_10K_2025",
+      "FCX_10K_2025"
+    ],
+    "gold_answer": "Linde typically has higher and more stable operating margins (~23-25%) vs Freeport's more volatile margins (~20-30% depending on commodity prices). Verify from 10-Ks.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Calculate operating income / revenue for each."
+  },
+  {
+    "id": "q036",
+    "text": "Which company had more cash and cash equivalents on hand at the end of their most recent fiscal year: Apple or Alphabet?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "GOOGL_10K_2025"
+    ],
+    "gold_answer": "Verify from balance sheets. Both hold very large cash positions ($60B+ each including short-term investments).",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Include cash, cash equivalents, and marketable securities for fair comparison."
+  },
+  {
+    "id": "q037",
+    "text": "How did Wells Fargo's net interest income change from fiscal year 2023 to 2024? Was the trend the same as JPMorgan Chase's?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "WFC_10K_2025",
+      "WFC_10K_2024",
+      "JPM_10K_2025",
+      "JPM_10K_2024"
+    ],
+    "gold_answer": "JPM's net interest income went from $89.3B (2023) to $92.6B (2024), up 4%. Verify WFC's trend from 10-Ks.",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "notes": "Requires 4 documents: two years for each of two banks."
+  },
+  {
+    "id": "q038",
+    "text": "Which company reported higher international revenue as a percentage of total revenue: McDonald's or Home Depot?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "MCD_10K_2025",
+      "HD_10K_2025"
+    ],
+    "gold_answer": "McDonald's has significantly higher international revenue (~60%+ from outside US) vs Home Depot (~8-10% from international). Verify from 10-Ks.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "Geographic revenue breakdown in segment reporting."
+  },
+  {
+    "id": "q039",
+    "text": "Compare AbbVie's and Johnson & Johnson's R&D spending as a percentage of revenue for their most recent fiscal year.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "ABBV_10K_2025",
+      "JNJ_10K_2025"
+    ],
+    "gold_answer": "Both invest heavily in R&D (~15-25% of revenue). Verify exact percentages from both 10-Ks.",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "notes": "R&D expense in income statement, divide by total revenue."
+  },
+  {
+    "id": "q040",
+    "text": "How did GE Aerospace's revenue change from fiscal year 2023 to 2024, and what drove the change?",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "evidence_docs": [
+      "GE_10K_2025",
+      "GE_10K_2024"
+    ],
+    "gold_answer": "Verify from both 10-Ks. Note GE completed the Vernova spinoff in 2024, making YoY comparison complex.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "GE split into GE Aerospace, GE Vernova, and GE HealthCare. Segment changes affect comparability."
+  },
+  {
+    "id": "q041",
+    "text": "Rank the following companies by total revenue in their most recent fiscal year (highest to lowest): Apple, NVIDIA, JPMorgan Chase, ExxonMobil, Walmart.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "NVDA_10K_2025",
+      "JPM_10K_2025",
+      "XOM_10K_2025",
+      "WMT_10K_2025"
+    ],
+    "gold_answer": "1. Walmart (~$648B), 2. ExxonMobil (~$339B), 3. Apple ($391.0B), 4. JPMorgan Chase ($177.6B), 5. NVIDIA ($130.5B). Note: Walmart and Apple ordering may vary depending on exact figures.",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "notes": "Requires reading revenue from 5 different 10-Ks and ranking."
+  },
+  {
+    "id": "q042",
+    "text": "Among all the financial sector companies in the corpus (JPM, BAC, GS, WFC, BLK), which had the highest net income in their most recent fiscal year?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "JPM_10K_2025",
+      "BAC_10K_2025",
+      "GS_10K_2025",
+      "WFC_10K_2025",
+      "BLK_10K_2023"
+    ],
+    "gold_answer": "JPMorgan Chase with $58.5 billion net income. Verify others from their 10-Ks.",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "notes": "Requires checking net income across all 5 financial sector companies."
+  },
+  {
+    "id": "q043",
+    "text": "Which three companies in the corpus have the highest gross margin percentage in their most recent fiscal year?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "gold_answer": "Likely NVIDIA (~75%), Eli Lilly (~80%), and BlackRock or other high-margin companies. Verify across all 10-Ks.",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "notes": "Requires computing gross margin for every company and ranking top 3."
+  },
+  {
+    "id": "q044",
+    "text": "What is the total combined revenue of all five technology companies (AAPL, NVDA, GOOGL, META, AMD) in their most recent fiscal years?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "NVDA_10K_2025",
+      "GOOGL_10K_2025",
+      "META_10K_2025",
+      "AMD_10K_2025"
+    ],
+    "gold_answer": "AAPL $391.0B + NVDA $130.5B + GOOGL ~$350B + META ~$161B + AMD ~$23B = approximately $1.06 trillion. Verify from 10-Ks.",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "notes": "Requires summing revenue from 5 different 10-Ks."
+  },
+  {
+    "id": "q045",
+    "text": "Rank the three energy companies (XOM, CVX, COP) by their total proved reserves of oil and gas as reported in their most recent 10-Ks.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "XOM_10K_2025",
+      "CVX_10K_2025",
+      "COP_10K_2025"
+    ],
+    "gold_answer": "ExxonMobil typically has the largest proved reserves, followed by Chevron, then ConocoPhillips. Verify from supplementary oil and gas disclosures in each 10-K.",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "notes": "Proved reserves are disclosed in supplementary information."
+  },
+  {
+    "id": "q046",
+    "text": "How much total R&D spending did the five healthcare companies (JNJ, UNH, LLY, PFE, ABBV) report collectively in their most recent fiscal years?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "JNJ_10K_2025",
+      "UNH_10K_2025",
+      "LLY_10K_2025",
+      "PFE_10K_2025",
+      "ABBV_10K_2025"
+    ],
+    "gold_answer": "Verify from all five 10-Ks. Expect total in the range of $40-55B combined.",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "notes": "UnitedHealth may report R&D differently as a health insurer vs pharma companies."
+  },
+  {
+    "id": "q047",
+    "text": "Which company in the entire corpus had the largest year-over-year revenue growth (in percentage terms) between their two most recent fiscal years?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "gold_answer": "NVIDIA with 114% revenue growth (FY2024 to FY2025). Verify by checking all companies.",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "notes": "Requires computing YoY growth for all 30 companies."
+  },
+  {
+    "id": "q048",
+    "text": "Among all consumer-facing companies in the corpus (WMT, PG, KO, HD, MCD, COST), what is the average operating margin?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "PG_10K_2025",
+      "KO_10K_2025",
+      "HD_10K_2025",
+      "MCD_10K_2025",
+      "COST_10K_2025"
+    ],
+    "gold_answer": "Verify from all 10-Ks. Expect wide range: MCD ~40%+, PG ~22%, KO ~25%, HD ~14%, WMT ~4%, COST ~3.5%.",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "notes": "Calculate operating income/revenue for each, then average."
+  },
+  {
+    "id": "q049",
+    "text": "Rank all five financial sector companies by their total deposits as of the most recent fiscal year end.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "JPM_10K_2025",
+      "BAC_10K_2025",
+      "GS_10K_2025",
+      "WFC_10K_2025",
+      "BLK_10K_2023"
+    ],
+    "gold_answer": "JPM ($2.4T), BAC, WFC are the top 3 deposit-taking banks. GS has less deposits. BLK is an asset manager (minimal deposits). Verify from balance sheets.",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "notes": "BLK is not a bank and may not report deposits. GS has a smaller deposit base."
+  },
+  {
+    "id": "q050",
+    "text": "Which company in the corpus has the most cash and short-term investments on its balance sheet in its most recent fiscal year?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "gold_answer": "Among non-financial companies, Apple or Alphabet likely has the most. Among financials, JPM holds the most. Verify from balance sheets.",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "notes": "Need to define 'cash' consistently: cash + cash equivalents + short-term investments."
+  },
+  {
+    "id": "q051",
+    "text": "How many companies in the corpus reported a net loss (negative net income) in any of their fiscal years covered by the corpus?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "gold_answer": "Boeing has reported net losses in recent years. Verify if any others did across the corpus.",
+    "difficulty": "very_hard",
+    "answer_type": "numeric",
+    "notes": "Requires checking net income across all documents in the corpus."
+  },
+  {
+    "id": "q052",
+    "text": "Rank the four industrial companies (CAT, BA, DE, GE) by total revenue in their most recent fiscal years.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "CAT_10K_2025",
+      "BA_10K_2025",
+      "DE_10K_2025",
+      "GE_10K_2025"
+    ],
+    "gold_answer": "Verify from all four 10-Ks. Note different fiscal year ends for DE (Oct) and GE's recent restructuring.",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "notes": "GE's revenue changed significantly with the Vernova spinoff."
+  },
+  {
+    "id": "q053",
+    "text": "What is the total market capitalization implied by the total stockholders' equity across all 5 financial companies?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "JPM_10K_2025",
+      "BAC_10K_2025",
+      "GS_10K_2025",
+      "WFC_10K_2025",
+      "BLK_10K_2023"
+    ],
+    "gold_answer": "Note: stockholders' equity ≠ market cap. Sum the book equity from all five balance sheets. JPM alone is ~$345B. Total likely $700B+.",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "notes": "This tests whether the system correctly reads balance sheet equity, not market cap."
+  },
+  {
+    "id": "q054",
+    "text": "Among all companies in the corpus, which five paid the highest total dividends (in dollar terms) in their most recent fiscal year?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "gold_answer": "Apple, JPMorgan, ExxonMobil, Microsoft/Chevron are typically among the top dividend payers. Verify from cash flow statements.",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "notes": "Total dividends paid found in the cash flow statement under financing activities."
+  },
+  {
+    "id": "q055",
+    "text": "What percentage of total corpus revenue (sum of all companies' most recent FY revenue) comes from the healthcare sector?",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "gold_answer": "Verify by summing healthcare company revenues and dividing by total corpus revenue.",
+    "difficulty": "very_hard",
+    "answer_type": "numeric",
+    "notes": "Requires aggregating revenue across all 30 companies and computing sector shares."
+  },
+  {
+    "id": "q056",
+    "text": "Both Apple and NVIDIA discuss supply chain concentration risk in their 10-Ks. Compare the specific risks each company highlights regarding their dependence on manufacturing partners.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "NVDA_10K_2025"
+    ],
+    "gold_answer": "Apple depends heavily on Foxconn/Hon Hai and other Asian manufacturers. NVIDIA depends on TSMC for chip fabrication. Both face geopolitical risk in Taiwan/China. Verify specific language from Risk Factors sections.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "Both have Item 1A Risk Factors discussing supply chain dependencies."
+  },
+  {
+    "id": "q057",
+    "text": "Compare how ExxonMobil and Chevron discuss climate change and energy transition risks in their most recent 10-K filings.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "XOM_10K_2025",
+      "CVX_10K_2025"
+    ],
+    "gold_answer": "Both discuss regulatory risks from climate legislation, potential demand shifts, and their investments in lower-carbon technologies. Verify specific differences in framing and emphasis from Risk Factors and MD&A.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "Climate-related disclosures in Risk Factors and increasingly in dedicated sustainability sections."
+  },
+  {
+    "id": "q058",
+    "text": "Which pairs of companies among JPM, BAC, GS, and WFC share the most similar risk factor language regarding interest rate risk?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "JPM_10K_2025",
+      "BAC_10K_2025",
+      "GS_10K_2025",
+      "WFC_10K_2025"
+    ],
+    "gold_answer": "JPM, BAC, and WFC (as traditional commercial banks) likely share the most similar interest rate risk language. GS, as more of an investment bank, frames it differently. Verify from Risk Factors.",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "notes": "Requires reading and comparing risk factor sections across 4 filings."
+  },
+  {
+    "id": "q059",
+    "text": "Compare how Walmart and Costco describe their competitive advantages and business strategies in their most recent 10-K filings.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "COST_10K_2025"
+    ],
+    "gold_answer": "Walmart emphasizes everyday low prices, scale, omnichannel, and grocery. Costco emphasizes membership model, limited SKUs, low margins, and high member renewal rates. Verify from Item 1: Business.",
+    "difficulty": "medium",
+    "answer_type": "descriptive",
+    "notes": "Item 1: Business has strategy descriptions."
+  },
+  {
+    "id": "q060",
+    "text": "Both NVIDIA and AMD compete in the GPU market. Compare how each company describes the competitive landscape in their most recent 10-K filings.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "NVDA_10K_2025",
+      "AMD_10K_2025"
+    ],
+    "gold_answer": "NVIDIA emphasizes its dominance in AI/data center GPUs and CUDA ecosystem. AMD emphasizes its competitive product lineup and gains in data center market share. Verify from Item 1: Business and Competition sections.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "Competition discussion usually in Item 1 or Item 1A."
+  },
+  {
+    "id": "q061",
+    "text": "Compare the regulatory risk disclosures of UnitedHealth Group and Pfizer. What regulatory bodies and frameworks does each company highlight as posing the greatest risk?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "UNH_10K_2025",
+      "PFE_10K_2025"
+    ],
+    "gold_answer": "UNH focuses on CMS, ACA, Medicaid/Medicare regulatory changes. Pfizer focuses on FDA approval processes, patent expirations, and drug pricing regulation. Verify from Risk Factors.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "Different sub-sectors of healthcare face different regulatory regimes."
+  },
+  {
+    "id": "q062",
+    "text": "Compare how Boeing and GE Aerospace discuss their commercial aviation backlog in their most recent 10-K filings.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "BA_10K_2025",
+      "GE_10K_2025"
+    ],
+    "gold_answer": "Both have massive backlogs. Boeing reports aircraft order backlog; GE reports engine service agreements and orders. Verify specific backlog dollar amounts and composition from MD&A.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "Backlog is a key metric for both companies, discussed in MD&A and business overview."
+  },
+  {
+    "id": "q063",
+    "text": "Compare how Caterpillar and Deere & Company discuss the impact of commodity prices on their businesses in their most recent 10-Ks.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "CAT_10K_2025",
+      "DE_10K_2025"
+    ],
+    "gold_answer": "CAT is affected by mining commodity prices (demand for mining equipment) and steel costs. Deere is affected by crop commodity prices (demand for agricultural equipment) and steel costs. Verify from MD&A and Risk Factors.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "Both are cyclical industrials but exposed to different commodity cycles."
+  },
+  {
+    "id": "q064",
+    "text": "Compare the revenue recognition policies of Alphabet (Google) and Meta Platforms as described in their most recent 10-Ks. Are there significant differences?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "GOOGL_10K_2025",
+      "META_10K_2025"
+    ],
+    "gold_answer": "Both primarily recognize advertising revenue when ads are displayed/clicked. Key differences may exist in how they account for hardware revenue (Pixel vs Quest) and cloud services. Verify from revenue recognition notes in financial statements.",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "notes": "Revenue recognition policy in Notes to Financial Statements."
+  },
+  {
+    "id": "q065",
+    "text": "Both Eli Lilly and AbbVie face patent expiration risks on key drugs. Compare the specific drugs and timelines each company discloses as patent expiration risks in their most recent 10-Ks.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "LLY_10K_2025",
+      "ABBV_10K_2025"
+    ],
+    "gold_answer": "AbbVie's Humira patent cliff already occurred. Eli Lilly faces future patent expirations on key diabetes/obesity drugs. Verify specific drug names and timelines from Risk Factors and IP discussions.",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "notes": "Patent information in Item 1: Business and Risk Factors."
+  },
+  {
+    "id": "q066",
+    "text": "Compare how Coca-Cola and Procter & Gamble discuss foreign currency exchange rate risks in their most recent 10-Ks. Which company has greater exposure?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "KO_10K_2025",
+      "PG_10K_2025"
+    ],
+    "gold_answer": "Both are global consumer companies with significant international revenue and FX exposure. Verify which reports higher international revenue percentage and how each hedges FX risk.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "FX risk discussion in MD&A and quantitative disclosures about market risk."
+  },
+  {
+    "id": "q067",
+    "text": "Compare the capital return programs (dividends + buybacks) of Apple and JPMorgan Chase in their most recent fiscal years. Which returned more capital to shareholders?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "JPM_10K_2025"
+    ],
+    "gold_answer": "Apple typically returns $90B+ annually through buybacks + dividends. JPM returns ~$20-25B. Apple likely returned more. Verify from cash flow statements.",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "notes": "Capital returns in financing activities section of cash flow statement."
+  },
+  {
+    "id": "q068",
+    "text": "Identify which pairs of companies in the corpus mention 'artificial intelligence' or 'AI' as both a risk factor AND a growth opportunity in their most recent 10-Ks.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "gold_answer": "NVDA, GOOGL, META, AMD certainly discuss AI as opportunity. Most companies now mention AI risks. Verify which specific companies discuss it as BOTH risk and opportunity.",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "notes": "Requires searching for AI/artificial intelligence mentions across all filings."
+  },
+  {
+    "id": "q069",
+    "text": "Compare how Freeport-McMoRan and Linde discuss their environmental liabilities and remediation obligations in their most recent 10-Ks.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "FCX_10K_2025",
+      "LIN_10K_2025"
+    ],
+    "gold_answer": "FCX (mining) likely has more significant environmental remediation obligations. Linde (industrial gases) has different environmental risks. Verify from contingencies notes and environmental disclosures.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "Environmental liabilities in Notes to Financial Statements (Commitments and Contingencies)."
+  },
+  {
+    "id": "q070",
+    "text": "Compare how BlackRock and Goldman Sachs describe their ESG/sustainable investing strategies in their most recent 10-Ks.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "BLK_10K_2023",
+      "GS_10K_2025"
+    ],
+    "gold_answer": "BlackRock has been a vocal proponent of ESG integration in investing. Goldman has sustainable finance initiatives. Verify specific strategies and product offerings from Item 1 and MD&A.",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "notes": "ESG/sustainability discussion varies significantly by company."
+  },
+  {
+    "id": "q071",
+    "text": "Compare how Walmart and Home Depot discuss their e-commerce and digital transformation strategies in their most recent 10-Ks.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "HD_10K_2025"
+    ],
+    "gold_answer": "Both have invested heavily in omnichannel. Walmart emphasizes Walmart+, delivery, and marketplace. Home Depot emphasizes interconnected retail and Pro customer digital tools. Verify from Item 1 and MD&A.",
+    "difficulty": "medium",
+    "answer_type": "descriptive",
+    "notes": "Digital strategy discussion in Item 1: Business and MD&A."
+  },
+  {
+    "id": "q072",
+    "text": "Compare the effective tax rates reported by Apple and NVIDIA in their most recent fiscal years. What explains any difference?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "AAPL_10K_2025",
+      "NVDA_10K_2025"
+    ],
+    "gold_answer": "Both benefit from lower tax rates on foreign earnings. Verify effective tax rates from income tax notes and discussion in MD&A.",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "notes": "Effective tax rate discussed in income tax footnote and MD&A."
+  },
+  {
+    "id": "q073",
+    "text": "Compare the goodwill and intangible assets on the balance sheets of AbbVie and Johnson & Johnson. Which company carries more as a percentage of total assets?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "ABBV_10K_2025",
+      "JNJ_10K_2025"
+    ],
+    "gold_answer": "AbbVie carries very high goodwill (~$67B+) due to the Allergan acquisition. JNJ also has significant goodwill. Verify from balance sheets and calculate as % of total assets.",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "notes": "Goodwill is prominent on both balance sheets due to major acquisitions."
+  },
+  {
+    "id": "q074",
+    "text": "Both ConocoPhillips and ExxonMobil discuss their production volumes in their 10-Ks. Compare their daily production (in barrels of oil equivalent per day) for the most recent fiscal year.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "COP_10K_2025",
+      "XOM_10K_2025"
+    ],
+    "gold_answer": "ExxonMobil produces significantly more than ConocoPhillips (approximately 3.7M+ BOE/d vs ~1.7M BOE/d). Verify from production disclosures in the 10-Ks.",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "notes": "Production data in supplementary oil and gas information."
+  },
+  {
+    "id": "q075",
+    "text": "Compare the debt maturity profiles of Meta Platforms and Alphabet as disclosed in their most recent 10-Ks. Which company faces higher near-term debt maturities?",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "evidence_docs": [
+      "META_10K_2025",
+      "GOOGL_10K_2025"
+    ],
+    "gold_answer": "Both carry relatively moderate debt compared to their cash positions. Verify specific maturity schedules from the long-term debt footnotes.",
+    "difficulty": "very_hard",
+    "answer_type": "comparative",
+    "notes": "Debt maturity schedule in Notes to Financial Statements under Long-term Debt."
+  }
+]

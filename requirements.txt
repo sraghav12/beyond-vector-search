@@ -1,0 +1,72 @@
+
+# ── LLM Providers ───────────────────────────────────────────
+openai>=1.30.0                   # GPT-4o, GPT-4o-mini API
+google-genai>=1.0.0              # Gemini 2.5 Pro, Flash (new Google GenAI SDK)
+litellm>=1.40.0                  # Universal LLM router (OpenAI, Gemini, Anthropic via one interface)
+
+# ── RLM Pipeline ────────────────────────────────────────────
+rlms>=0.1.0                      # Recursive Language Models (pip install rlms)
+
+# ── PageIndex Pipeline ──────────────────────────────────────
+pageindex>=0.2.0                 # Vectorless reasoning-based RAG
+
+# ── Vector RAG Pipeline ────────────────────────────────────
+chromadb>=0.5.0                  # Vector database (runs locally, no server needed)
+langchain>=0.3.0                 # RAG orchestration framework
+langchain-openai>=0.2.0          # OpenAI embeddings + chat models for LangChain
+langchain-google-genai>=2.0.0    # Gemini integration for LangChain
+langchain-chroma>=0.1.0          # ChromaDB integration for LangChain
+langchain-text-splitters>=0.3.0  # Document chunking utilities
+
+# ── Embeddings ──────────────────────────────────────────────
+tiktoken>=0.7.0                  # OpenAI tokenizer (token counting for cost tracking)
+sentence-transformers>=3.0.0     # Local embeddings alternative (free, no API cost)
+
+# ── Data Collection (SEC EDGAR) ─────────────────────────────
+requests>=2.32.0                 # HTTP client for EDGAR API
+beautifulsoup4>=4.12.0           # HTML parsing for SEC filings
+lxml>=5.2.0                      # Fast XML/HTML parser (bs4 backend)
+sec-edgar-downloader>=5.0.0      # Direct SEC filing downloader
+
+# ── Data Processing ─────────────────────────────────────────
+pandas>=2.2.0                    # DataFrames for results analysis
+numpy>=1.26.0                    # Numerical operations
+jsonlines>=4.0.0                 # Read/write JSONL files cleanly
+
+# ── Evaluation & Metrics ────────────────────────────────────
+scikit-learn>=1.5.0              # F1 score, classification metrics
+rouge-score>=0.1.2               # ROUGE metrics for summary evaluation
+python-Levenshtein>=0.25.0       # Edit distance for fuzzy matching
+
+# ── Visualization ───────────────────────────────────────────
+matplotlib>=3.9.0                # Publication-quality static charts
+seaborn>=0.13.0                  # Statistical visualization (heatmaps, distributions)
+plotly>=5.22.0                   # Interactive charts (degradation curves, scatter plots)
+kaleido>=0.2.1                   # Plotly static image export (for README/paper figures)
+
+# ── Experiment Management ───────────────────────────────────
+python-dotenv>=1.0.0             # Load API keys from .env file
+pyyaml>=6.0.0                    # Parse experiment config YAML files
+tqdm>=4.66.0                     # Progress bars for long benchmark runs
+rich>=13.7.0                     # Pretty console output and tables
+
+# ── Notebooks ───────────────────────────────────────────────
+jupyter>=1.0.0                   # Jupyter notebook server
+ipykernel>=6.29.0                # Python kernel for Jupyter
+ipywidgets>=8.1.0                # Interactive widgets in notebooks
+nbformat>=5.10.0                 # Notebook format utilities
+
+# ── Testing ─────────────────────────────────────────────────
+pytest>=8.2.0                    # Test runner
+pytest-asyncio>=0.23.0           # Async test support (for LLM API calls)
+pytest-timeout>=2.3.0            # Timeout for API-dependent tests
+
+# ── Utilities ───────────────────────────────────────────────
+tenacity>=8.3.0                  # Retry logic for flaky API calls
+aiohttp>=3.9.0                   # Async HTTP (for parallel API calls)
+diskcache>=5.6.0                 # Local disk cache (cache API responses during dev)
+
+# ── Optional: Experiment Tracking ───────────────────────────
+# Uncomment if you want MLOps-level tracking
+# wandb>=0.17.0                  # Weights & Biases experiment tracking
+# mlflow>=2.14.0                 # MLflow experiment tracking (alternative to wandb)

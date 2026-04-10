@@ -1,0 +1,20 @@
+{
+  "q_smoke_001": {
+    "answer": "81 million",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": ["COST_10K_2025"],
+    "verified": true
+  },
+  "q_smoke_002": {
+    "answer": "$159.5 billion",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": ["HD_10K_2025"],
+    "verified": true
+  }
+}

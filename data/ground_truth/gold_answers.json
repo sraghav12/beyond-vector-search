@@ -1,0 +1,906 @@
+{
+  "q001": {
+    "answer": "$391.0 billion ($391,035 million)",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "AAPL_10K_2024"
+    ],
+    "verified": false
+  },
+  "q002": {
+    "answer": "R&D was part of $16.4 billion total operating expenses for FY2025 (ending Jan 26, 2025). NVIDIA reported $12.893 billion in R&D specifically.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "NVDA_10K_2025"
+    ],
+    "verified": false
+  },
+  "q003": {
+    "answer": "$177.6 billion ($177,556 million)",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "JPM_10K_2024"
+    ],
+    "verified": false
+  },
+  "q004": {
+    "answer": "Approximately $339.2 billion. Verify from 10-K Consolidated Statements of Income.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "XOM_10K_2024"
+    ],
+    "verified": false
+  },
+  "q005": {
+    "answer": "$58.496 billion ($58,496 million)",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "PFE_10K_2023"
+    ],
+    "verified": false
+  },
+  "q006": {
+    "answer": "Approximately 2.1 million associates worldwide. Verify exact number from Item 1 of 10-K.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "WMT_10K_2025"
+    ],
+    "verified": false
+  },
+  "q007": {
+    "answer": "Approximately $66.5 billion. Verify from Consolidated Statements of Operations.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "BA_10K_2024"
+    ],
+    "verified": false
+  },
+  "q008": {
+    "answer": "Advertising revenue, which constitutes the vast majority of Meta's total revenue (approximately 96-98%).",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "META_10K_2024"
+    ],
+    "verified": false
+  },
+  "q009": {
+    "answer": "Verify from 10-K. Calculate as operating income / total revenue. Historically ~20%.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "CAT_10K_2024"
+    ],
+    "verified": false
+  },
+  "q010": {
+    "answer": "Verify from 10-K Consolidated Statements of Earnings.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "GS_10K_2024"
+    ],
+    "verified": false
+  },
+  "q011": {
+    "answer": "After the Kenvue consumer health spinoff, JNJ reports two segments: Innovative Medicine and MedTech.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "JNJ_10K_2024"
+    ],
+    "verified": false
+  },
+  "q012": {
+    "answer": "Verify from 10-K. Historically ~$15-17 billion range.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "CVX_10K_2024"
+    ],
+    "verified": false
+  },
+  "q013": {
+    "answer": "Over $11.5 trillion in AUM as of December 31, 2024. Verify exact figure from 10-K.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "BLK_10K_2024"
+    ],
+    "verified": false
+  },
+  "q014": {
+    "answer": "Verify from 10-K MD&A section. Comp sales have been slightly negative in recent periods.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "HD_10K_2024"
+    ],
+    "verified": false
+  },
+  "q015": {
+    "answer": "Approximately $46-47 billion. Verify from Consolidated Statements of Income.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "KO_10K_2024"
+    ],
+    "verified": false
+  },
+  "q016": {
+    "answer": "Three segments: Google Services, Google Cloud, and Other Bets.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "GOOGL_10K_2024"
+    ],
+    "verified": false
+  },
+  "q017": {
+    "answer": "Approximately 49-52%. Verify from 10-K income statement.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "AMD_10K_2024"
+    ],
+    "verified": false
+  },
+  "q018": {
+    "answer": "Approximately $84 billion. Verify from 10-K. Note: P&G FY2024 ends June 30, 2024.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "PG_10K_2024"
+    ],
+    "verified": false
+  },
+  "q019": {
+    "answer": "Services revenue was $96,169M out of $391,035M total = approximately 24.6%.",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "AAPL_10K_2024"
+    ],
+    "verified": false
+  },
+  "q020": {
+    "answer": "$344.8 billion (approximately $345 billion)",
+    "tier": 1,
+    "tier_name": "single_hop",
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "JPM_10K_2024"
+    ],
+    "verified": false
+  },
+  "q021": {
+    "answer": "Apple had higher revenue ($391.0B) compared to NVIDIA ($130.5B). Note: different fiscal year end dates.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "easy",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "NVDA_10K_2025"
+    ],
+    "verified": false
+  },
+  "q022": {
+    "answer": "Verify from both 10-Ks. NVIDIA R&D ~10% of revenue; AMD R&D typically ~22-25% of revenue. AMD likely spends more as a percentage.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "NVDA_10K_2025",
+      "AMD_10K_2024"
+    ],
+    "verified": false
+  },
+  "q023": {
+    "answer": "JPMorgan Chase reported higher net income ($58.5B) vs Bank of America (approximately $27-28B).",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "easy",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "JPM_10K_2024",
+      "BAC_10K_2024"
+    ],
+    "verified": false
+  },
+  "q024": {
+    "answer": "Verify from both 10-Ks. Historically ExxonMobil has higher capex than Chevron.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "XOM_10K_2024",
+      "CVX_10K_2024"
+    ],
+    "verified": false
+  },
+  "q025": {
+    "answer": "Eli Lilly typically has higher gross margins (~80%) compared to Pfizer (~60-65%). Verify from 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "LLY_10K_2024",
+      "PFE_10K_2024"
+    ],
+    "verified": false
+  },
+  "q026": {
+    "answer": "Revenue increased from $383.3B (FY2023) to $391.0B (FY2024), an increase of approximately $7.7B or 2.0%.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "AAPL_10K_2023"
+    ],
+    "verified": false
+  },
+  "q027": {
+    "answer": "Walmart revenue (~$648B) is roughly 2.6-2.8x Costco revenue (~$242-254B). Verify exact figures from 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "COST_10K_2024"
+    ],
+    "verified": false
+  },
+  "q028": {
+    "answer": "JPMorgan Chase ($4.0 trillion) reported higher total assets than Bank of America (~$3.3 trillion).",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "easy",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "JPM_10K_2024",
+      "BAC_10K_2024"
+    ],
+    "verified": false
+  },
+  "q029": {
+    "answer": "NVIDIA grew 114% YoY (FY2025 vs FY2024). AMD growth was much lower. Verify AMD growth rate from 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "NVDA_10K_2025",
+      "NVDA_10K_2024",
+      "AMD_10K_2024",
+      "AMD_10K_2023"
+    ],
+    "verified": false
+  },
+  "q030": {
+    "answer": "Verify from both 10-Ks. Note: Deere FY ends Oct 31.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "CAT_10K_2024",
+      "DE_10K_2025"
+    ],
+    "verified": false
+  },
+  "q031": {
+    "answer": "Verify from both 10-Ks. Both are Dividend Aristocrats with 60+ year streaks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "KO_10K_2024",
+      "PG_10K_2024"
+    ],
+    "verified": false
+  },
+  "q032": {
+    "answer": "JPMorgan Chase reported ROE of 17-18%. Goldman Sachs typically reports 10-14%. Verify from 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "GS_10K_2024",
+      "JPM_10K_2024"
+    ],
+    "verified": false
+  },
+  "q033": {
+    "answer": "Reality Labs has been reporting significant operating losses ($13-16B range). Verify trend from both 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "META_10K_2024",
+      "META_10K_2023"
+    ],
+    "verified": false
+  },
+  "q034": {
+    "answer": "ExxonMobil carries significantly more long-term debt than ConocoPhillips. Verify exact figures from balance sheets.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "XOM_10K_2024",
+      "COP_10K_2024"
+    ],
+    "verified": false
+  },
+  "q035": {
+    "answer": "Linde typically has higher and more stable operating margins (~23-25%) vs Freeport's more volatile margins (~20-30% depending on commodity prices). Verify from 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "LIN_10K_2024",
+      "FCX_10K_2024"
+    ],
+    "verified": false
+  },
+  "q036": {
+    "answer": "Verify from balance sheets. Both hold very large cash positions ($60B+ each including short-term investments).",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "GOOGL_10K_2024"
+    ],
+    "verified": false
+  },
+  "q037": {
+    "answer": "JPM's net interest income went from $89.3B (2023) to $92.6B (2024), up 4%. Verify WFC's trend from 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "WFC_10K_2024",
+      "WFC_10K_2023",
+      "JPM_10K_2024",
+      "JPM_10K_2023"
+    ],
+    "verified": false
+  },
+  "q038": {
+    "answer": "McDonald's has significantly higher international revenue (~60%+ from outside US) vs Home Depot (~8-10% from international). Verify from 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "MCD_10K_2024",
+      "HD_10K_2024"
+    ],
+    "verified": false
+  },
+  "q039": {
+    "answer": "Both invest heavily in R&D (~15-25% of revenue). Verify exact percentages from both 10-Ks.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "medium",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "ABBV_10K_2024",
+      "JNJ_10K_2024"
+    ],
+    "verified": false
+  },
+  "q040": {
+    "answer": "Verify from both 10-Ks. Note GE completed the Vernova spinoff in 2024, making YoY comparison complex.",
+    "tier": 2,
+    "tier_name": "multi_hop",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "GE_10K_2024",
+      "GE_10K_2023"
+    ],
+    "verified": false
+  },
+  "q041": {
+    "answer": "1. Walmart (~$648B), 2. ExxonMobil (~$339B), 3. Apple ($391.0B), 4. JPMorgan Chase ($177.6B), 5. NVIDIA ($130.5B). Note: Walmart and Apple ordering may vary depending on exact figures.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "NVDA_10K_2025",
+      "JPM_10K_2024",
+      "XOM_10K_2024",
+      "WMT_10K_2025"
+    ],
+    "verified": false
+  },
+  "q042": {
+    "answer": "JPMorgan Chase with $58.5 billion net income. Verify others from their 10-Ks.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "JPM_10K_2024",
+      "BAC_10K_2024",
+      "GS_10K_2024",
+      "WFC_10K_2024",
+      "BLK_10K_2024"
+    ],
+    "verified": false
+  },
+  "q043": {
+    "answer": "Likely NVIDIA (~75%), Eli Lilly (~80%), and BlackRock or other high-margin companies. Verify across all 10-Ks.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "verified": false
+  },
+  "q044": {
+    "answer": "AAPL $391.0B + NVDA $130.5B + GOOGL ~$350B + META ~$161B + AMD ~$23B = approximately $1.06 trillion. Verify from 10-Ks.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "NVDA_10K_2025",
+      "GOOGL_10K_2024",
+      "META_10K_2024",
+      "AMD_10K_2024"
+    ],
+    "verified": false
+  },
+  "q045": {
+    "answer": "ExxonMobil typically has the largest proved reserves, followed by Chevron, then ConocoPhillips. Verify from supplementary oil and gas disclosures in each 10-K.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "XOM_10K_2024",
+      "CVX_10K_2024",
+      "COP_10K_2024"
+    ],
+    "verified": false
+  },
+  "q046": {
+    "answer": "Verify from all five 10-Ks. Expect total in the range of $40-55B combined.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "JNJ_10K_2024",
+      "UNH_10K_2024",
+      "LLY_10K_2024",
+      "PFE_10K_2024",
+      "ABBV_10K_2024"
+    ],
+    "verified": false
+  },
+  "q047": {
+    "answer": "NVIDIA with 114% revenue growth (FY2024 to FY2025). Verify by checking all companies.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "verified": false
+  },
+  "q048": {
+    "answer": "Verify from all 10-Ks. Expect wide range: MCD ~40%+, PG ~22%, KO ~25%, HD ~14%, WMT ~4%, COST ~3.5%.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "PG_10K_2024",
+      "KO_10K_2024",
+      "HD_10K_2024",
+      "MCD_10K_2024",
+      "COST_10K_2024"
+    ],
+    "verified": false
+  },
+  "q049": {
+    "answer": "JPM ($2.4T), BAC, WFC are the top 3 deposit-taking banks. GS has less deposits. BLK is an asset manager (minimal deposits). Verify from balance sheets.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "JPM_10K_2024",
+      "BAC_10K_2024",
+      "GS_10K_2024",
+      "WFC_10K_2024",
+      "BLK_10K_2024"
+    ],
+    "verified": false
+  },
+  "q050": {
+    "answer": "Among non-financial companies, Apple or Alphabet likely has the most. Among financials, JPM holds the most. Verify from balance sheets.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "verified": false
+  },
+  "q051": {
+    "answer": "Boeing has reported net losses in recent years. Verify if any others did across the corpus.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "very_hard",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "verified": false
+  },
+  "q052": {
+    "answer": "Verify from all four 10-Ks. Note different fiscal year ends for DE (Oct) and GE's recent restructuring.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "CAT_10K_2024",
+      "BA_10K_2024",
+      "DE_10K_2025",
+      "GE_10K_2024"
+    ],
+    "verified": false
+  },
+  "q053": {
+    "answer": "Note: stockholders' equity \u2260 market cap. Sum the book equity from all five balance sheets. JPM alone is ~$345B. Total likely $700B+.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "JPM_10K_2024",
+      "BAC_10K_2024",
+      "GS_10K_2024",
+      "WFC_10K_2024",
+      "BLK_10K_2024"
+    ],
+    "verified": false
+  },
+  "q054": {
+    "answer": "Apple, JPMorgan, ExxonMobil, Microsoft/Chevron are typically among the top dividend payers. Verify from cash flow statements.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "very_hard",
+    "answer_type": "ranking",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "verified": false
+  },
+  "q055": {
+    "answer": "Verify by summing healthcare company revenues and dividing by total corpus revenue.",
+    "tier": 3,
+    "tier_name": "aggregation",
+    "difficulty": "very_hard",
+    "answer_type": "numeric",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "verified": false
+  },
+  "q056": {
+    "answer": "Apple depends heavily on Foxconn/Hon Hai and other Asian manufacturers. NVIDIA depends on TSMC for chip fabrication. Both face geopolitical risk in Taiwan/China. Verify specific language from Risk Factors sections.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "NVDA_10K_2025"
+    ],
+    "verified": false
+  },
+  "q057": {
+    "answer": "Both discuss regulatory risks from climate legislation, potential demand shifts, and their investments in lower-carbon technologies. Verify specific differences in framing and emphasis from Risk Factors and MD&A.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "XOM_10K_2024",
+      "CVX_10K_2024"
+    ],
+    "verified": false
+  },
+  "q058": {
+    "answer": "JPM, BAC, and WFC (as traditional commercial banks) likely share the most similar interest rate risk language. GS, as more of an investment bank, frames it differently. Verify from Risk Factors.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "JPM_10K_2024",
+      "BAC_10K_2024",
+      "GS_10K_2024",
+      "WFC_10K_2024"
+    ],
+    "verified": false
+  },
+  "q059": {
+    "answer": "Walmart emphasizes everyday low prices, scale, omnichannel, and grocery. Costco emphasizes membership model, limited SKUs, low margins, and high member renewal rates. Verify from Item 1: Business.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "medium",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "COST_10K_2024"
+    ],
+    "verified": false
+  },
+  "q060": {
+    "answer": "NVIDIA emphasizes its dominance in AI/data center GPUs and CUDA ecosystem. AMD emphasizes its competitive product lineup and gains in data center market share. Verify from Item 1: Business and Competition sections.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "NVDA_10K_2025",
+      "AMD_10K_2024"
+    ],
+    "verified": false
+  },
+  "q061": {
+    "answer": "UNH focuses on CMS, ACA, Medicaid/Medicare regulatory changes. Pfizer focuses on FDA approval processes, patent expirations, and drug pricing regulation. Verify from Risk Factors.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "UNH_10K_2024",
+      "PFE_10K_2024"
+    ],
+    "verified": false
+  },
+  "q062": {
+    "answer": "Both have massive backlogs. Boeing reports aircraft order backlog; GE reports engine service agreements and orders. Verify specific backlog dollar amounts and composition from MD&A.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "BA_10K_2024",
+      "GE_10K_2024"
+    ],
+    "verified": false
+  },
+  "q063": {
+    "answer": "CAT is affected by mining commodity prices (demand for mining equipment) and steel costs. Deere is affected by crop commodity prices (demand for agricultural equipment) and steel costs. Verify from MD&A and Risk Factors.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "CAT_10K_2024",
+      "DE_10K_2025"
+    ],
+    "verified": false
+  },
+  "q064": {
+    "answer": "Both primarily recognize advertising revenue when ads are displayed/clicked. Key differences may exist in how they account for hardware revenue (Pixel vs Quest) and cloud services. Verify from revenue recognition notes in financial statements.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "GOOGL_10K_2024",
+      "META_10K_2024"
+    ],
+    "verified": false
+  },
+  "q065": {
+    "answer": "AbbVie's Humira patent cliff already occurred. Eli Lilly faces future patent expirations on key diabetes/obesity drugs. Verify specific drug names and timelines from Risk Factors and IP discussions.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "LLY_10K_2024",
+      "ABBV_10K_2024"
+    ],
+    "verified": false
+  },
+  "q066": {
+    "answer": "Both are global consumer companies with significant international revenue and FX exposure. Verify which reports higher international revenue percentage and how each hedges FX risk.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "KO_10K_2024",
+      "PG_10K_2024"
+    ],
+    "verified": false
+  },
+  "q067": {
+    "answer": "Apple typically returns $90B+ annually through buybacks + dividends. JPM returns ~$20-25B. Apple likely returned more. Verify from cash flow statements.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "JPM_10K_2024"
+    ],
+    "verified": false
+  },
+  "q068": {
+    "answer": "NVDA, GOOGL, META, AMD certainly discuss AI as opportunity. Most companies now mention AI risks. Verify which specific companies discuss it as BOTH risk and opportunity.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "very_hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "ALL"
+    ],
+    "verified": false
+  },
+  "q069": {
+    "answer": "FCX (mining) likely has more significant environmental remediation obligations. Linde (industrial gases) has different environmental risks. Verify from contingencies notes and environmental disclosures.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "FCX_10K_2024",
+      "LIN_10K_2024"
+    ],
+    "verified": false
+  },
+  "q070": {
+    "answer": "BlackRock has been a vocal proponent of ESG integration in investing. Goldman has sustainable finance initiatives. Verify specific strategies and product offerings from Item 1 and MD&A.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "BLK_10K_2024",
+      "GS_10K_2024"
+    ],
+    "verified": false
+  },
+  "q071": {
+    "answer": "Both have invested heavily in omnichannel. Walmart emphasizes Walmart+, delivery, and marketplace. Home Depot emphasizes interconnected retail and Pro customer digital tools. Verify from Item 1 and MD&A.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "medium",
+    "answer_type": "descriptive",
+    "evidence_docs": [
+      "WMT_10K_2025",
+      "HD_10K_2024"
+    ],
+    "verified": false
+  },
+  "q072": {
+    "answer": "Both benefit from lower tax rates on foreign earnings. Verify effective tax rates from income tax notes and discussion in MD&A.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "AAPL_10K_2024",
+      "NVDA_10K_2025"
+    ],
+    "verified": false
+  },
+  "q073": {
+    "answer": "AbbVie carries very high goodwill (~$67B+) due to the Allergan acquisition. JNJ also has significant goodwill. Verify from balance sheets and calculate as % of total assets.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "ABBV_10K_2024",
+      "JNJ_10K_2024"
+    ],
+    "verified": false
+  },
+  "q074": {
+    "answer": "ExxonMobil produces significantly more than ConocoPhillips (approximately 3.7M+ BOE/d vs ~1.7M BOE/d). Verify from production disclosures in the 10-Ks.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "COP_10K_2024",
+      "XOM_10K_2024"
+    ],
+    "verified": false
+  },
+  "q075": {
+    "answer": "Both carry relatively moderate debt compared to their cash positions. Verify specific maturity schedules from the long-term debt footnotes.",
+    "tier": 4,
+    "tier_name": "pairwise",
+    "difficulty": "very_hard",
+    "answer_type": "comparative",
+    "evidence_docs": [
+      "META_10K_2024",
+      "GOOGL_10K_2024"
+    ],
+    "verified": false
+  }
+}
