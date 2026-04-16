@@ -115,9 +115,17 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     tune_grp.add_argument("--vector-embedding-batch-size", type=int, default=32)
     tune_grp.add_argument("--vector-rebuild-index", action="store_true")
     tune_grp.add_argument("--pageindex-max-sections", type=int, default=8)
-    tune_grp.add_argument("--rlm-max-depth", type=int, default=4)
-    tune_grp.add_argument("--rlm-max-subcalls", type=int, default=12)
-    tune_grp.add_argument("--rlm-token-budget", type=int, default=8000)
+    tune_grp.add_argument("--rlm-max-depth", type=int, default=2)
+    tune_grp.add_argument("--rlm-max-subcalls", type=int, default=20)
+    tune_grp.add_argument(
+        "--rlm-token-budget", type=int, default=0,
+        help="RLM cumulative token cap. 0 = uncapped (recommended for long corpora).",
+    )
+    tune_grp.add_argument(
+        "--rlm-max-timeout", type=float, default=540.0,
+        help="RLM internal soft-timeout in seconds. Should be < --query-timeout so the "
+             "RLM exits gracefully with a partial answer before the runner SIGKILLs it.",
+    )
 
     p.add_argument("--verbose", action="store_true")
     return p.parse_args(argv)
@@ -168,6 +176,7 @@ def _pipeline_kwargs(pipeline_name: str, model: str, args: argparse.Namespace) -
             "max_depth": args.rlm_max_depth,
             "max_subcalls": args.rlm_max_subcalls,
             "token_budget": args.rlm_token_budget,
+            "max_timeout": args.rlm_max_timeout,
         }
     return {"model": model}
 
@@ -293,6 +302,10 @@ def main(argv: list[str] | None = None) -> None:
         level=logging.DEBUG if args.verbose else logging.INFO,
         format="%(levelname)s %(message)s",
     )
+    # Even in --verbose mode, silence the HTTP/SDK noise floor — otherwise every
+    # OpenAI call dumps full request/response bodies and drowns the RLM trace.
+    for noisy in ("httpcore", "httpx", "openai", "openai._base_client", "urllib3"):
+        logging.getLogger(noisy).setLevel(logging.WARNING)
 
     output_dir = Path(args.output_dir)
     (output_dir / "raw").mkdir(parents=True, exist_ok=True)
