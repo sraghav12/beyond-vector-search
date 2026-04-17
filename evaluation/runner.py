@@ -158,6 +158,7 @@ def run_pipeline(
     resume: bool = True,
     show_progress: bool = False,
     query_timeout: Optional[int] = 120,  # seconds; None = no timeout
+    query_delay: float = 0,  # seconds to sleep between queries (rate-limit pacing)
 ) -> list[dict[str, Any]]:
     try:
         from tqdm import tqdm  # type: ignore[import-untyped]
@@ -265,6 +266,10 @@ def run_pipeline(
         if output_path:
             append_jsonl(output_path, record)
         records.append(record)
+
+        if query_delay > 0:
+            import time
+            time.sleep(query_delay)
 
     return records
 

@@ -12,7 +12,7 @@ except ImportError:
     load_dotenv = None
 
 if load_dotenv is not None and find_dotenv is not None:
-    load_dotenv(find_dotenv(usecwd=True), override=False)
+    load_dotenv(find_dotenv(usecwd=True), override=True)
 
 MODEL_COSTS = {
     "gpt-4o-mini": (0.00015, 0.00060),

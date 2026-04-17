@@ -127,6 +127,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
              "RLM exits gracefully with a partial answer before the runner SIGKILLs it.",
     )
 
+    tune_grp.add_argument(
+        "--query-delay", type=float, default=0,
+        help="Seconds to sleep between queries (rate-limit pacing). Default: 0.",
+    )
     p.add_argument("--verbose", action="store_true")
     return p.parse_args(argv)
 
@@ -404,6 +408,7 @@ def main(argv: list[str] | None = None) -> None:
             resume=resume,
             show_progress=True,
             query_timeout=args.query_timeout or None,
+            query_delay=args.query_delay,
         )
 
         # per-run cost tally
