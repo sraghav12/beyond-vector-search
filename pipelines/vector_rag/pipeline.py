@@ -32,6 +32,7 @@ except ImportError:
     Cache = None
 
 from pipelines.base import (
+    corpus_fingerprint,
     BasePipeline,
     CONTEXT_LIMITS,
     PipelineResult,
@@ -106,6 +107,7 @@ class VectorRAGPipeline(BasePipeline):
         self._context_limit = CONTEXT_LIMITS.get(model, 128_000)
 
         self._corpus_scale = 0
+        self._corpus_fp = ""
         self._docs: list[dict[str, Any]] = []
         self._chunks: list[Document] = []
         self._vectorstore: Optional[Chroma] = None
@@ -179,7 +181,10 @@ class VectorRAGPipeline(BasePipeline):
     def _index_dir(self) -> Path:
         model_slug = _slug(self.model)
         embed_slug = _slug(self.embedding_model)
-        return self._persist_root / model_slug / embed_slug / f"scale_{self._corpus_scale}"
+        # corpus fingerprint in the path: a rebuilt corpus can never silently
+        # reuse an index built from different content
+        return (self._persist_root / model_slug / embed_slug
+                / f"scale_{self._corpus_scale}_{self._corpus_fp}")
 
     def _cache_key(self, question: str) -> str:
         payload = {
@@ -191,6 +196,7 @@ class VectorRAGPipeline(BasePipeline):
             "chunk_overlap": self.chunk_overlap,
             "top_k": self.top_k,
             "scale": self._corpus_scale,
+            "corpus_fp": self._corpus_fp,
             "question": question,
         }
         raw = json.dumps(payload, sort_keys=True)
@@ -354,6 +360,7 @@ class VectorRAGPipeline(BasePipeline):
             self._corpus_scale = int(path.stem.split("_")[-1])
         except ValueError:
             self._corpus_scale = 0
+        self._corpus_fp = corpus_fingerprint(str(path))
 
         self._docs = self._read_corpus(str(path))
         self._chunks = self._chunk_documents(self._docs)

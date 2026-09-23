@@ -1,0 +1,114 @@
+{
+  "dataset_revision": "2026-09-13-single-hop-v1",
+  "status": "partial_agent_verification_human_review_pending",
+  "agent_verified_query_ids": [
+    "q001",
+    "q002",
+    "q003",
+    "q004",
+    "q005",
+    "q006",
+    "q007",
+    "q008",
+    "q009",
+    "q010",
+    "q011",
+    "q012",
+    "q013",
+    "q014",
+    "q015",
+    "q016",
+    "q017",
+    "q018",
+    "q019",
+    "q020"
+  ],
+  "pending_query_ids": [
+    "q021",
+    "q022",
+    "q023",
+    "q024",
+    "q025",
+    "q026",
+    "q027",
+    "q028",
+    "q029",
+    "q030",
+    "q031",
+    "q032",
+    "q033",
+    "q034",
+    "q035",
+    "q036",
+    "q037",
+    "q038",
+    "q039",
+    "q040",
+    "q041",
+    "q042",
+    "q043",
+    "q044",
+    "q045",
+    "q046",
+    "q047",
+    "q048",
+    "q049",
+    "q050",
+    "q051",
+    "q052",
+    "q053",
+    "q054",
+    "q055",
+    "q056",
+    "q057",
+    "q058",
+    "q059",
+    "q060",
+    "q061",
+    "q062",
+    "q063",
+    "q064",
+    "q065",
+    "q066",
+    "q067",
+    "q068",
+    "q069",
+    "q070",
+    "q071",
+    "q072",
+    "q073",
+    "q074",
+    "q075"
+  ],
+  "changed_question_ids": [
+    "q004",
+    "q005",
+    "q012",
+    "q016"
+  ],
+  "source_quote_integrity": "passed for all evidence excerpts",
+  "query_gold_consistency": "passed for 20 reviewed questions",
+  "missing_reviewed_evidence_by_scale": {
+    "50": {
+      "q005": [
+        "PFE_10K_2023"
+      ],
+      "q014": [
+        "HD_10K_2024"
+      ]
+    },
+    "100": {
+      "q005": [
+        "PFE_10K_2023"
+      ]
+    },
+    "150": {}
+  },
+  "files_sha256": {
+    "data/queries/queries.json": "cd07c2db6ee8a1c57bfb53564a05b0dc26bead0b62c7c0bed08a275703563530",
+    "data/ground_truth/gold_answers.json": "cacbc14b31e53404cd273d7c7bd718c8ad88ab0bcfd52e46f3888d485ebc0f57",
+    "data/ground_truth/provenance/2026-09-13_single_hop.json": "4d82a5f801e3744ae39c7349ef731fcbb0f2e7aa51b5888fe09bb33fcbf1a2c0"
+  },
+  "paid_api_spend_usd": 0,
+  "existing_results_policy": "All old scored results are stale for this gold revision. Four changed questions require new predictions at every scale. Corpus changes require fresh predictions at affected scales. No corpus or old result file modified by this correction batch."
+}

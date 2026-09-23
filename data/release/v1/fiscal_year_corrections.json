@@ -1,0 +1,62 @@
+[
+  {
+    "doc_id": "WMT_10K_2025",
+    "old_fiscal_year": 2025,
+    "fiscal_year": 2026,
+    "cover_quote": "For the fiscal year ended January 31 , 2026"
+  },
+  {
+    "doc_id": "WMT_10K_2024",
+    "old_fiscal_year": 2024,
+    "fiscal_year": 2025,
+    "cover_quote": "For the fiscal year ended January 31 , 2025"
+  },
+  {
+    "doc_id": "WMT_10K_2023",
+    "old_fiscal_year": 2023,
+    "fiscal_year": 2024,
+    "cover_quote": "For the fiscal year ended January 31 , 2024"
+  },
+  {
+    "doc_id": "WMT_10K_2022",
+    "old_fiscal_year": 2022,
+    "fiscal_year": 2023,
+    "cover_quote": "For the fiscal year ended January 31 , 2023"
+  },
+  {
+    "doc_id": "WMT_10K_2021",
+    "old_fiscal_year": 2021,
+    "fiscal_year": 2022,
+    "cover_quote": "For the fiscal year ended January 31 , 2022"
+  },
+  {
+    "doc_id": "NVDA_10K_2025",
+    "old_fiscal_year": 2025,
+    "fiscal_year": 2026,
+    "cover_quote": "For the fiscal year ended January 25 , 2026"
+  },
+  {
+    "doc_id": "NVDA_10K_2024",
+    "old_fiscal_year": 2024,
+    "fiscal_year": 2025,
+    "cover_quote": "For the fiscal year ended January 26 , 2025"
+  },
+  {
+    "doc_id": "NVDA_10K_2023",
+    "old_fiscal_year": 2023,
+    "fiscal_year": 2024,
+    "cover_quote": "For the fiscal year ended January 28 , 2024"
+  },
+  {
+    "doc_id": "NVDA_10K_2022",
+    "old_fiscal_year": 2022,
+    "fiscal_year": 2023,
+    "cover_quote": "For the fiscal year ended January 29 , 2023"
+  },
+  {
+    "doc_id": "NVDA_10K_2021",
+    "old_fiscal_year": 2021,
+    "fiscal_year": 2022,
+    "cover_quote": "For the fiscal year ended January 30 , 2022"
+  }
+]

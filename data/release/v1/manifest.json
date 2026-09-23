@@ -1,0 +1,1374 @@
+{
+  "release": "v1",
+  "selection_frozen": "2026-09-13",
+  "completed": "2026-09-14",
+  "questions": 43,
+  "excluded": 32,
+  "documents": 150,
+  "tickers": 30,
+  "corpus_uncompressed_sha256": "1e76125542e8d870a329981dd38a6eae396ba80615318ac5490fc023a43e9030",
+  "corpus_text_unchanged_from_original": true,
+  "changes": "Corrected fiscal_year metadata for 10 NVDA/WMT filings; doc IDs retained as immutable legacy identifiers.",
+  "scope": "Exploratory 43-query benchmark at 150 documents; scaling omitted from v1.",
+  "annotation": "Agent-verified source passages; no claim of independent human judge calibration.",
+  "files_sha256": {
+    "data/release/v1/queries.json": "5864c59d8afae6f3fe181de1a0beaee237a7f9f4d7ae08985229210690777e12",
+    "data/release/v1/gold_answers.json": "b1b8952305e9132b1195acfb03efaa69cc5f94e327a6cfa9e199b6f1b94eb3d9",
+    "data/release/v1/exclusions.json": "d0d148628f4054662996b4e843898457c5e04a248b289a4a04a005e68fb4b08f",
+    "data/release/v1/fiscal_year_corrections.json": "8ff127e9022159d382514b793f470b342ffa780906c3635f748fd77216556b0d",
+    "data/release/v1/corpus_150.jsonl.gz": "f5ea399da19d8799c169b81024061ae67f7ebdc0dd18499f2735bdfc3d063363"
+  },
+  "filings": [
+    {
+      "doc_id": "COST_10K_2025",
+      "ticker": "COST",
+      "fiscal_year": 2025,
+      "cik": "909832",
+      "accession_number": "0000909832-25-000101",
+      "filing_date": "2025-10-08",
+      "text_sha256": "84965e2fec3f0ffae9a3ab0b3b9db8fac6092af685ec3dfcb35694327d1bb0e3"
+    },
+    {
+      "doc_id": "COST_10K_2024",
+      "ticker": "COST",
+      "fiscal_year": 2024,
+      "cik": "909832",
+      "accession_number": "0000909832-24-000049",
+      "filing_date": "2024-10-09",
+      "text_sha256": "00c63b94119df2887c20de461b1b5b1250b419359b05779bbd146c2713123c26"
+    },
+    {
+      "doc_id": "COST_10K_2023",
+      "ticker": "COST",
+      "fiscal_year": 2023,
+      "cik": "909832",
+      "accession_number": "0000909832-23-000042",
+      "filing_date": "2023-10-11",
+      "text_sha256": "1d6e994d551a65b718fa34d836f69111e986569324ed5589eef2fa59cb66cf88"
+    },
+    {
+      "doc_id": "COST_10K_2022",
+      "ticker": "COST",
+      "fiscal_year": 2022,
+      "cik": "909832",
+      "accession_number": "0000909832-22-000021",
+      "filing_date": "2022-10-05",
+      "text_sha256": "97c83d27935d3f0acc6b68a8507ce375a9545a42f94cef5bc053b920e6800032"
+    },
+    {
+      "doc_id": "COST_10K_2021",
+      "ticker": "COST",
+      "fiscal_year": 2021,
+      "cik": "909832",
+      "accession_number": "0000909832-21-000014",
+      "filing_date": "2021-10-06",
+      "text_sha256": "1cf0dd81a9e72cab216d5313138a359d132a2469b641dcc3efa6bb2ec291a944"
+    },
+    {
+      "doc_id": "HD_10K_2025",
+      "ticker": "HD",
+      "fiscal_year": 2025,
+      "cik": "354950",
+      "accession_number": "0001628280-26-019436",
+      "filing_date": "2026-03-18",
+      "text_sha256": "a6c3839b9fb9fffe10ab9798a50c140cb317512440a1139aca40300c698d4300"
+    },
+    {
+      "doc_id": "HD_10K_2024",
+      "ticker": "HD",
+      "fiscal_year": 2024,
+      "cik": "354950",
+      "accession_number": "0000354950-25-000085",
+      "filing_date": "2025-03-21",
+      "text_sha256": "56961837b6740956807b88a18873192d7ddd83ce3924976c14d833a429ee541b"
+    },
+    {
+      "doc_id": "HD_10K_2023",
+      "ticker": "HD",
+      "fiscal_year": 2023,
+      "cik": "354950",
+      "accession_number": "0000354950-24-000062",
+      "filing_date": "2024-03-13",
+      "text_sha256": "a52500902e18d3754d03fc12602776653e437f4a56af5af8baab30bdd2b96fc3"
+    },
+    {
+      "doc_id": "HD_10K_2022",
+      "ticker": "HD",
+      "fiscal_year": 2022,
+      "cik": "354950",
+      "accession_number": "0000354950-23-000059",
+      "filing_date": "2023-03-15",
+      "text_sha256": "c1fa5675dc772d972c5026adc5fa4003d09554cf048a51fe169b1d3b8d5ff647"
+    },
+    {
+      "doc_id": "HD_10K_2021",
+      "ticker": "HD",
+      "fiscal_year": 2021,
+      "cik": "354950",
+      "accession_number": "0000354950-22-000070",
+      "filing_date": "2022-03-23",
+      "text_sha256": "6b9364cbc469d50afba2714c4526932cf0aa4e95a3954405e90f5c9eef1b1fac"
+    },
+    {
+      "doc_id": "MCD_10K_2025",
+      "ticker": "MCD",
+      "fiscal_year": 2025,
+      "cik": "63908",
+      "accession_number": "0000063908-26-000035",
+      "filing_date": "2026-02-24",
+      "text_sha256": "e4563f678d7f94b1a198a3a2c7094fdce0d93c4c6117813e727586918c50cfa0"
+    },
+    {
+      "doc_id": "MCD_10K_2024",
+      "ticker": "MCD",
+      "fiscal_year": 2024,
+      "cik": "63908",
+      "accession_number": "0000063908-25-000012",
+      "filing_date": "2025-02-25",
+      "text_sha256": "95d45302afe97f50188e4c769355d15620f5e8aca5de2418ff41ae1e03f29108"
+    },
+    {
+      "doc_id": "MCD_10K_2023",
+      "ticker": "MCD",
+      "fiscal_year": 2023,
+      "cik": "63908",
+      "accession_number": "0000063908-24-000072",
+      "filing_date": "2024-02-22",
+      "text_sha256": "2f0e766658c131d3d032f96bd462fd08d659d8a9490cc31fa4934f650b8f05b7"
+    },
+    {
+      "doc_id": "MCD_10K_2022",
+      "ticker": "MCD",
+      "fiscal_year": 2022,
+      "cik": "63908",
+      "accession_number": "0000063908-23-000012",
+      "filing_date": "2023-02-24",
+      "text_sha256": "a803161a5d66ff9bf45624f9187cf69bf7ef8c3ad6af00ec5ee2de3cdccd554d"
+    },
+    {
+      "doc_id": "MCD_10K_2021",
+      "ticker": "MCD",
+      "fiscal_year": 2021,
+      "cik": "63908",
+      "accession_number": "0000063908-22-000011",
+      "filing_date": "2022-02-24",
+      "text_sha256": "cc964e82db18c6f6a5e5eb0d74e1131b768c6ee1a1aa23e6dbcf8fa938b0b192"
+    },
+    {
+      "doc_id": "KO_10K_2025",
+      "ticker": "KO",
+      "fiscal_year": 2025,
+      "cik": "21344",
+      "accession_number": "0001628280-26-010047",
+      "filing_date": "2026-02-20",
+      "text_sha256": "40a6d0b9d6eca91aec06505d65fe2724d85d3005a7cefac797b70f2246e9619a"
+    },
+    {
+      "doc_id": "KO_10K_2024",
+      "ticker": "KO",
+      "fiscal_year": 2024,
+      "cik": "21344",
+      "accession_number": "0000021344-25-000011",
+      "filing_date": "2025-02-20",
+      "text_sha256": "4956eb36f737eda4bac8b70828e89232fbb70abac21b9a5e89329a7d75a6203f"
+    },
+    {
+      "doc_id": "KO_10K_2023",
+      "ticker": "KO",
+      "fiscal_year": 2023,
+      "cik": "21344",
+      "accession_number": "0000021344-24-000009",
+      "filing_date": "2024-02-20",
+      "text_sha256": "bdebaac70c1b5cfbfc47dbf9a85b78ed860f335aff97e95e8750de49ae50a7da"
+    },
+    {
+      "doc_id": "KO_10K_2022",
+      "ticker": "KO",
+      "fiscal_year": 2022,
+      "cik": "21344",
+      "accession_number": "0000021344-23-000011",
+      "filing_date": "2023-02-21",
+      "text_sha256": "59232c4c2139dbefc553eff2955270c17087f352b6b6e9dad8e283f4541854fb"
+    },
+    {
+      "doc_id": "KO_10K_2021",
+      "ticker": "KO",
+      "fiscal_year": 2021,
+      "cik": "21344",
+      "accession_number": "0000021344-22-000009",
+      "filing_date": "2022-02-22",
+      "text_sha256": "404d8ab34d0e3cbcdb807e923d37f9fb9555f3b652edce47d416405245fe5941"
+    },
+    {
+      "doc_id": "PG_10K_2025",
+      "ticker": "PG",
+      "fiscal_year": 2025,
+      "cik": "80424",
+      "accession_number": "0000080424-25-000076",
+      "filing_date": "2025-08-04",
+      "text_sha256": "d46bcf94aae877b3c015ccd9205fb056a26a28cd831875b65a7352237bff6adf"
+    },
+    {
+      "doc_id": "PG_10K_2024",
+      "ticker": "PG",
+      "fiscal_year": 2024,
+      "cik": "80424",
+      "accession_number": "0000080424-24-000083",
+      "filing_date": "2024-08-05",
+      "text_sha256": "7919479969defa013c37251425f5047f8a1ecc854e7c09ded7eb94e18b2f5bad"
+    },
+    {
+      "doc_id": "PG_10K_2023",
+      "ticker": "PG",
+      "fiscal_year": 2023,
+      "cik": "80424",
+      "accession_number": "0000080424-23-000073",
+      "filing_date": "2023-08-04",
+      "text_sha256": "8b3aa55d2a9a2dcc30dad659e27ed8b06289d2e216e029f822f1f12fd2f51483"
+    },
+    {
+      "doc_id": "PG_10K_2022",
+      "ticker": "PG",
+      "fiscal_year": 2022,
+      "cik": "80424",
+      "accession_number": "0000080424-22-000064",
+      "filing_date": "2022-08-05",
+      "text_sha256": "71df370c13dc63c566e9a919896d6512f47c68db3fb3f8e7529b191880c03fd7"
+    },
+    {
+      "doc_id": "PG_10K_2021",
+      "ticker": "PG",
+      "fiscal_year": 2021,
+      "cik": "80424",
+      "accession_number": "0000080424-21-000100",
+      "filing_date": "2021-08-06",
+      "text_sha256": "f049ee42871631f009a7f7db3f90836f67ba07ef8bad5200161daf9b484c6242"
+    },
+    {
+      "doc_id": "WMT_10K_2025",
+      "ticker": "WMT",
+      "fiscal_year": 2026,
+      "cik": "104169",
+      "accession_number": "0000104169-26-000055",
+      "filing_date": "2026-03-13",
+      "text_sha256": "2410e6410790c1215e55a9edd01303db60d88570eff6066fb1d27d42aaeeebc6"
+    },
+    {
+      "doc_id": "WMT_10K_2024",
+      "ticker": "WMT",
+      "fiscal_year": 2025,
+      "cik": "104169",
+      "accession_number": "0000104169-25-000021",
+      "filing_date": "2025-03-14",
+      "text_sha256": "eef74a9568502ccd8b69eb0ffea053390db1ef04de568ea2a95b50e413a36e5e"
+    },
+    {
+      "doc_id": "WMT_10K_2023",
+      "ticker": "WMT",
+      "fiscal_year": 2024,
+      "cik": "104169",
+      "accession_number": "0000104169-24-000056",
+      "filing_date": "2024-03-15",
+      "text_sha256": "b4ebc9d22b894ce7c2154e4cd5f841e0e577e550c9501a92bf3caafbdfe27f7f"
+    },
+    {
+      "doc_id": "WMT_10K_2022",
+      "ticker": "WMT",
+      "fiscal_year": 2023,
+      "cik": "104169",
+      "accession_number": "0000104169-23-000020",
+      "filing_date": "2023-03-17",
+      "text_sha256": "22ef46e5219aa3e3198fe0ec6d2ed15c06a97203cfd39a214528106ac5b4a8e9"
+    },
+    {
+      "doc_id": "WMT_10K_2021",
+      "ticker": "WMT",
+      "fiscal_year": 2022,
+      "cik": "104169",
+      "accession_number": "0000104169-22-000012",
+      "filing_date": "2022-03-18",
+      "text_sha256": "0442dc0322f17918d144d9ee92df2d3a4561b47a1cfb68df399d889c5f4c50be"
+    },
+    {
+      "doc_id": "COP_10K_2025",
+      "ticker": "COP",
+      "fiscal_year": 2025,
+      "cik": "1163165",
+      "accession_number": "0001163165-26-000009",
+      "filing_date": "2026-02-17",
+      "text_sha256": "e02f9e3540ad17b24e2d833bfa1b9f14881b681a217c4ec6323a205a20142641"
+    },
+    {
+      "doc_id": "COP_10K_2024",
+      "ticker": "COP",
+      "fiscal_year": 2024,
+      "cik": "1163165",
+      "accession_number": "0001163165-25-000012",
+      "filing_date": "2025-02-18",
+      "text_sha256": "69a682ad664e292fc5db08318c4be566992d85b7e97cb16727ebc53d01265715"
+    },
+    {
+      "doc_id": "COP_10K_2023",
+      "ticker": "COP",
+      "fiscal_year": 2023,
+      "cik": "1163165",
+      "accession_number": "0001163165-24-000010",
+      "filing_date": "2024-02-15",
+      "text_sha256": "999937f38fe52cbd7af813c0e8434115b461174f93e6bdc01d5a95ef8b226d89"
+    },
+    {
+      "doc_id": "COP_10K_2022",
+      "ticker": "COP",
+      "fiscal_year": 2022,
+      "cik": "1163165",
+      "accession_number": "0001163165-23-000006",
+      "filing_date": "2023-02-16",
+      "text_sha256": "30b35e4fe3237a112cb439a6fde1c9c0fb9968230d045f5aaaae55ad66a1295a"
+    },
+    {
+      "doc_id": "COP_10K_2021",
+      "ticker": "COP",
+      "fiscal_year": 2021,
+      "cik": "1163165",
+      "accession_number": "0001562762-22-000031",
+      "filing_date": "2022-02-17",
+      "text_sha256": "07e77ca520e8b2a3171e43029be10a25903f3a23984c7177d809e2e32a5ece5d"
+    },
+    {
+      "doc_id": "CVX_10K_2025",
+      "ticker": "CVX",
+      "fiscal_year": 2025,
+      "cik": "93410",
+      "accession_number": "0000093410-26-000078",
+      "filing_date": "2026-02-24",
+      "text_sha256": "865eaf1760f233d314c96e794995d820ea1cbd5016844377c363928f8705b4a6"
+    },
+    {
+      "doc_id": "CVX_10K_2024",
+      "ticker": "CVX",
+      "fiscal_year": 2024,
+      "cik": "93410",
+      "accession_number": "0000093410-25-000009",
+      "filing_date": "2025-02-21",
+      "text_sha256": "e93c385e91fd709399449b822be52be10d79301e22dbcfc9b948083421cc1b66"
+    },
+    {
+      "doc_id": "CVX_10K_2023",
+      "ticker": "CVX",
+      "fiscal_year": 2023,
+      "cik": "93410",
+      "accession_number": "0000093410-24-000013",
+      "filing_date": "2024-02-26",
+      "text_sha256": "f6a9b62bf9b5c8af326627e7ac8af7e171e81d9567bddedb07dabe9a14883ef6"
+    },
+    {
+      "doc_id": "CVX_10K_2022",
+      "ticker": "CVX",
+      "fiscal_year": 2022,
+      "cik": "93410",
+      "accession_number": "0000093410-23-000009",
+      "filing_date": "2023-02-23",
+      "text_sha256": "325ccb619ce4fd9e56410fdfdf106bf9c77c6baed806e8887da717ce78b029c9"
+    },
+    {
+      "doc_id": "CVX_10K_2021",
+      "ticker": "CVX",
+      "fiscal_year": 2021,
+      "cik": "93410",
+      "accession_number": "0000093410-22-000019",
+      "filing_date": "2022-02-24",
+      "text_sha256": "c629392f3e8a508c35b0e130c4bcebc57524f37aa27e1e78237f211a35a1ff3b"
+    },
+    {
+      "doc_id": "XOM_10K_2025",
+      "ticker": "XOM",
+      "fiscal_year": 2025,
+      "cik": "34088",
+      "accession_number": "0000034088-26-000045",
+      "filing_date": "2026-02-18",
+      "text_sha256": "d5cef65982d90a6c025f399858a4c4d3f935c95672837c9f91dc2074f465c3ab"
+    },
+    {
+      "doc_id": "XOM_10K_2024",
+      "ticker": "XOM",
+      "fiscal_year": 2024,
+      "cik": "34088",
+      "accession_number": "0000034088-25-000010",
+      "filing_date": "2025-02-19",
+      "text_sha256": "f0bb73c1b600e87930497d868d5c3f349cd153b70778340dbe4077241f4e6bdd"
+    },
+    {
+      "doc_id": "XOM_10K_2023",
+      "ticker": "XOM",
+      "fiscal_year": 2023,
+      "cik": "34088",
+      "accession_number": "0000034088-24-000018",
+      "filing_date": "2024-02-28",
+      "text_sha256": "f842954d17372f363acac75468fcf3e11b65f6b01413834cd2d701db24c7f5cf"
+    },
+    {
+      "doc_id": "XOM_10K_2022",
+      "ticker": "XOM",
+      "fiscal_year": 2022,
+      "cik": "34088",
+      "accession_number": "0000034088-23-000020",
+      "filing_date": "2023-02-22",
+      "text_sha256": "61f2137de2376adc38b5a77bee5489c518556050a442632c5f494056c8e2fc1e"
+    },
+    {
+      "doc_id": "XOM_10K_2021",
+      "ticker": "XOM",
+      "fiscal_year": 2021,
+      "cik": "34088",
+      "accession_number": "0000034088-22-000011",
+      "filing_date": "2022-02-23",
+      "text_sha256": "1e11cf5e318674b49731485d48ac837619cc1ba1061dc0914f41b5d015367db1"
+    },
+    {
+      "doc_id": "BAC_10K_2025",
+      "ticker": "BAC",
+      "fiscal_year": 2025,
+      "cik": "70858",
+      "accession_number": "0000070858-26-000157",
+      "filing_date": "2026-02-25",
+      "text_sha256": "0b1c0bd94c8134d17b3379c89a01a4ab06cfe4e7f1fdcd56677e6591faa52808"
+    },
+    {
+      "doc_id": "BAC_10K_2024",
+      "ticker": "BAC",
+      "fiscal_year": 2024,
+      "cik": "70858",
+      "accession_number": "0000070858-25-000139",
+      "filing_date": "2025-02-25",
+      "text_sha256": "13195ca88a9b0aabb37f15ed79871dfa6f9e1d5d164c79a519fdc8f3316acb46"
+    },
+    {
+      "doc_id": "BAC_10K_2023",
+      "ticker": "BAC",
+      "fiscal_year": 2023,
+      "cik": "70858",
+      "accession_number": "0000070858-24-000122",
+      "filing_date": "2024-02-20",
+      "text_sha256": "6beeae978cba7affbe61c5c66c878b60af9351ce7deee3a0a593ba4969a7eea4"
+    },
+    {
+      "doc_id": "BAC_10K_2022",
+      "ticker": "BAC",
+      "fiscal_year": 2022,
+      "cik": "70858",
+      "accession_number": "0000070858-23-000092",
+      "filing_date": "2023-02-22",
+      "text_sha256": "a72733ff6b9477719b8d28d7a257939405f5c19cc36d5dcba136ae3f7791b106"
+    },
+    {
+      "doc_id": "BAC_10K_2021",
+      "ticker": "BAC",
+      "fiscal_year": 2021,
+      "cik": "70858",
+      "accession_number": "0000070858-22-000062",
+      "filing_date": "2022-02-22",
+      "text_sha256": "a32f427b088e46b087d4f8854c4e6da75a6c0f638602cbb5591e4f1ff24f0fc0"
+    },
+    {
+      "doc_id": "BLK_10K_2023",
+      "ticker": "BLK",
+      "fiscal_year": 2023,
+      "cik": "1364742",
+      "accession_number": "0000950170-24-019271",
+      "filing_date": "2024-02-23",
+      "text_sha256": "f2d08be23eebb8b5c6fe764a6e121a3dcc59b6f352419a03c2e0738e075c33de"
+    },
+    {
+      "doc_id": "BLK_10K_2022",
+      "ticker": "BLK",
+      "fiscal_year": 2022,
+      "cik": "1364742",
+      "accession_number": "0000950170-23-004343",
+      "filing_date": "2023-02-24",
+      "text_sha256": "d206ed5408cf5a94cd771a6f7e5fb7e9bd7cc80989f0d12d69c50c69e6807c05"
+    },
+    {
+      "doc_id": "BLK_10K_2021",
+      "ticker": "BLK",
+      "fiscal_year": 2021,
+      "cik": "1364742",
+      "accession_number": "0001564590-22-007117",
+      "filing_date": "2022-02-25",
+      "text_sha256": "116aa3fe75e5ed7af903f8a5a93e0104cec7573442a7faddf3d8dc470a80c26c"
+    },
+    {
+      "doc_id": "BLK_10K_2020",
+      "ticker": "BLK",
+      "fiscal_year": 2020,
+      "cik": "1364742",
+      "accession_number": "0001564590-21-008796",
+      "filing_date": "2021-02-25",
+      "text_sha256": "3e500eefc76950b5e1899a8efa8aab0703e72553e8b8fac1783da68905e9cb60"
+    },
+    {
+      "doc_id": "BLK_10K_2019",
+      "ticker": "BLK",
+      "fiscal_year": 2019,
+      "cik": "1364742",
+      "accession_number": "0001564590-20-007807",
+      "filing_date": "2020-02-28",
+      "text_sha256": "f6864c2d16ea5589f27b75655577ebe8c97c65502ad99e92f539662bf27fb372"
+    },
+    {
+      "doc_id": "GS_10K_2025",
+      "ticker": "GS",
+      "fiscal_year": 2025,
+      "cik": "886982",
+      "accession_number": "0000886982-26-000091",
+      "filing_date": "2026-02-25",
+      "text_sha256": "62e53d8bfadec6c7e21fd3ef763686425a51ffda7a325f58ee859d54328e5e53"
+    },
+    {
+      "doc_id": "GS_10K_2024",
+      "ticker": "GS",
+      "fiscal_year": 2024,
+      "cik": "886982",
+      "accession_number": "0000886982-25-000005",
+      "filing_date": "2025-02-27",
+      "text_sha256": "3fc68c5045605af94a573697c9e49955087a7503c042c190762381ca049c33da"
+    },
+    {
+      "doc_id": "GS_10K_2023",
+      "ticker": "GS",
+      "fiscal_year": 2023,
+      "cik": "886982",
+      "accession_number": "0000886982-24-000006",
+      "filing_date": "2024-02-23",
+      "text_sha256": "4f8d44a463574c0ebc72f9fd83f5e330911e1d55ca49b9d20662a2f206985d45"
+    },
+    {
+      "doc_id": "GS_10K_2022",
+      "ticker": "GS",
+      "fiscal_year": 2022,
+      "cik": "886982",
+      "accession_number": "0000886982-23-000003",
+      "filing_date": "2023-02-24",
+      "text_sha256": "f1cd72fc3bd4868acd451dccce941472ef6abf5e67959e785d952acda826f041"
+    },
+    {
+      "doc_id": "GS_10K_2021",
+      "ticker": "GS",
+      "fiscal_year": 2021,
+      "cik": "886982",
+      "accession_number": "0001193125-22-052682",
+      "filing_date": "2022-02-25",
+      "text_sha256": "aa5a5e6547c078b57e4cf5f3c750a5742077a02458a78a2482e2e27b4d43c4f9"
+    },
+    {
+      "doc_id": "JPM_10K_2025",
+      "ticker": "JPM",
+      "fiscal_year": 2025,
+      "cik": "19617",
+      "accession_number": "0001628280-26-008131",
+      "filing_date": "2026-02-13",
+      "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa"
+    },
+    {
+      "doc_id": "JPM_10K_2024",
+      "ticker": "JPM",
+      "fiscal_year": 2024,
+      "cik": "19617",
+      "accession_number": "0000019617-25-000270",
+      "filing_date": "2025-02-14",
+      "text_sha256": "e6249ebf693d0571ff1d36e3ce43d0b1c7da9029f1e62c38a37a40459f5c704c"
+    },
+    {
+      "doc_id": "JPM_10K_2023",
+      "ticker": "JPM",
+      "fiscal_year": 2023,
+      "cik": "19617",
+      "accession_number": "0000019617-24-000225",
+      "filing_date": "2024-02-16",
+      "text_sha256": "8b61bc3c5041dfa352196a3f887dd43901cef8050d6a7a517b503439d0ca59d6"
+    },
+    {
+      "doc_id": "JPM_10K_2022",
+      "ticker": "JPM",
+      "fiscal_year": 2022,
+      "cik": "19617",
+      "accession_number": "0000019617-23-000231",
+      "filing_date": "2023-02-21",
+      "text_sha256": "f16368cd500aca5d3f12a886140db640b04fd14386c50d36c485447f447e660d"
+    },
+    {
+      "doc_id": "JPM_10K_2021",
+      "ticker": "JPM",
+      "fiscal_year": 2021,
+      "cik": "19617",
+      "accession_number": "0000019617-22-000272",
+      "filing_date": "2022-02-22",
+      "text_sha256": "78c81d272e59946471c00e3cc46ad3d90197d6594291099b61978797ad769a87"
+    },
+    {
+      "doc_id": "WFC_10K_2025",
+      "ticker": "WFC",
+      "fiscal_year": 2025,
+      "cik": "72971",
+      "accession_number": "0000072971-26-000133",
+      "filing_date": "2026-02-24",
+      "text_sha256": "ba22f3c2678a9017954ee8291b9fedec16678efa8dd69c428adac9e942f60abf"
+    },
+    {
+      "doc_id": "WFC_10K_2024",
+      "ticker": "WFC",
+      "fiscal_year": 2024,
+      "cik": "72971",
+      "accession_number": "0000072971-25-000066",
+      "filing_date": "2025-02-25",
+      "text_sha256": "cc381bc117f1e98c4c43677b1b53d57d790af3c96260945b0d69cfc9e5635d6e"
+    },
+    {
+      "doc_id": "WFC_10K_2023",
+      "ticker": "WFC",
+      "fiscal_year": 2023,
+      "cik": "72971",
+      "accession_number": "0000072971-24-000064",
+      "filing_date": "2024-02-20",
+      "text_sha256": "c26cc05fcf2b9adb4626a0fdb5c034ae8f51d40794c7d0ede461982806c2757b"
+    },
+    {
+      "doc_id": "WFC_10K_2022",
+      "ticker": "WFC",
+      "fiscal_year": 2022,
+      "cik": "72971",
+      "accession_number": "0000072971-23-000071",
+      "filing_date": "2023-02-21",
+      "text_sha256": "6f36161a95ddfb296a3e48448c6d03cc5f6b9ad02d80f303b412527b01559034"
+    },
+    {
+      "doc_id": "WFC_10K_2021",
+      "ticker": "WFC",
+      "fiscal_year": 2021,
+      "cik": "72971",
+      "accession_number": "0000072971-22-000096",
+      "filing_date": "2022-02-22",
+      "text_sha256": "4e632c3fb6453da5fad704c306957a03e5791fda8f3a53794264f204b49b7876"
+    },
+    {
+      "doc_id": "ABBV_10K_2025",
+      "ticker": "ABBV",
+      "fiscal_year": 2025,
+      "cik": "1551152",
+      "accession_number": "0001551152-26-000008",
+      "filing_date": "2026-02-20",
+      "text_sha256": "db07f04c51b40e71c6dfddcb41420950447acdef72a5bcff6d8ace8403002d2d"
+    },
+    {
+      "doc_id": "ABBV_10K_2024",
+      "ticker": "ABBV",
+      "fiscal_year": 2024,
+      "cik": "1551152",
+      "accession_number": "0001551152-25-000020",
+      "filing_date": "2025-02-14",
+      "text_sha256": "e7d42f359d93395bddd5b0b31810e299ba6749dabfcf7929d2552c986bbb8301"
+    },
+    {
+      "doc_id": "ABBV_10K_2023",
+      "ticker": "ABBV",
+      "fiscal_year": 2023,
+      "cik": "1551152",
+      "accession_number": "0001551152-24-000011",
+      "filing_date": "2024-02-20",
+      "text_sha256": "d60add84cfedb310edcc968269da9b151c0a0f21125449bc2a7fec9f6c69c653"
+    },
+    {
+      "doc_id": "ABBV_10K_2022",
+      "ticker": "ABBV",
+      "fiscal_year": 2022,
+      "cik": "1551152",
+      "accession_number": "0001551152-23-000011",
+      "filing_date": "2023-02-17",
+      "text_sha256": "8d6f9bf05f42efcba9fdcb97c7e6af6d7002b66bc47f45c2698f56e76b1fefd7"
+    },
+    {
+      "doc_id": "ABBV_10K_2021",
+      "ticker": "ABBV",
+      "fiscal_year": 2021,
+      "cik": "1551152",
+      "accession_number": "0001551152-22-000007",
+      "filing_date": "2022-02-18",
+      "text_sha256": "159239574d2f6d2a42bccfa05c6b22d0e3eb9bf5912ed92643d2f81e02a23db3"
+    },
+    {
+      "doc_id": "JNJ_10K_2025",
+      "ticker": "JNJ",
+      "fiscal_year": 2025,
+      "cik": "200406",
+      "accession_number": "0000200406-26-000016",
+      "filing_date": "2026-02-11",
+      "text_sha256": "6e245362290ce65bb51091af459910020457f333d0042796418f88ae9a39d3fc"
+    },
+    {
+      "doc_id": "JNJ_10K_2024",
+      "ticker": "JNJ",
+      "fiscal_year": 2024,
+      "cik": "200406",
+      "accession_number": "0000200406-25-000038",
+      "filing_date": "2025-02-13",
+      "text_sha256": "e37d405b0b663e64bb26d6a6e754b3a28d6ecd038a979bc754b75254e1592cc6"
+    },
+    {
+      "doc_id": "JNJ_10K_2023",
+      "ticker": "JNJ",
+      "fiscal_year": 2023,
+      "cik": "200406",
+      "accession_number": "0000200406-24-000013",
+      "filing_date": "2024-02-16",
+      "text_sha256": "93c131f1021a03fea14510e0e6863722a46c842eec74d4d0028aa47f1a8103bd"
+    },
+    {
+      "doc_id": "JNJ_10K_2022",
+      "ticker": "JNJ",
+      "fiscal_year": 2022,
+      "cik": "200406",
+      "accession_number": "0000200406-23-000016",
+      "filing_date": "2023-02-16",
+      "text_sha256": "aea5b54ee59d7d772b4b6bade37727be84da51851a6a16cdaa53bd39da9c6999"
+    },
+    {
+      "doc_id": "JNJ_10K_2021",
+      "ticker": "JNJ",
+      "fiscal_year": 2021,
+      "cik": "200406",
+      "accession_number": "0000200406-22-000022",
+      "filing_date": "2022-02-17",
+      "text_sha256": "af7223d0506d0c35048e53c995172943ec4ae5ab6a20f853db60f21e8fc8748d"
+    },
+    {
+      "doc_id": "LLY_10K_2025",
+      "ticker": "LLY",
+      "fiscal_year": 2025,
+      "cik": "59478",
+      "accession_number": "0000059478-26-000013",
+      "filing_date": "2026-02-12",
+      "text_sha256": "4f4e4cfbcd2005ec0a451d99c5efbffb3210b64ad322e1e52b8faa5a092872d4"
+    },
+    {
+      "doc_id": "LLY_10K_2024",
+      "ticker": "LLY",
+      "fiscal_year": 2024,
+      "cik": "59478",
+      "accession_number": "0000059478-25-000067",
+      "filing_date": "2025-02-19",
+      "text_sha256": "e0e668d21a7e1ac30f270da107d7ea29cf2dde671fbd880c7a4e08bb17fe6e5d"
+    },
+    {
+      "doc_id": "LLY_10K_2023",
+      "ticker": "LLY",
+      "fiscal_year": 2023,
+      "cik": "59478",
+      "accession_number": "0000059478-24-000065",
+      "filing_date": "2024-02-21",
+      "text_sha256": "7ae694f87dfdcc8a496d3502cb23b561c7de758c014218346e805c5cb80d9a74"
+    },
+    {
+      "doc_id": "LLY_10K_2022",
+      "ticker": "LLY",
+      "fiscal_year": 2022,
+      "cik": "59478",
+      "accession_number": "0000059478-23-000082",
+      "filing_date": "2023-02-22",
+      "text_sha256": "40fae2fceecae85f431437fccca5e83b148afd0303b48e94f7aaea1d569cc1a9"
+    },
+    {
+      "doc_id": "LLY_10K_2021",
+      "ticker": "LLY",
+      "fiscal_year": 2021,
+      "cik": "59478",
+      "accession_number": "0000059478-22-000068",
+      "filing_date": "2022-02-23",
+      "text_sha256": "2bc53b3c74fdbdd10baf8c152059ff2ceced0a5da39ae37e26abff2ee129eefd"
+    },
+    {
+      "doc_id": "PFE_10K_2025",
+      "ticker": "PFE",
+      "fiscal_year": 2025,
+      "cik": "78003",
+      "accession_number": "0000078003-26-000026",
+      "filing_date": "2026-02-26",
+      "text_sha256": "4bdcb2f96a149487a72e998d8b9da78bef1fe3a322947e4bae4b6e072ef44c92"
+    },
+    {
+      "doc_id": "PFE_10K_2024",
+      "ticker": "PFE",
+      "fiscal_year": 2024,
+      "cik": "78003",
+      "accession_number": "0000078003-25-000054",
+      "filing_date": "2025-02-27",
+      "text_sha256": "aa7252f56b39bff566f4748b146e316404da2cba4ac3ed287925dd37b72690d1"
+    },
+    {
+      "doc_id": "PFE_10K_2023",
+      "ticker": "PFE",
+      "fiscal_year": 2023,
+      "cik": "78003",
+      "accession_number": "0000078003-24-000039",
+      "filing_date": "2024-02-22",
+      "text_sha256": "929fa3574d39c5e54b921ab6d7790f889f6f777a7ae164ccc2a422d9117afcf7"
+    },
+    {
+      "doc_id": "PFE_10K_2022",
+      "ticker": "PFE",
+      "fiscal_year": 2022,
+      "cik": "78003",
+      "accession_number": "0000078003-23-000024",
+      "filing_date": "2023-02-23",
+      "text_sha256": "b5e767f8213a7ec2b05a7f95717505e45fbf00e5272f6822e91801abe17df004"
+    },
+    {
+      "doc_id": "PFE_10K_2021",
+      "ticker": "PFE",
+      "fiscal_year": 2021,
+      "cik": "78003",
+      "accession_number": "0000078003-22-000027",
+      "filing_date": "2022-02-24",
+      "text_sha256": "32bdf2c47835008f4b3e71c4726fa9e406e21cf92793a20a2ceedfb11a4ab3bb"
+    },
+    {
+      "doc_id": "UNH_10K_2025",
+      "ticker": "UNH",
+      "fiscal_year": 2025,
+      "cik": "731766",
+      "accession_number": "0000731766-26-000062",
+      "filing_date": "2026-03-02",
+      "text_sha256": "39cfc4f6990d647fd96805a5b4c84e227074cd88a1186de0b3ca563d15230dd0"
+    },
+    {
+      "doc_id": "UNH_10K_2024",
+      "ticker": "UNH",
+      "fiscal_year": 2024,
+      "cik": "731766",
+      "accession_number": "0000731766-25-000063",
+      "filing_date": "2025-02-27",
+      "text_sha256": "d8b2f28ffe5c36dd2b196c5ee08171a08f77f308e046de458aa4e7ee9d880553"
+    },
+    {
+      "doc_id": "UNH_10K_2023",
+      "ticker": "UNH",
+      "fiscal_year": 2023,
+      "cik": "731766",
+      "accession_number": "0000731766-24-000081",
+      "filing_date": "2024-02-28",
+      "text_sha256": "bbfae033e07a0a19f2eb7158ea51854f48aa9ce71788baff087e82bdab7964e4"
+    },
+    {
+      "doc_id": "UNH_10K_2022",
+      "ticker": "UNH",
+      "fiscal_year": 2022,
+      "cik": "731766",
+      "accession_number": "0000731766-23-000008",
+      "filing_date": "2023-02-24",
+      "text_sha256": "9100768ad06c948b36100148d032539a65aeebe1d72ad9684057e212d985dbfe"
+    },
+    {
+      "doc_id": "UNH_10K_2021",
+      "ticker": "UNH",
+      "fiscal_year": 2021,
+      "cik": "731766",
+      "accession_number": "0000731766-22-000008",
+      "filing_date": "2022-02-15",
+      "text_sha256": "762d708c5adc7192ee5df4a61e6d9d9491b3235a9ed678ac63db93b04f059f1b"
+    },
+    {
+      "doc_id": "BA_10K_2025",
+      "ticker": "BA",
+      "fiscal_year": 2025,
+      "cik": "12927",
+      "accession_number": "0001628280-26-004357",
+      "filing_date": "2026-01-30",
+      "text_sha256": "1b032d755d97b8ed4f6e005b97c1ecfcf43360489610c417ac2ed56778ff4d71"
+    },
+    {
+      "doc_id": "BA_10K_2024",
+      "ticker": "BA",
+      "fiscal_year": 2024,
+      "cik": "12927",
+      "accession_number": "0000012927-25-000015",
+      "filing_date": "2025-02-03",
+      "text_sha256": "bd3b3d7dca4544c332db7929fbbe40c4d49b014363c1205942382f75ac250e4f"
+    },
+    {
+      "doc_id": "BA_10K_2023",
+      "ticker": "BA",
+      "fiscal_year": 2023,
+      "cik": "12927",
+      "accession_number": "0000012927-24-000010",
+      "filing_date": "2024-01-31",
+      "text_sha256": "5b556be16658f481c38a7e666de04e7a0f1c91f909ca2398ba3911e988a04dea"
+    },
+    {
+      "doc_id": "BA_10K_2022",
+      "ticker": "BA",
+      "fiscal_year": 2022,
+      "cik": "12927",
+      "accession_number": "0000012927-23-000007",
+      "filing_date": "2023-01-27",
+      "text_sha256": "5678f122282c7b24988c5e37e53f826b0917bcecb8ac2e968660fd140c73926d"
+    },
+    {
+      "doc_id": "BA_10K_2021",
+      "ticker": "BA",
+      "fiscal_year": 2021,
+      "cik": "12927",
+      "accession_number": "0000012927-22-000010",
+      "filing_date": "2022-01-31",
+      "text_sha256": "9fe5639aacf76e646e976ec6bf8967d126104e16b9994fc33de957f3500e15b6"
+    },
+    {
+      "doc_id": "CAT_10K_2025",
+      "ticker": "CAT",
+      "fiscal_year": 2025,
+      "cik": "18230",
+      "accession_number": "0000018230-26-000008",
+      "filing_date": "2026-02-13",
+      "text_sha256": "79a0e80357f21baccc19cccfab3636e622c674d0cc1c65cdb2d2cc942d2a2de5"
+    },
+    {
+      "doc_id": "CAT_10K_2024",
+      "ticker": "CAT",
+      "fiscal_year": 2024,
+      "cik": "18230",
+      "accession_number": "0000018230-25-000008",
+      "filing_date": "2025-02-14",
+      "text_sha256": "0e404f1700a7c4f1b544ba73963640f589730e627f3993e467774b70abef9ba0"
+    },
+    {
+      "doc_id": "CAT_10K_2023",
+      "ticker": "CAT",
+      "fiscal_year": 2023,
+      "cik": "18230",
+      "accession_number": "0000018230-24-000009",
+      "filing_date": "2024-02-16",
+      "text_sha256": "b447bbeed1b22581576a0b4462b7724353451a9b8dbc447bae5efcefa9e6d1a7"
+    },
+    {
+      "doc_id": "CAT_10K_2022",
+      "ticker": "CAT",
+      "fiscal_year": 2022,
+      "cik": "18230",
+      "accession_number": "0000018230-23-000011",
+      "filing_date": "2023-02-15",
+      "text_sha256": "6ba82529d35d264157bb2652a145208edee3a19cb026cdc3dc891b5aeccd02f7"
+    },
+    {
+      "doc_id": "CAT_10K_2021",
+      "ticker": "CAT",
+      "fiscal_year": 2021,
+      "cik": "18230",
+      "accession_number": "0000018230-22-000050",
+      "filing_date": "2022-02-16",
+      "text_sha256": "e3cf9eab78aafa70b6fa756fd91223dbbf19a90e5691d8d23046b5e53f35b4a5"
+    },
+    {
+      "doc_id": "DE_10K_2025",
+      "ticker": "DE",
+      "fiscal_year": 2025,
+      "cik": "315189",
+      "accession_number": "0001104659-25-122321",
+      "filing_date": "2025-12-18",
+      "text_sha256": "d2935945d61b39a032d09658752d3e1f05a8b73749854f27bd017c1c13ec6057"
+    },
+    {
+      "doc_id": "DE_10K_2024",
+      "ticker": "DE",
+      "fiscal_year": 2024,
+      "cik": "315189",
+      "accession_number": "0001558370-24-016169",
+      "filing_date": "2024-12-12",
+      "text_sha256": "1102eb9c9a27fdb4b5b6fdd04dbc88c65fceca5e9e854b7abc66a85d5480c291"
+    },
+    {
+      "doc_id": "DE_10K_2023",
+      "ticker": "DE",
+      "fiscal_year": 2023,
+      "cik": "315189",
+      "accession_number": "0001558370-23-019812",
+      "filing_date": "2023-12-15",
+      "text_sha256": "2e851d66c4748c4400f9545ff342a4f02fcd486b7d837b2cc9648666bdcd4ca8"
+    },
+    {
+      "doc_id": "DE_10K_2022",
+      "ticker": "DE",
+      "fiscal_year": 2022,
+      "cik": "315189",
+      "accession_number": "0001558370-22-018703",
+      "filing_date": "2022-12-15",
+      "text_sha256": "bc2c64ff1b720337c6f750c6c8f1cae7021608c37dc73a989304097640444132"
+    },
+    {
+      "doc_id": "DE_10K_2021",
+      "ticker": "DE",
+      "fiscal_year": 2021,
+      "cik": "315189",
+      "accession_number": "0001558370-21-016864",
+      "filing_date": "2021-12-16",
+      "text_sha256": "a4073a2144e11b9ca15a43608c3f87dc57114001cc2b0a7c08a2e0d7e53ba90a"
+    },
+    {
+      "doc_id": "GE_10K_2025",
+      "ticker": "GE",
+      "fiscal_year": 2025,
+      "cik": "40545",
+      "accession_number": "0000040545-26-000008",
+      "filing_date": "2026-01-29",
+      "text_sha256": "bab7b934c9f8f72351cf2a20818ec9d80946efe8cb28b601effdefc8cda0d831"
+    },
+    {
+      "doc_id": "GE_10K_2024",
+      "ticker": "GE",
+      "fiscal_year": 2024,
+      "cik": "40545",
+      "accession_number": "0000040545-25-000015",
+      "filing_date": "2025-02-03",
+      "text_sha256": "7af7c233a9359866160355ae0a54707c3fd8bf78e75da17e3065af28ec6043e4"
+    },
+    {
+      "doc_id": "GE_10K_2023",
+      "ticker": "GE",
+      "fiscal_year": 2023,
+      "cik": "40545",
+      "accession_number": "0000040545-24-000027",
+      "filing_date": "2024-02-02",
+      "text_sha256": "0208fa3f7a5d961edc408f77866f4781a9deee5e59c68ae835bce4e0a2c7d5e2"
+    },
+    {
+      "doc_id": "GE_10K_2022",
+      "ticker": "GE",
+      "fiscal_year": 2022,
+      "cik": "40545",
+      "accession_number": "0000040545-23-000023",
+      "filing_date": "2023-02-10",
+      "text_sha256": "3ccd32d54af0f4443662a35f6892884cb7679a11b140bb5eb167ea7b77b10964"
+    },
+    {
+      "doc_id": "GE_10K_2021",
+      "ticker": "GE",
+      "fiscal_year": 2021,
+      "cik": "40545",
+      "accession_number": "0000040545-22-000008",
+      "filing_date": "2022-02-11",
+      "text_sha256": "a6da8add083119ed1b647e7cfe8e6688294aa37fe5135c3a02fcbf725342c849"
+    },
+    {
+      "doc_id": "FCX_10K_2025",
+      "ticker": "FCX",
+      "fiscal_year": 2025,
+      "cik": "831259",
+      "accession_number": "0000831259-26-000012",
+      "filing_date": "2026-02-13",
+      "text_sha256": "62cb222e64ea6c1363b3576d0d985b5e598f92f93448090eea4aea87445dccc4"
+    },
+    {
+      "doc_id": "FCX_10K_2024",
+      "ticker": "FCX",
+      "fiscal_year": 2024,
+      "cik": "831259",
+      "accession_number": "0000831259-25-000006",
+      "filing_date": "2025-02-14",
+      "text_sha256": "be6f3b0dc40d5281e47b4d1c0b025ecd4c36c396f05b359daaf7480250a3b11d"
+    },
+    {
+      "doc_id": "FCX_10K_2023",
+      "ticker": "FCX",
+      "fiscal_year": 2023,
+      "cik": "831259",
+      "accession_number": "0000831259-24-000011",
+      "filing_date": "2024-02-16",
+      "text_sha256": "b66d31b90017d990fa86607ce718df0a0323b711b9ce415694197c26f3cb7867"
+    },
+    {
+      "doc_id": "FCX_10K_2022",
+      "ticker": "FCX",
+      "fiscal_year": 2022,
+      "cik": "831259",
+      "accession_number": "0000831259-23-000013",
+      "filing_date": "2023-02-15",
+      "text_sha256": "53553160ebd3b2fb841009c752e8f2dd4605b16637c9327c866591266f39030c"
+    },
+    {
+      "doc_id": "FCX_10K_2021",
+      "ticker": "FCX",
+      "fiscal_year": 2021,
+      "cik": "831259",
+      "accession_number": "0000831259-22-000009",
+      "filing_date": "2022-02-15",
+      "text_sha256": "45f14717e7510051a449b819def13c2b3a06f073d53bdb10a25bd1d88c7833e9"
+    },
+    {
+      "doc_id": "LIN_10K_2025",
+      "ticker": "LIN",
+      "fiscal_year": 2025,
+      "cik": "1707925",
+      "accession_number": "0001628280-26-011430",
+      "filing_date": "2026-02-25",
+      "text_sha256": "f113705c518860f6323e18989dd558f9dae2662d4bb6251fbeb26e54a7931ac0"
+    },
+    {
+      "doc_id": "LIN_10K_2024",
+      "ticker": "LIN",
+      "fiscal_year": 2024,
+      "cik": "1707925",
+      "accession_number": "0001628280-25-007990",
+      "filing_date": "2025-02-26",
+      "text_sha256": "7e80d0ad2749bafa5640c1867069ad1f78839e309b9a8651b8cac3cf3e016e39"
+    },
+    {
+      "doc_id": "LIN_10K_2023",
+      "ticker": "LIN",
+      "fiscal_year": 2023,
+      "cik": "1707925",
+      "accession_number": "0001628280-24-007424",
+      "filing_date": "2024-02-28",
+      "text_sha256": "76b4f7cb3612258f2ba31dceccdca60629ce472ab9a0f4e44a8e8853b03c1024"
+    },
+    {
+      "doc_id": "LIN_10K_2022",
+      "ticker": "LIN",
+      "fiscal_year": 2022,
+      "cik": "1707925",
+      "accession_number": "0001628280-23-005434",
+      "filing_date": "2023-02-28",
+      "text_sha256": "8bcc32d5d7208eb9482bcc572ce6c401c22c8564ee12d49d70c9230bc7c75bd2"
+    },
+    {
+      "doc_id": "LIN_10K_2021",
+      "ticker": "LIN",
+      "fiscal_year": 2021,
+      "cik": "1707925",
+      "accession_number": "0001628280-22-004180",
+      "filing_date": "2022-02-28",
+      "text_sha256": "5839dd651f201e852a9618ad9cec606e57baf042d0985087ac73409f57476c4b"
+    },
+    {
+      "doc_id": "AAPL_10K_2025",
+      "ticker": "AAPL",
+      "fiscal_year": 2025,
+      "cik": "320193",
+      "accession_number": "0000320193-25-000079",
+      "filing_date": "2025-10-31",
+      "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a"
+    },
+    {
+      "doc_id": "AAPL_10K_2024",
+      "ticker": "AAPL",
+      "fiscal_year": 2024,
+      "cik": "320193",
+      "accession_number": "0000320193-24-000123",
+      "filing_date": "2024-11-01",
+      "text_sha256": "62c7c766579feaaefbc72b6484a903b1c3558cf3484160afae0c2ef92988abbe"
+    },
+    {
+      "doc_id": "AAPL_10K_2023",
+      "ticker": "AAPL",
+      "fiscal_year": 2023,
+      "cik": "320193",
+      "accession_number": "0000320193-23-000106",
+      "filing_date": "2023-11-03",
+      "text_sha256": "6ec66e675f8e093730ecee19c37c0b6fe18731437e1795bb3e7bb2705eaff6e2"
+    },
+    {
+      "doc_id": "AAPL_10K_2022",
+      "ticker": "AAPL",
+      "fiscal_year": 2022,
+      "cik": "320193",
+      "accession_number": "0000320193-22-000108",
+      "filing_date": "2022-10-28",
+      "text_sha256": "ed000b977f5ef92cd60b39d78c849ce681832b873c054b62a6a03a23a656b2f3"
+    },
+    {
+      "doc_id": "AAPL_10K_2021",
+      "ticker": "AAPL",
+      "fiscal_year": 2021,
+      "cik": "320193",
+      "accession_number": "0000320193-21-000105",
+      "filing_date": "2021-10-29",
+      "text_sha256": "f1f6cea146650a68be12f311ffe4d699a23bc8cc3ca6775fa57b38198f60f35f"
+    },
+    {
+      "doc_id": "AMD_10K_2025",
+      "ticker": "AMD",
+      "fiscal_year": 2025,
+      "cik": "2488",
+      "accession_number": "0000002488-26-000018",
+      "filing_date": "2026-02-04",
+      "text_sha256": "4e54f8fab9ad0c762a9dafc1a2852b9031c23093b790fddedcea6f3bbb141d2b"
+    },
+    {
+      "doc_id": "AMD_10K_2024",
+      "ticker": "AMD",
+      "fiscal_year": 2024,
+      "cik": "2488",
+      "accession_number": "0000002488-25-000012",
+      "filing_date": "2025-02-05",
+      "text_sha256": "d055987896d60509a90388e29bf4bb1d625ce325920f1d503b7e9d3c102e1a75"
+    },
+    {
+      "doc_id": "AMD_10K_2023",
+      "ticker": "AMD",
+      "fiscal_year": 2023,
+      "cik": "2488",
+      "accession_number": "0000002488-24-000012",
+      "filing_date": "2024-01-31",
+      "text_sha256": "6dc0136cb0811d7b2275d81a9b4ea8451de9e579cf5340245170d065740ff0ad"
+    },
+    {
+      "doc_id": "AMD_10K_2022",
+      "ticker": "AMD",
+      "fiscal_year": 2022,
+      "cik": "2488",
+      "accession_number": "0000002488-23-000047",
+      "filing_date": "2023-02-27",
+      "text_sha256": "c431331fd59309616e8a2de636dfef5b57bb8a32f6c96e6ec76e5cdbdb1919a9"
+    },
+    {
+      "doc_id": "AMD_10K_2021",
+      "ticker": "AMD",
+      "fiscal_year": 2021,
+      "cik": "2488",
+      "accession_number": "0000002488-22-000016",
+      "filing_date": "2022-02-03",
+      "text_sha256": "69c75037a77d1c39d13620d72f7dbc02f3aea18d27e9f5b5aa5bd991002f9223"
+    },
+    {
+      "doc_id": "GOOGL_10K_2025",
+      "ticker": "GOOGL",
+      "fiscal_year": 2025,
+      "cik": "1652044",
+      "accession_number": "0001652044-26-000018",
+      "filing_date": "2026-02-05",
+      "text_sha256": "ad450c62bbcad6fa6faea4b6bab2e798ca808f1fe386350ad6b8447399e2ecf9"
+    },
+    {
+      "doc_id": "GOOGL_10K_2024",
+      "ticker": "GOOGL",
+      "fiscal_year": 2024,
+      "cik": "1652044",
+      "accession_number": "0001652044-25-000014",
+      "filing_date": "2025-02-05",
+      "text_sha256": "d5850dad6170958e7ee899d500f387079f3cb0b82157b6686a801e0cb635a714"
+    },
+    {
+      "doc_id": "GOOGL_10K_2023",
+      "ticker": "GOOGL",
+      "fiscal_year": 2023,
+      "cik": "1652044",
+      "accession_number": "0001652044-24-000022",
+      "filing_date": "2024-01-31",
+      "text_sha256": "96c76fcea6f40b5f7f31f78adb0b8c2d74ea6c01a2ef7624fcbdd384653ac53a"
+    },
+    {
+      "doc_id": "GOOGL_10K_2022",
+      "ticker": "GOOGL",
+      "fiscal_year": 2022,
+      "cik": "1652044",
+      "accession_number": "0001652044-23-000016",
+      "filing_date": "2023-02-03",
+      "text_sha256": "8acf3bbc4a0920d2c375901c08b6ab298970e2b859c59c8d0fa60772df760655"
+    },
+    {
+      "doc_id": "GOOGL_10K_2021",
+      "ticker": "GOOGL",
+      "fiscal_year": 2021,
+      "cik": "1652044",
+      "accession_number": "0001652044-22-000019",
+      "filing_date": "2022-02-02",
+      "text_sha256": "e5884b168a13fd315c92e703a91aff8691355fb5ff2149e07df836261833887a"
+    },
+    {
+      "doc_id": "META_10K_2025",
+      "ticker": "META",
+      "fiscal_year": 2025,
+      "cik": "1326801",
+      "accession_number": "0001628280-26-003942",
+      "filing_date": "2026-01-29",
+      "text_sha256": "d5a180ad0f0a655c5a871e3884528357d7930ec48099dbe9f2e2c50bf1871006"
+    },
+    {
+      "doc_id": "META_10K_2024",
+      "ticker": "META",
+      "fiscal_year": 2024,
+      "cik": "1326801",
+      "accession_number": "0001326801-25-000017",
+      "filing_date": "2025-01-30",
+      "text_sha256": "9a4abbf013b4656ec3ee5d1ff96101914323f4b107a15a4130b975d749331441"
+    },
+    {
+      "doc_id": "META_10K_2023",
+      "ticker": "META",
+      "fiscal_year": 2023,
+      "cik": "1326801",
+      "accession_number": "0001326801-24-000012",
+      "filing_date": "2024-02-02",
+      "text_sha256": "6f983c4d1a74dbdcc5a9aefadb933576cb2e53bb3e7dc2c99ebfaebb3572a1aa"
+    },
+    {
+      "doc_id": "META_10K_2022",
+      "ticker": "META",
+      "fiscal_year": 2022,
+      "cik": "1326801",
+      "accession_number": "0001326801-23-000013",
+      "filing_date": "2023-02-02",
+      "text_sha256": "fc816a9507aa8296aabbccd8ea7c8583e10556da95e06f6e69e6fd86ded0e40f"
+    },
+    {
+      "doc_id": "META_10K_2021",
+      "ticker": "META",
+      "fiscal_year": 2021,
+      "cik": "1326801",
+      "accession_number": "0001326801-22-000018",
+      "filing_date": "2022-02-03",
+      "text_sha256": "0941c8fe8b20eff4056f99e670b7f6ab02b2be587f0eb5e577d44b4a60927fe8"
+    },
+    {
+      "doc_id": "NVDA_10K_2025",
+      "ticker": "NVDA",
+      "fiscal_year": 2026,
+      "cik": "1045810",
+      "accession_number": "0001045810-26-000021",
+      "filing_date": "2026-02-25",
+      "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584"
+    },
+    {
+      "doc_id": "NVDA_10K_2024",
+      "ticker": "NVDA",
+      "fiscal_year": 2025,
+      "cik": "1045810",
+      "accession_number": "0001045810-25-000023",
+      "filing_date": "2025-02-26",
+      "text_sha256": "e62df86e73cb4bbb1c075dcf63669a8339d01ca12b810934edde035e1d214482"
+    },
+    {
+      "doc_id": "NVDA_10K_2023",
+      "ticker": "NVDA",
+      "fiscal_year": 2024,
+      "cik": "1045810",
+      "accession_number": "0001045810-24-000029",
+      "filing_date": "2024-02-21",
+      "text_sha256": "dd37800a2daa0d235743b8fb5a1fc66582005cc23fd5cbefcf54416306e264c4"
+    },
+    {
+      "doc_id": "NVDA_10K_2022",
+      "ticker": "NVDA",
+      "fiscal_year": 2023,
+      "cik": "1045810",
+      "accession_number": "0001045810-23-000017",
+      "filing_date": "2023-02-24",
+      "text_sha256": "6f928f6e5cf022bc03aacf7bf9f232db21bc928d70f0588e9641c6b1b96aea91"
+    },
+    {
+      "doc_id": "NVDA_10K_2021",
+      "ticker": "NVDA",
+      "fiscal_year": 2022,
+      "cik": "1045810",
+      "accession_number": "0001045810-22-000036",
+      "filing_date": "2022-03-18",
+      "text_sha256": "8e088eb6c08610dbd4830f7b9cfdf13d7c948a038deb0211df530cedb2be3fb0"
+    }
+  ],
+  "release_finalized": "2026-09-22"
+}

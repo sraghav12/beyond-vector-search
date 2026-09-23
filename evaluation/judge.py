@@ -29,25 +29,30 @@ import pandas as pd  # type: ignore[import-untyped]
 
 # ── Cross-model judge selection ───────────────────────────────────────────────
 
-# Preferred cross-provider judges — Claude is best: different company, different arch
+# Preferred cross-provider judges. Values must be litellm-callable model ids
+# (gemini needs the "gemini/" provider prefix).
 _CROSS_JUDGE: dict[str, str] = {
-    "gpt-4o-mini": "anthropic/claude-haiku-4-5-20251001",
-    "gpt-4o": "anthropic/claude-haiku-4-5-20251001",
-    "gemini-2.5-flash": "anthropic/claude-haiku-4-5-20251001",
-    "gemini-2.0-flash": "anthropic/claude-haiku-4-5-20251001",
-    "gemini-1.5-flash": "anthropic/claude-haiku-4-5-20251001",
+    "gpt-4o-mini": "gemini/gemini-3.6-flash",
+    "gpt-4o": "gemini/gemini-3.6-flash",
+    "gemini-3.6-flash": "gpt-4o-mini",
+    "gemini-2.5-flash": "gpt-4o-mini",
+    "gemini-2.0-flash": "gpt-4o-mini",
+    "gemini-1.5-flash": "gpt-4o-mini",
     "claude-haiku": "gpt-4o-mini",
     "claude-sonnet": "gpt-4o-mini",
     "claude-opus": "gpt-4o-mini",
 }
 
-# Same-provider fallbacks (different tier) when cross-provider key is unavailable
-_SAME_PROVIDER_FALLBACK: dict[str, str] = {
+# Retry fallbacks when a judge call fails with a recoverable error. Values must
+# be litellm-callable model ids; cross-provider is acceptable here — a working
+# judge beats a broken preference.
+_JUDGE_FALLBACK: dict[str, str] = {
     "gpt-4o-mini": "gpt-4o",
     "gpt-4o": "gpt-4o-mini",
-    "gemini-2.5-flash": "gemini-2.0-flash",
-    "gemini-2.0-flash": "gemini-1.5-flash",
-    "gemini-1.5-flash": "gemini-2.0-flash",
+    "gemini-3.6-flash": "gpt-4o",
+    "gemini-2.5-flash": "gpt-4o",
+    "gemini-2.0-flash": "gpt-4o",
+    "gemini-1.5-flash": "gpt-4o",
     "claude-haiku-4-5-20251001": "gpt-4o-mini",
 }
 
@@ -55,8 +60,20 @@ _DEGENERATE_PREFIXES = ("error:", "exceeds_context", "exceeds context")
 
 
 def _has_key(provider: str) -> bool:
-    """Check whether an API key for the given provider is present in the environment."""
+    """Check whether an API key for the given provider is present in the environment.
+
+    Providers listed in BVS_DISABLED_PROVIDERS (comma-separated) are treated as
+    keyless even if their env var is set — use this for keys that exist but are
+    out of credits, so judge selection never routes to them.
+    """
     import os
+    disabled = {
+        p.strip().lower()
+        for p in os.environ.get("BVS_DISABLED_PROVIDERS", "").split(",")
+        if p.strip()
+    }
+    if provider in disabled:
+        return False
     if provider == "openai":
         return bool(os.environ.get("OPENAI_API_KEY"))
     if provider == "anthropic":
@@ -81,7 +98,15 @@ def _provider(model: str) -> str:
 
 
 def get_recommended_judge(evaluated_model: str) -> str:
-    """Return the best available judge, preferring Claude > Gemini > GPT (cross-provider)."""
+    """Return the best available cross-provider judge for the evaluated model.
+
+    BVS_JUDGE_MODEL, when set, overrides all selection logic.
+    """
+    import os
+    override = os.environ.get("BVS_JUDGE_MODEL")
+    if override:
+        return override
+
     key = evaluated_model.lower().split("/")[-1]
 
     # find the ideal cross-provider judge
@@ -91,8 +116,8 @@ def get_recommended_judge(evaluated_model: str) -> str:
             ideal = judge
             break
     if ideal is None:
-        # default: prefer Claude, fall through to others
-        ideal = "anthropic/claude-haiku-4-5-20251001"
+        # default: prefer Gemini (cross-provider for the gpt-* models we run)
+        ideal = "gemini/gemini-3.6-flash"
 
     # use ideal if its provider key is available
     if _has_key(_provider(ideal)):
@@ -100,8 +125,8 @@ def get_recommended_judge(evaluated_model: str) -> str:
 
     # try other cross-provider options in priority order
     for candidate in [
+        "gemini/gemini-3.6-flash",
         "anthropic/claude-haiku-4-5-20251001",
-        "gemini/gemini-2.0-flash",
         "gpt-4o",
         "gpt-4o-mini",
     ]:
@@ -114,7 +139,7 @@ def get_recommended_judge(evaluated_model: str) -> str:
             return candidate
 
     # last resort: same-provider different tier (note self-eval bias)
-    fallback = _SAME_PROVIDER_FALLBACK.get(key)
+    fallback = _JUDGE_FALLBACK.get(key)
     if fallback and _has_key(_provider(fallback)):
         import warnings
         warnings.warn(
@@ -186,8 +211,11 @@ class LLMJudge:
         self,
         model: str = "gpt-4o-mini",
         cache_dir: Optional[str] = None,
+        judge_model: Optional[str] = None,
     ) -> None:
         self.model = model
+        # Explicit judge override; when None the judge is auto-selected per call.
+        self.judge_model = judge_model
         _cache_path = Path(cache_dir) if cache_dir else (
             Path(__file__).parent.parent / ".cache" / "judge"
         )
@@ -220,7 +248,7 @@ class LLMJudge:
                     judge_model=self.model, cached=False,
                 )
 
-        judge_model = get_recommended_judge(self.model)
+        judge_model = self.judge_model or get_recommended_judge(self.model)
         cache_key = _cache_key(judge_model, question, predicted, gold, answer_type or "")
 
         if cache_key in self._cache:
@@ -236,9 +264,9 @@ class LLMJudge:
 
         result = self._call_judge(judge_model, question, predicted, gold, answer_type)
 
-        # If the primary judge hit a quota/auth/404 error, try the same-provider fallback
+        # If the primary judge hit a quota/auth/404 error, try the fallback judge
         if result.error is not None and _is_recoverable(result.error):
-            fallback = _SAME_PROVIDER_FALLBACK.get(judge_model.split("/")[-1])
+            fallback = _JUDGE_FALLBACK.get(judge_model.split("/")[-1])
             if fallback is None and _has_key("openai"):
                 fallback = "gpt-4o"
             if fallback and fallback != judge_model:
@@ -300,14 +328,27 @@ class LLMJudge:
         with open(results_path, encoding="utf-8") as fh:
             lines = [l.strip() for l in fh if l.strip()]
 
+        # Resume appends rather than rewrites, so a partial file can hold several
+        # rows per query_id. Keep the last ok row per query, else the last row.
+        by_qid: dict[str, dict] = {}
+        qid_order: list[str] = []
+        for line in lines:
+            rec = json.loads(line)
+            qid = rec.get("query_id", "")
+            if qid not in by_qid:
+                qid_order.append(qid)
+                by_qid[qid] = rec
+            elif rec.get("status") == "ok" or by_qid[qid].get("status") != "ok":
+                by_qid[qid] = rec
+        records = [by_qid[q] for q in qid_order]
+
         try:
             from tqdm import tqdm  # type: ignore[import-untyped]
-            iter_lines = tqdm(lines, desc="judging", unit="q") if show_progress else lines
+            iter_records = tqdm(records, desc="judging", unit="q") if show_progress else records
         except ImportError:
-            iter_lines = lines
+            iter_records = records
 
-        for line in iter_lines:
-            record = json.loads(line)
+        for record in iter_records:
             query_id = record.get("query_id", "")
             gold_entry = gold_answers.get(query_id, {})
             gold = gold_entry.get("answer", record.get("gold_answer", ""))
@@ -320,12 +361,14 @@ class LLMJudge:
                 judge_reasoning = f"pipeline error: {record.get('error_message', '')}"
                 judge_cost = 0.0
                 judge_cached = False
+                judge_model_used = ""
             else:
                 jr = self.score(question, predicted, gold, answer_type)
                 judge_score = jr.score
                 judge_reasoning = jr.reasoning
                 judge_cost = jr.cost_usd
                 judge_cached = jr.cached
+                judge_model_used = jr.judge_model
 
             rows.append(
                 {
@@ -344,6 +387,7 @@ class LLMJudge:
                     "judge_reasoning": judge_reasoning,
                     "judge_cost_usd": judge_cost,
                     "judge_cached": judge_cached,
+                    "judge_model": judge_model_used,
                     "answer_preview": str(predicted)[:120],
                     "gold_preview": str(gold)[:120],
                 }
@@ -398,6 +442,8 @@ class LLMJudge:
                     {"role": "user", "content": user_msg},
                 ],
                 temperature=0,
+                # ride out free-tier RPM windows before giving up on this judge
+                num_retries=4,
             )
             raw = response.choices[0].message.content.strip()
             score, reasoning = _parse_judge_response(raw)

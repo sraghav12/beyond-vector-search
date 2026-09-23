@@ -1,4 +1,6 @@
+import hashlib
 import math
+import re
 import time
 import tiktoken
 from abc import ABC, abstractmethod
@@ -44,10 +46,26 @@ CONTEXT_LIMITS = {
 
 
 def compute_cost(model: str, tokens_in: int, tokens_out: int) -> float:
+    model = model.split("/")[-1]
+    if model not in MODEL_COSTS:
+        model = re.sub(r"-\d{4}-\d{2}-\d{2}$", "", model)
     if model not in MODEL_COSTS:
         return 0.0
     in_rate, out_rate = MODEL_COSTS[model]
     return (tokens_in / 1000 * in_rate) + (tokens_out / 1000 * out_rate)
+
+
+def corpus_fingerprint(corpus_path: str) -> str:
+    """Short content hash of a corpus file, used in cache keys and index paths.
+
+    Guarantees a rebuilt corpus at the same scale can never be served another
+    corpus's cached answers or vector index.
+    """
+    h = hashlib.md5()
+    with open(corpus_path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()[:8]
 
 
 class TokenCounter:

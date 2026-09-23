@@ -176,12 +176,16 @@ def test_load_corpus_reuses_existing_index_without_reembedding(
         ],
     )
 
+    from pipelines.base import corpus_fingerprint
+
     persist_root = tmp_path / "chroma"
+    # index dirs are keyed by corpus content fingerprint: reuse only happens
+    # for the exact same corpus bytes
     existing_index_dir = (
         persist_root
         / "gpt-4o-mini"
         / "text-embedding-3-small"
-        / "scale_10"
+        / f"scale_10_{corpus_fingerprint(str(corpus_path))}"
     )
     existing_index_dir.mkdir(parents=True, exist_ok=True)
     (existing_index_dir / "chroma.sqlite3").write_text("existing", encoding="utf-8")

@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "records": {
+    "q041": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "question": "Rank the latest fiscal years present in the frozen corpus by total revenue: Walmart, Apple, ExxonMobil, NVIDIA, and JPMorgan Chase. Use ExxonMobil total revenues and other income and JPMorgan reported total net revenue.",
+      "previous_question": "Rank the following companies by total revenue in their most recent fiscal year (highest to lowest): Apple, NVIDIA, JPMorgan Chase, ExxonMobil, Walmart.",
+      "question_changed": true,
+      "answer": "Walmart $713,163M > Apple $416,161M > ExxonMobil $332,238M > NVIDIA $215,938M > JPMorgan Chase $182,447M. Walmart and NVIDIA report fiscal 2026; the other figures are FY2025.",
+      "previous_answer": "1. Walmart (~$648B), 2. ExxonMobil (~$339B), 3. Apple ($391.0B), 4. JPMorgan Chase ($177.6B), 5. NVIDIA ($130.5B). Note: Walmart and Apple ordering may vary depending on exact figures.",
+      "interpretation": "Cross-industry revenue definitions are named explicitly. Fiscal periods differ.",
+      "evidence": [
+        {
+          "doc_id": "WMT_10K_2025",
+          "accession_number": "0000104169-26-000055",
+          "filing_date": "2026-03-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/0000104169-26-000055-index.html",
+          "text_sha256": "2410e6410790c1215e55a9edd01303db60d88570eff6066fb1d27d42aaeeebc6",
+          "start_char": 185515,
+          "end_char": 186422,
+          "quote": "partially offset by increased inventory purchases. Free cash flow for fiscal 2025 decreased when compared to fiscal 2024 due to an increase of $3.2 billion in capital expenditures to support our omnichannel growth strategy, partially offset by the increase in net cash provided by operating activities described above.\n\n37\n\nResults of Operations\nConsolidated Results of Operations\n\nFiscal Years Ended January 31,\n\n(Dollar amounts and retail square feet in millions)\n\n2026\n\n2025\n\n2024\n\nNet sales\n\n706,413\n\n674,538\n\n642,637\n\nPercentage change from comparable period\n\n4.7\n\n5.0\n\n6.1\n\nMembership and other income (1)\n\n6,750\n\n6,447\n\n5,488\n\nTotal revenues\n\n713,163\n\n680,985\n\n648,125\n\nPercentage change from comparable period\n\n4.7\n\n5.1\n\n6.0\n\nGross profit (2)\n\n171,018\n\n162,785\n\n152,495\n\nOperating expenses (2)\n\n147,943\n\n139,884\n\n130,971\n\nOperating income\n\n29,825\n\n29,348\n\n27,012\n\nOther (gains) and losses\n\n(2,075)\n\n"
+        },
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 107851,
+          "end_char": 108758,
+          "quote": "oeconomic environment and result in shifts and reductions in consumer spending and negative consumer sentiment for the Company's products and services, all of which can further adversely affect the Company's business and results of operations.\n\nSegment Operating Performance\nThe following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):\n\n2025\n\nChange\n\n2024\n\nChange\n\n2023\n\nAmericas\n178,353\n\n7\n\n167,045\n\n3\n\n162,560\n\nEurope\n111,032\n\n10\n\n101,328\n\n7\n\n94,294\n\nGreater China\n64,377\n\n(4)\n\n66,952\n\n(8)\n\n72,559\n\nJapan\n28,703\n\n15\n\n25,052\n\n3\n\n24,257\n\nRest of Asia Pacific\n33,696\n\n10\n\n30,658\n\n4\n\n29,615\n\nTotal net sales\n416,161\n\n6\n\n391,035\n\n2\n\n383,285\n\nAmericas\nAmericas net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPhone and Services. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year im"
+        },
+        {
+          "doc_id": "XOM_10K_2025",
+          "accession_number": "0000034088-26-000045",
+          "filing_date": "2026-02-18",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/0000034088-26-000045-index.html",
+          "text_sha256": "d5cef65982d90a6c025f399858a4c4d3f935c95672837c9f91dc2074f465c3ab",
+          "start_char": 256526,
+          "end_char": 257433,
+          "quote": "nd current period production volumes, as applicable.\n\n/s/ PricewaterhouseCoopers LLP\nHouston, Texas\nFebruary 18, 2026\n\nWe have served as the Corporation's auditor since 1934.\n\n70\n\nTable of Contents\n\nFinancial Table of Contents\nThe information in the Notes to Consolidated Financial Statements is an integral part of these statements.\nCONSOLIDATED STATEMENT OF INCOME\n\n(millions of dollars)\nNote\nReference\nNumber\n2025\n2024\n2023\n\nRevenues and other income\n\nSales and other operating revenue\n\n3\n323,905\n\n339,247\n\n334,697\n\nIncome from equity affiliates\n\n8\n5,064\n\n6,194\n\n6,385\n\nOther income\n\n3,269\n\n4,144\n\n3,500\n\nTotal revenues and other income\n\n332,238\n\n349,585\n\n344,582\n\nCosts and other deductions\n\nCrude oil and product purchases\n\n184,248\n\n199,454\n\n193,029\n\nProduction and manufacturing expenses\n\n42,424\n\n39,609\n\n36,885\n\nSelling, general and administrative expenses\n\n11,128\n\n9,976\n\n9,919\n\nDepreciation and dep"
+        },
+        {
+          "doc_id": "NVDA_10K_2025",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+          "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584",
+          "start_char": 190833,
+          "end_char": 191740,
+          "quote": "r supply chain and manufacturing costs, employee wages, costs for capital equipment, the value of our investments, revenue and competitive position. Our product and solution pricing generally does not fluctuate with short-term changes in our costs. Within our supply chain, we continuously manage product availability and costs with our vendors.\nRefer to \"Item 1A. Risk Factors - Risks Related to Regulatory, Legal, Our Stock and Other Matters\" for a further discussion of the potential impact of these factors on our business.\nFiscal Year 2026 Summary\n\nYear Ended\n\nJan 25, 2026\n\nJan 26, 2025\n\nChange\n\n($ in millions, except per share data)\n\nRevenue\n215,938\n\n130,497\n\nUp 65%\n\nGross margin\n71.1\n\n75.0\n\n-3.9 pts\n\nOperating expenses\n23,076\n\n16,405\n\nUp 41%\n\nOperating income\n130,387\n\n81,453\n\nUp 60%\n\nNet income\n120,067\n\n72,880\n\nUp 65%\n\nNet income per diluted share\n4.90\n\n2.94\n\nUp 67%\nRevenue for fiscal year 202"
+        },
+        {
+          "doc_id": "JPM_10K_2025",
+          "accession_number": "0001628280-26-008131",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+          "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa",
+          "start_char": 195552,
+          "end_char": 196459,
+          "quote": "02\n\nNote 31 - International operations\n305\n\nNote 32 - Business segments & Corporate\n306\n\nNote 33 - Parent C ompany\n310\n\nNote 34 - Business combinations\n312\n\nSupplementary Information:\n\nDistribution of assets, liabilities and stockholders' equity; interest rates and interest differentials\n315\n\nGlossary of Terms and Acronyms\n320\n\nJPMorgan Chase & Co./2025 Form 10-K\n\n43\n\nFinancial\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\n\nAs of or for the year ended December 31,\n(in millions, except per share, ratio, employee data and where otherwise noted)\n\n2025\n\n2024\n\n2023\n\nSelected income statement data\n\nTotal net revenue\n\n182,447\n\n177,556\n\n(g)\n158,104\n\nTotal noninterest expense\n\n95,640\n\n91,797\n\n(g)\n87,172\n\nPre-provision profit (a)\n\n86,807\n\n85,759\n\n70,932\n\nProvision for credit losses\n\n14,212\n\n(e)\n10,678\n\n9,320\n\nIncome before income tax expense\n\n72,595\n\n75,081\n\n61,612\n\nIncome tax expen"
+        }
+      ]
+    },
+    "q044": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "question": "What is the total combined revenue of all five technology companies (AAPL, NVDA, GOOGL, META, AMD) in their most recent fiscal years?",
+      "previous_question": "What is the total combined revenue of all five technology companies (AAPL, NVDA, GOOGL, META, AMD) in their most recent fiscal years?",
+      "question_changed": false,
+      "answer": "Combined revenue was $1,270,540 million ($1.270540 trillion): Apple 416,161M + NVIDIA 215,938M + Alphabet 402,836M + Meta 200,966M + AMD 34,639M.",
+      "previous_answer": "AAPL $391.0B + NVDA $130.5B + GOOGL ~$350B + META ~$161B + AMD ~$23B = approximately $1.06 trillion. Verify from 10-Ks.",
+      "interpretation": "Sum latest company fiscal years in frozen corpus; NVIDIA fiscal 2026, others FY2025.",
+      "evidence": [
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 107851,
+          "end_char": 108758,
+          "quote": "oeconomic environment and result in shifts and reductions in consumer spending and negative consumer sentiment for the Company's products and services, all of which can further adversely affect the Company's business and results of operations.\n\nSegment Operating Performance\nThe following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):\n\n2025\n\nChange\n\n2024\n\nChange\n\n2023\n\nAmericas\n178,353\n\n7\n\n167,045\n\n3\n\n162,560\n\nEurope\n111,032\n\n10\n\n101,328\n\n7\n\n94,294\n\nGreater China\n64,377\n\n(4)\n\n66,952\n\n(8)\n\n72,559\n\nJapan\n28,703\n\n15\n\n25,052\n\n3\n\n24,257\n\nRest of Asia Pacific\n33,696\n\n10\n\n30,658\n\n4\n\n29,615\n\nTotal net sales\n416,161\n\n6\n\n391,035\n\n2\n\n383,285\n\nAmericas\nAmericas net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPhone and Services. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year im"
+        },
+        {
+          "doc_id": "NVDA_10K_2025",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+          "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584",
+          "start_char": 190833,
+          "end_char": 191740,
+          "quote": "r supply chain and manufacturing costs, employee wages, costs for capital equipment, the value of our investments, revenue and competitive position. Our product and solution pricing generally does not fluctuate with short-term changes in our costs. Within our supply chain, we continuously manage product availability and costs with our vendors.\nRefer to \"Item 1A. Risk Factors - Risks Related to Regulatory, Legal, Our Stock and Other Matters\" for a further discussion of the potential impact of these factors on our business.\nFiscal Year 2026 Summary\n\nYear Ended\n\nJan 25, 2026\n\nJan 26, 2025\n\nChange\n\n($ in millions, except per share data)\n\nRevenue\n215,938\n\n130,497\n\nUp 65%\n\nGross margin\n71.1\n\n75.0\n\n-3.9 pts\n\nOperating expenses\n23,076\n\n16,405\n\nUp 41%\n\nOperating income\n130,387\n\n81,453\n\nUp 60%\n\nNet income\n120,067\n\n72,880\n\nUp 65%\n\nNet income per diluted share\n4.90\n\n2.94\n\nUp 67%\nRevenue for fiscal year 202"
+        },
+        {
+          "doc_id": "GOOGL_10K_2025",
+          "accession_number": "0001652044-26-000018",
+          "filing_date": "2026-02-05",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html",
+          "text_sha256": "ad450c62bbcad6fa6faea4b6bab2e798ca808f1fe386350ad6b8447399e2ecf9",
+          "start_char": 146905,
+          "end_char": 147812,
+          "quote": " which we operate. The provision includes the effect of reserve provisions and changes to reserves that are considered appropriate as well as the related net interest and penalties.\nFor additional information, including a reconciliation of the US federal statutory rate to our effective tax rate, see Note 14 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\nExecutive Overview\nThe following table summarizes consolidated financial results (in millions, except for per share information and percentages):\n\nYear Ended December 31,\n\n2024\n\n2025\n\n$ Change\n\n% Change\n\nConsolidated revenues\n350,018\n\n402,836\n\n52,818\n\n15\n\nCost of revenues\n146,306\n\n162,535\n\n16,229\n\n11\n\nOperating expenses\n91,322\n\n111,262\n\n19,940\n\n22\n\nOperating income\n112,390\n\n129,039\n\n16,649\n\n15\n\nOperating margin\n32\n\n32\n\n0\n\nOther income (expense), net\n7,425\n\n29,787\n\n22,362\n\n301\n\nNet income"
+        },
+        {
+          "doc_id": "META_10K_2025",
+          "accession_number": "0001628280-26-003942",
+          "filing_date": "2026-01-29",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.html",
+          "text_sha256": "d5a180ad0f0a655c5a871e3884528357d7930ec48099dbe9f2e2c50bf1871006",
+          "start_char": 292339,
+          "end_char": 293246,
+          "quote": "es in employee compensation and infrastructure costs.\n\n60\n\nTable of Contents\nConsolidated and Segment Results\n\nWe report our financial results for our two reportable segments: Family of Apps (FoA) and Reality Labs (RL). FoA includes Facebook, Instagram, Messenger, WhatsApp, and other services. RL includes our virtual and augmented reality related consumer hardware, software, and content.\n\nFamily of Apps\n\nReality Labs\n\nTotal\n\nYear Ended\nDecember 31,\n\nYear Ended\nDecember 31,\n\nYear Ended\nDecember 31,\n\n2025\n\n2024\n\n% change\n\n2025\n\n2024\n\n% change\n\n2025\n\n2024\n\n% change\n\n(in millions, except percentages)\n\nRevenue\n198,759\n\n162,355\n\n22%\n\n2,207\n\n2,146\n\n200,966\n\n164,501\n\n22%\n\nCosts and expenses\n96,290\n\n75,246\n\n28%\n\n21,400\n\n19,875\n\n117,690\n\n95,121\n\n24%\n\nIncome (loss) from operations\n102,469\n\n87,109\n\n18%\n\n(19,193)\n\n(17,729)\n\n(8)%\n\n83,276\n\n69,380\n\n20%\n\nOperating margin\n52\n\n54\n\n(870)\n\n(826)\n\n41\n\n42\n\n• Net inco"
+        },
+        {
+          "doc_id": "AMD_10K_2025",
+          "accession_number": "0000002488-26-000018",
+          "filing_date": "2026-02-04",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html",
+          "text_sha256": "4e54f8fab9ad0c762a9dafc1a2852b9031c23093b790fddedcea6f3bbb141d2b",
+          "start_char": 231572,
+          "end_char": 232477,
+          "quote": "t international sales will continue to be a significant portion of total sales in the foreseeable future. Substantially all of our sales transactions are denominated in U.S. dollars.\n\nComparison of Gross Margin, Expenses, Interest Expense, Other Income (expense) and Income Taxes\nThe following is a summary of certain Consolidated Statement of Operations data for 2025 and 2024:\n\nDecember 27, 2025\n\nDecember 28, 2024\n\n(In millions, except for percentages)\n\nNet revenue\n34,639\n\n25,785\n\nCost of sales\n16,456\n\n12,114\n\nAmortization of acquisition-related intangibles\n1,031\n\n946\n\nGross profit\n17,152\n\n12,725\n\nGross margin\n50\n\n49\n\nResearch and development\n8,091\n\n6,456\n\nMarketing, general and administrative\n4,144\n\n2,735\n\nAmortization of acquisition-related intangibles\n1,223\n\n1,448\n\nInterest expense\n(131)\n\n(92)\n\nOther income (expense), net\n577\n\n181\n\nIncome tax provision (benefit)\n(103)\n\n381\n\nIncome from disc"
+        }
+      ],
+      "calculation": {
+        "sum_million_usd": 1270540
+      }
+    },
+    "q052": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "question": "Rank Boeing, Caterpillar, GE Aerospace, and Deere by FY2025 consolidated total revenue. Include GE insurance revenue and Deere finance/other income.",
+      "previous_question": "Rank the four industrial companies (CAT, BA, DE, GE) by total revenue in their most recent fiscal years.",
+      "question_changed": true,
+      "answer": "Boeing $89,463M > Caterpillar $67,589M > GE Aerospace $45,855M > Deere $45,684M, for their respective FY2025 periods.",
+      "previous_answer": "Verify from all four 10-Ks. Note different fiscal year ends for DE (Oct) and GE's recent restructuring.",
+      "interpretation": "Consolidated totals, not industrial net sales alone.",
+      "evidence": [
+        {
+          "doc_id": "BA_10K_2025",
+          "accession_number": "0001628280-26-004357",
+          "filing_date": "2026-01-30",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/0001628280-26-004357-index.html",
+          "text_sha256": "1b032d755d97b8ed4f6e005b97c1ecfcf43360489610c417ac2ed56778ff4d71",
+          "start_char": 102745,
+          "end_char": 103651,
+          "quote": " significant earnings charges on these programs. BDS's production system and supply chain are beginning to stabilize; however, prior period performance has adversely affected margins and cash flows.\nAt BGS, we expect commercial revenues to remain strong in future quarters as the commercial airline industry has largely recovered and transitions to growth. The demand outlook for our government services business remains stable.\n\nConsolidated Results of Operations\nThe following table summarizes key indicators of consolidated results of operations:\n\n(Dollars in millions, except per share data)\n\nYears ended December 31,\n2025\n\n2024\n\n2023\n\nRevenues\n$89,463\n\n$66,517\n\n$77,794\n\nGAAP\n\nEarnings/(loss) from operations\n$4,281\n\n($10,707)\n\n($773)\n\nOperating margins\n4.8\n\n(16.1)\n\n(1.0)\n\nEffective income tax rate\n15.1\n\n3.1\n\n(11.8)\n\nNet earnings/(loss) attributable to Boeing shareholders\n$2,235\n\n($11,817)\n\n($2,222"
+        },
+        {
+          "doc_id": "CAT_10K_2025",
+          "accession_number": "0000018230-26-000008",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/0000018230-26-000008-index.html",
+          "text_sha256": "79a0e80357f21baccc19cccfab3636e622c674d0cc1c65cdb2d2cc942d2a2de5",
+          "start_char": 133457,
+          "end_char": 134363,
+          "quote": "ge\n\nChange\n\nConstruction Industries\n\n25,455\n\n568\n\n(1,136)\n\n24\n\n149\n\n25,060\n\n(395)\n\n(2\n\nResource Industries\n\n12,471\n\n403\n\n(272)\n\n(46)\n\n(82)\n\n12,474\n\n3\n\nPower & Energy\n\n28,854\n\n2,401\n\n592\n\n62\n\n292\n\n32,201\n\n3,347\n\n12\n\nAll Other Segment\n\n344\n\n11\n\n(1)\n\n(27)\n\n327\n\n(17)\n\n(5\n\nCorporate Items and Eliminations\n\n(5,761)\n\n6\n\n(1)\n\n6\n\n(332)\n\n(6,082)\n\n(321)\n\nMachinery, Power & Energy\n\n61,363\n\n3,389\n\n(817)\n\n45\n\n63,980\n\n2,617\n\n4\n\nFinancial Products Segment\n\n4,053\n\n167\n\n4,220\n\n167\n\n4\n\nCorporate Items and Eliminations\n\n(607)\n\n(4)\n\n(611)\n\n(4)\n\nFinancial Products Revenues\n\n3,446\n\n163\n\n3,609\n\n163\n\n5\n\nConsolidated Sales and Revenues\n\n64,809\n\n3,389\n\n(817)\n\n45\n\n163\n\n67,589\n\n2,780\n\n4\n\nSales and Revenues by Geographic Region\n\nNorth America\n\nLatin America\n\nEAME\n\nAsia/Pacific\n\nExternal Sales and Revenues\n\nInter-Segment\n\nTotal Sales and Revenues\n\n(Millions of dollars)\n\n% Chg\n\n% Chg\n\n% Chg\n\n% Chg\n\n% Chg\n\n% Chg\n\n% Chg\n\n2025\n"
+        },
+        {
+          "doc_id": "GE_10K_2025",
+          "accession_number": "0000040545-26-000008",
+          "filing_date": "2026-01-29",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000008/0000040545-26-000008-index.html",
+          "text_sha256": "bab7b934c9f8f72351cf2a20818ec9d80946efe8cb28b601effdefc8cda0d831",
+          "start_char": 43063,
+          "end_char": 43969,
+          "quote": "the tariff environment, including relevant U.S. Supreme Court rulings.\n\nOn January 15, 2026, we announced that our Commercial Engines & Services (CES) segment will expand to include the entire commercial engine lifecycle, including safety and quality, product management, engineering, supply chain, manufacturing and aftermarket services. In addition, our Aeroderivative business, currently reported in CES, will move to our Defense Propulsion & Technologies segment.\n\nCONSOLIDATED RESULTS\n\nREVENUE\n2025\n2024\n2023\n\nEquipment revenue\n12,159\n\n10,274\n\n9,318\n\nServices revenue\n30,163\n\n24,847\n\n22,641\n\nInsurance revenue\n3,533\n\n3,581\n\n3,389\n\nTotal revenue\n45,855\n\n38,702\n\n35,348\n\nFor the year ended December 31, 2025 , total revenue increased $7.2 billion, or 18%, compared to the year ended December 31, 2024. Equipment revenue increased, driven by increased engine deliveries and price. Services revenue increa"
+        },
+        {
+          "doc_id": "DE_10K_2025",
+          "accession_number": "0001104659-25-122321",
+          "filing_date": "2025-12-18",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/315189/000110465925122321/0001104659-25-122321-index.html",
+          "text_sha256": "d2935945d61b39a032d09658752d3e1f05a8b73749854f27bd017c1c13ec6057",
+          "start_char": 180597,
+          "end_char": 181953,
+          "quote": "nd leases by dealers of new and used equipment that is largely manufactured by equipment operations. Those earnings and cash flows generally are the difference between the finance income received from customer payments less interest expense, and depreciation on equipment subject to an operating lease. The two businesses are capitalized differently and have separate performance metrics. The supplemental consolidating data is also used by management due to these differences.\n\nINCOME STATEMENTS\n\nFor the Years Ended November 2, 2025, October 27, 2024, and October 29, 2023\n\nUnaudited\n\nEQUIPMENT\n\nFINANCIAL\n\nOPERATIONS\n\nSERVICES\n\nELIMINATIONS\n\nCONSOLIDATED\n\n2025\n\n2024\n\n2023\n\n2025\n\n2024\n\n2023\n\n2025\n\n2024\n\n2023\n\n2025\n\n2024\n\n2023\n\nNet Sales and Revenues\n\nNet sales\n\n38,917\n\n44,759\n\n55,565\n\n38,917\n\n44,759\n\n55,565\n\nFinance and interest income\n\n521\n\n596\n\n636\n\n5,768\n\n6,035\n\n5,055\n\n(541)\n\n(872)\n\n(1,008)\n\n5,748\n\n5,759\n\n4,683\n\n1\n\nOther income\n\n821\n\n1,006\n\n858\n\n521\n\n458\n\n499\n\n(323)\n\n(266)\n\n(354)\n\n1,019\n\n1,198\n\n1,003\n\n2, 3, 4\n\nTotal\n\n40,259\n\n46,361\n\n57,059\n\n6,289\n\n6,493\n\n5,554\n\n(864)\n\n(1,138)\n\n(1,362)\n\n45,684\n\n51,716\n\n61,251\n\nCosts and Expenses\n\nCost of sales\n\n28,190\n\n30,803\n\n37,739\n\n(31)\n\n(28)\n\n(24)\n\n28,159\n\n30,775\n\n37,715\n\n4\n\nResearch and development expenses\n\n2,311\n\n2,290\n\n2,177\n\n2,311\n\n2,290\n\n2,177\n\nSelling, administrative and general expenses\n\n3,856"
+        }
+      ]
+    },
+    "q067": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "question": "Compare FY2025 cash-flow-statement share repurchases plus dividends paid for Apple and JPMorgan Chase. Include dividend equivalents for Apple and all dividends paid (including preferred) for JPMorgan. Which total is higher?",
+      "previous_question": "Compare the capital return programs (dividends + buybacks) of Apple and JPMorgan Chase in their most recent fiscal years. Which returned more capital to shareholders?",
+      "question_changed": true,
+      "answer": "Apple returned $106,132M ($90,711M buybacks + $15,421M dividends/dividend equivalents), versus JPMorgan $48,216M ($31,591M treasury stock repurchased + $16,625M dividends paid). Apple returned approximately 2.20 times as much.",
+      "previous_answer": "Apple typically returns $90B+ annually through buybacks + dividends. JPM returns ~$20-25B. Apple likely returned more. Verify from cash flow statements.",
+      "interpretation": "Cash flow line items; includes preferred dividends for JPMorgan.",
+      "evidence": [
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 131864,
+          "end_char": 133820,
+          "quote": "ancial Statements.\n\nApple Inc. | 2025 Form 10-K | 32\n\nApple Inc.\nCONSOLIDATED STATEMENTS OF CASH FLOWS\n(In millions)\n\nYears ended\n\nSeptember 27,\n2025\n\nSeptember 28,\n2024\n\nSeptember 30,\n2023\n\nCash, cash equivalents, and restricted cash and cash equivalents, beginning balances\n29,943\n\n30,737\n\n24,977\n\nOperating activities:\n\nNet income\n112,010\n\n93,736\n\n96,995\n\nAdjustments to reconcile net income to cash generated by operating activities:\n\nDepreciation and amortization\n11,698\n\n11,445\n\n11,519\n\nShare-based compensation expense\n12,863\n\n11,688\n\n10,833\n\nOther\n( 89 )\n\n( 2,266 )\n\n( 2,227 )\n\nChanges in operating assets and liabilities:\n\nAccounts receivable, net\n( 6,682 )\n\n( 3,788 )\n\n( 1,688 )\n\nVendor non-trade receivables\n( 347 )\n\n( 1,356 )\n\n1,271\n\nInventories\n1,400\n\n( 1,046 )\n\n( 1,618 )\n\nOther current and non-current assets\n( 9,197 )\n\n( 11,731 )\n\n( 5,684 )\n\nAccounts payable\n902\n\n6,020\n\n( 1,889 )\n\nOther current and non-current liabilities\n( 11,076 )\n\n15,552\n\n3,031\n\nCash generated by operating activities\n111,482\n\n118,254\n\n110,543\n\nInvesting activities:\n\nPurchases of marketable securities\n( 24,407 )\n\n( 48,656 )\n\n( 29,513 )\n\nProceeds from maturities of marketable securities\n40,907\n\n51,211\n\n39,686\n\nProceeds from sales of marketable securities\n12,890\n\n11,135\n\n5,828\n\nPayments for acquisition of property, plant and equipment\n( 12,715 )\n\n( 9,447 )\n\n( 10,959 )\n\nOther\n( 1,480 )\n\n( 1,308 )\n\n( 1,337 )\n\nCash generated by investing activities\n15,195\n\n2,935\n\n3,705\n\nFinancing activities:\n\nPayments for taxes related to net share settlement of equity awards\n( 5,960 )\n\n( 5,441 )\n\n( 5,431 )\n\nPayments for dividends and dividend equivalents\n( 15,421 )\n\n( 15,234 )\n\n( 15,025 )\n\nRepurchases of common stock\n( 90,711 )\n\n( 94,949 )\n\n( 77,550 )\n\nProceeds from issuance of term debt, net\n4,481\n\n5,228\n\nRepayments of term debt\n( 10,932 )\n\n( 9,958 )\n\n( 11,151 )\n\nProceeds from/(Repayments of) commercial paper, net\n( 2,032 )\n\n3,960\n\n( 3,978 )\n\nOther\n( 111 )\n\n( 361 )\n\n( 5"
+        },
+        {
+          "doc_id": "JPM_10K_2025",
+          "accession_number": "0001628280-26-008131",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+          "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa",
+          "start_char": 619477,
+          "end_char": 622233,
+          "quote": "djustments to reconcile net income to net cash provided by operating activities:\n\nProvision for credit losses\n14,212\n\n10,678\n\n9,320\n\nDepreciation and amortization\n8,821\n\n7,938\n\n7,512\n\nDeferred tax (benefit)/expense\n5,611\n\n2,004\n\n( 4,534 )\n\nEstimated bargain purchase gain associated with the First Republic acquisition\n\n( 103 )\n\n( 2,775 )\n\nInitial gain on the Visa share exchange\n\n( 7,990 )\n\nOther\n1,309\n\n1,985\n\n4,301\n\nOriginations and purchases of loans held-for-sale\n( 260,772 )\n\n( 212,238 )\n\n( 115,245 )\n\nProceeds from sales, securitizations and paydowns of loans held-for-sale\n235,232\n\n205,303\n\n116,430\n\nNet change in:\n\nTrading assets\n( 156,461 )\n\n( 95,729 )\n\n( 74,091 )\n\nSecurities borrowed\n( 66,648 )\n\n( 18,762 )\n\n( 14,902 )\n\nAccrued interest and accounts receivable\n( 11,514 )\n\n5,735\n\n19,928\n\nOther assets\n( 12,582 )\n\n( 7,650 )\n\n32,970\n\nTrading liabilities\n23,134\n\n2,276\n\n5,315\n\nAccounts payable and other liabilities\n5,270\n\n( 90 )\n\n( 25,388 )\n\nOther operating adjustments\n9,558\n\n6,160\n\n4,581\n\nNet cash (used in)/provided by operating activities\n( 147,782 )\n\n( 42,012 )\n\n12,974\n\nInvesting activities\n\nNet change in:\n\nFederal funds sold and securities purchased under resale agreements\n( 41,264 )\n\n( 18,706 )\n\n39,740\n\nHeld-to-maturity securities:\n\nProceeds from paydowns and maturities\n54,791\n\n99,363\n\n53,056\n\nPurchases\n( 5,432 )\n\n( 4,709 )\n\n( 4,141 )\n\nAvailable-for-sale securities:\n\nProceeds from paydowns and maturities\n37,414\n\n38,499\n\n53,744\n\nProceeds from sales\n141,295\n\n104,625\n\n108,434\n\nPurchases\n( 308,772 )\n\n( 352,712 )\n\n( 115,499 )\n\nProceeds from sales and securitizations of loans held-for-investment\n57,565\n\n57,921\n\n47,312\n\nOther changes in loans, net\n( 188,497 )\n\n( 83,176 )\n\n( 88,343 )\n\nNet cash used in First Republic Acquisition\n\n( 2,362 )\n\n( 9,920 )\n\nAll other investing activities, net\n( 12,665 )\n\n( 2,146 )\n\n( 16,740 )\n\nNet cash (used in)/provided by investing activities\n( 265,565 )\n\n( 163,403 )\n\n67,643\n\nFinancing activities\n\nNet change in:\n\nDeposits\n153,168\n\n3,299\n\n( 32,196 )\n\nFederal funds purchased and securities loaned or sold under repurchase agreements\n145,535\n\n80,288\n\n13,801\n\nShort-term borrowings\n9,422\n\n7,439\n\n( 1,934 )\n\nBeneficial interests issued by consolidated VIEs\n( 622 )\n\n1,543\n\n9,029\n\nProceeds from long-term borrowings\n120,761\n\n109,915\n\n75,417\n\nPayments of long-term borrowings\n( 108,100 )\n\n( 96,605 )\n\n( 64,880 )\n\nProceeds from issuance of preferred stock\n3,000\n\n2,500\n\nRedemption of preferred stock\n( 3,000 )\n\n( 9,850 )\n\nTreasury stock repurchased\n( 31,591 )\n\n( 18,830 )\n\n( 9,824 )\n\nDividends paid\n( 16,625 )\n\n( 14,783 )\n\n( 13,463 )\n\nAll other financing activities, net\n( 2,415 )\n\n( 1,469 )\n\n( 1,521 )\n\nNet cash provided by/(used in) financing activities\n269,533\n\n63,447\n\n( 25,571 )\n\nEffect of exchange rat"
+        }
+      ],
+      "calculation": {
+        "apple_million_usd": 106132,
+        "jpm_million_usd": 48216,
+        "ratio": 2.2011780321884853
+      }
+    },
+    "q073": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "question": "Compare the goodwill and intangible assets on the balance sheets of AbbVie and Johnson & Johnson. Which company carries more as a percentage of total assets?",
+      "previous_question": "Compare the goodwill and intangible assets on the balance sheets of AbbVie and Johnson & Johnson. Which company carries more as a percentage of total assets?",
+      "question_changed": false,
+      "answer": "AbbVie was higher as a percentage of assets: ($35,640M goodwill + $52,641M net intangibles)/$133,960M = 65.9%, versus Johnson & Johnson ($48,772M + $50,403M)/$199,210M = 49.8%. J&J was larger in absolute dollars.",
+      "previous_answer": "AbbVie carries very high goodwill (~$67B+) due to the Allergan acquisition. JNJ also has significant goodwill. Verify from balance sheets and calculate as % of total assets.",
+      "interpretation": "FY2025 ending balance-sheet values; net intangible assets plus goodwill, no double counting.",
+      "evidence": [
+        {
+          "doc_id": "ABBV_10K_2025",
+          "accession_number": "0001551152-26-000008",
+          "filing_date": "2026-02-20",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/0001551152-26-000008-index.html",
+          "text_sha256": "db07f04c51b40e71c6dfddcb41420950447acdef72a5bcff6d8ace8403002d2d",
+          "start_char": 228684,
+          "end_char": 229640,
+          "quote": "767\n\nComprehensive income attributable to noncontrolling interest\n7\n\n8\n\n10\n\nComprehensive income attributable to AbbVie Inc.\n5,007\n\n4,658\n\n4,757\n\nThe accompanying notes are an integral part of these consolidated financial statements.\n\n53\n\n| 2025 Form 10-K\n\nAbbVie Inc. and Subsidiaries\nConsolidated Balance Sheets\n\nas of December 31 (in millions, except share data)\n2025\n\n2024\n\nAssets\n\nCurrent assets\n\nCash and equivalents\n5,229\n\n5,524\n\nShort-term investments\n28\n\n31\n\nAccounts receivable, net\n12,589\n\n10,919\n\nInventories\n4,951\n\n4,181\n\nPrepaid expenses and other\n6,265\n\n4,927\n\nTotal current assets\n29,062\n\n25,582\n\nInvestments\n268\n\n279\n\nProperty and equipment, net\n5,628\n\n5,134\n\nIntangible assets, net\n52,641\n\n60,068\n\nGoodwill\n35,640\n\n34,956\n\nOther assets\n10,721\n\n9,142\n\nTotal assets\n133,960\n\n135,161\n\nLiabilities and Equity\n\nCurrent liabilities\n\nShort-term borrowings\n2,499\n\nCurrent portion of long-term debt and finance lease obligations\n6,056\n\n6,804\n\nAcco"
+        },
+        {
+          "doc_id": "JNJ_10K_2025",
+          "accession_number": "0000200406-26-000016",
+          "filing_date": "2026-02-11",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/0000200406-26-000016-index.html",
+          "text_sha256": "6e245362290ce65bb51091af459910020457f333d0042796418f88ae9a39d3fc",
+          "start_char": 177845,
+          "end_char": 178801,
+          "quote": "gement's report on internal control over financial reporting\n\n111\n\n42\n\nJohnson & Johnson and subsidiaries consolidated balance sheets\nAt December 28, 2025 and December 29, 2024\n(Dollars in Millions Except Share and Per Share Amounts) (Note 1)\n\n2025\n2024\n\nAssets\n\nCurrent assets\n\nCash and cash equivalents (Notes 1 and 2)\n$ 19,709\n24,105\n\nMarketable securities (Notes 1 and 2)\n393\n417\n\nAccounts receivable trade, less allowances $ 183 (2024, $ 167 )\n17,178\n14,842\n\nInventories (Notes 1 and 3)\n14,191\n12,444\n\nPrepaid expenses and other receivables\n4,153\n4,085\n\nTotal current assets\n55,624\n55,893\n\nProperty, plant and equipment, net (Notes 1 and 4)\n23,169\n20,518\n\nIntangible assets, net (Notes 1 and 5)\n50,403\n37,618\n\nGoodwill (Notes 1 and 5)\n48,772\n44,200\n\nDeferred taxes on income (Note 8)\n6,874\n10,461\n\nOther assets\n14,368\n11,414\n\nTotal assets\n$ 199,210\n180,104\n\nLiabilities and Shareholders' Equity\n\nCurrent liabilities\n\nLoans and notes payable (Note 7)\n$"
+        }
+      ],
+      "calculation": {
+        "abbv_pct": 65.9010152284264,
+        "jnj_pct": 49.78414738215953
+      }
+    },
+    "q074": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "question": "Both ConocoPhillips and ExxonMobil discuss their production volumes in their 10-Ks. Compare their daily production (in barrels of oil equivalent per day) for the most recent fiscal year.",
+      "previous_question": "Both ConocoPhillips and ExxonMobil discuss their production volumes in their 10-Ks. Compare their daily production (in barrels of oil equivalent per day) for the most recent fiscal year.",
+      "question_changed": false,
+      "answer": "ExxonMobil averaged approximately 4.7 million oil-equivalent barrels per day in 2025, versus ConocoPhillips 2,375 MBOED (2.375 million BOE/day). ExxonMobil produced approximately 1.98 times as much.",
+      "previous_answer": "ExxonMobil produces significantly more than ConocoPhillips (approximately 3.7M+ BOE/d vs ~1.7M BOE/d). Verify from production disclosures in the 10-Ks.",
+      "interpretation": "MBOED means thousand barrels of oil equivalent per day; compare total production, not oil-only volumes.",
+      "evidence": [
+        {
+          "doc_id": "XOM_10K_2025",
+          "accession_number": "0000034088-26-000045",
+          "filing_date": "2026-02-18",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/0000034088-26-000045-index.html",
+          "text_sha256": "d5cef65982d90a6c025f399858a4c4d3f935c95672837c9f91dc2074f465c3ab",
+          "start_char": 163119,
+          "end_char": 163460,
+          "quote": " Papua New Guinea, and the United States. In 2025, Upstream production averaged 4.7 million oil-equivalent barrels per day (Moebd), our highest production in over 40 years. As future development projects and drilling activities bring new production online, the Corporation expects a shift in the geographic mix and in the type of opportuniti"
+        },
+        {
+          "doc_id": "COP_10K_2025",
+          "accession_number": "0001163165-26-000009",
+          "filing_date": "2026-02-17",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/0001163165-26-000009-index.html",
+          "text_sha256": "e02f9e3540ad17b24e2d833bfa1b9f14881b681a217c4ec6323a205a20142641",
+          "start_char": 9666,
+          "end_char": 10427,
+          "quote": "ompany headquartered in Houston, Texas with operations and activities in 14 countries. Our diverse, low cost of supply portfolio includes resource-rich unconventional plays in North America; conventional assets in North America, Europe, Africa and Asia; LNG developments; oil sands in Canada; and an inventory of global exploration prospects. On December 31, 2025, we employed approximately 9,900 people worldwide and had total assets of about $122 billion. Total company production for the year was 2,375 MBOED.\nConocoPhillips was incorporated in the state of Delaware in 2001 in connection with and in anticipation of the merger between Conoco Inc. and Phillips Petroleum Company. The merger between Conoco and Phillips was consummated on August 30, 2002. In "
+        }
+      ],
+      "calculation": {
+        "ratio": 1.9789473684210528
+      }
+    }
+  }
+}

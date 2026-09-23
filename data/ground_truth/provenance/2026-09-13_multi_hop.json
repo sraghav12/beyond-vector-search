@@ -1,0 +1,812 @@
+{
+  "schema_version": 1,
+  "scope": "17 supported answers from q021–q040; three unresolved, not eligible for validated scoring. Agent review only.",
+  "records": {
+    "q021": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Which company had higher total revenue in their most recent fiscal year: Apple or NVIDIA?",
+      "previous_question": "Which company had higher total revenue in their most recent fiscal year: Apple or NVIDIA?",
+      "question_changed": false,
+      "answer": "Apple: $416,161 million in FY2025, versus NVIDIA: $215,938 million in fiscal 2026. Apple had higher revenue.",
+      "previous_answer": "Apple had higher revenue ($391.0B) compared to NVIDIA ($130.5B). Note: different fiscal year end dates.",
+      "previous_query_evidence_docs": [
+        "AAPL_10K_2025",
+        "NVDA_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "AAPL_10K_2024",
+        "NVDA_10K_2025"
+      ],
+      "interpretation": "Latest company filings in the frozen corpus; fiscal year ends differ.",
+      "evidence": [
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 108051,
+          "end_char": 108688,
+          "quote": "mpany's business and results of operations.\n\nSegment Operating Performance\nThe following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):\n\n2025\n\nChange\n\n2024\n\nChange\n\n2023\n\nAmericas\n178,353\n\n7\n\n167,045\n\n3\n\n162,560\n\nEurope\n111,032\n\n10\n\n101,328\n\n7\n\n94,294\n\nGreater China\n64,377\n\n(4)\n\n66,952\n\n(8)\n\n72,559\n\nJapan\n28,703\n\n15\n\n25,052\n\n3\n\n24,257\n\nRest of Asia Pacific\n33,696\n\n10\n\n30,658\n\n4\n\n29,615\n\nTotal net sales\n416,161\n\n6\n\n391,035\n\n2\n\n383,285\n\nAmericas\nAmericas net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPhone and Services. The weakness in foreign curre"
+        },
+        {
+          "doc_id": "NVDA_10K_2025",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+          "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584",
+          "start_char": 191033,
+          "end_char": 191670,
+          "quote": " fluctuate with short-term changes in our costs. Within our supply chain, we continuously manage product availability and costs with our vendors.\nRefer to \"Item 1A. Risk Factors - Risks Related to Regulatory, Legal, Our Stock and Other Matters\" for a further discussion of the potential impact of these factors on our business.\nFiscal Year 2026 Summary\n\nYear Ended\n\nJan 25, 2026\n\nJan 26, 2025\n\nChange\n\n($ in millions, except per share data)\n\nRevenue\n215,938\n\n130,497\n\nUp 65%\n\nGross margin\n71.1\n\n75.0\n\n-3.9 pts\n\nOperating expenses\n23,076\n\n16,405\n\nUp 41%\n\nOperating income\n130,387\n\n81,453\n\nUp 60%\n\nNet income\n120,067\n\n72,880\n\nUp 65%\n\nNet i"
+        }
+      ]
+    },
+    "q022": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Which company spent more on R&D as a percentage of revenue: NVIDIA or AMD in their most recent fiscal years?",
+      "previous_question": "Which company spent more on R&D as a percentage of revenue: NVIDIA or AMD in their most recent fiscal years?",
+      "question_changed": false,
+      "answer": "AMD spent approximately 23.4% of revenue on R&D ($8,091M / $34,639M) in FY2025, versus NVIDIA approximately 8.6% ($18,497M / $215,938M) in fiscal 2026. AMD was higher.",
+      "previous_answer": "Verify from both 10-Ks. NVIDIA R&D ~10% of revenue; AMD R&D typically ~22-25% of revenue. AMD likely spends more as a percentage.",
+      "previous_query_evidence_docs": [
+        "NVDA_10K_2025",
+        "AMD_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "NVDA_10K_2025",
+        "AMD_10K_2024"
+      ],
+      "interpretation": "Use reported R&D expense divided by same-period revenue; latest company filings.",
+      "evidence": [
+        {
+          "doc_id": "AMD_10K_2025",
+          "accession_number": "0000002488-26-000018",
+          "filing_date": "2026-02-04",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html",
+          "text_sha256": "4e54f8fab9ad0c762a9dafc1a2852b9031c23093b790fddedcea6f3bbb141d2b",
+          "start_char": 231772,
+          "end_char": 232407,
+          "quote": "oss Margin, Expenses, Interest Expense, Other Income (expense) and Income Taxes\nThe following is a summary of certain Consolidated Statement of Operations data for 2025 and 2024:\n\nDecember 27, 2025\n\nDecember 28, 2024\n\n(In millions, except for percentages)\n\nNet revenue\n34,639\n\n25,785\n\nCost of sales\n16,456\n\n12,114\n\nAmortization of acquisition-related intangibles\n1,031\n\n946\n\nGross profit\n17,152\n\n12,725\n\nGross margin\n50\n\n49\n\nResearch and development\n8,091\n\n6,456\n\nMarketing, general and administrative\n4,144\n\n2,735\n\nAmortization of acquisition-related intangibles\n1,223\n\n1,448\n\nInterest expense\n(131)\n\n(92)\n\nOther income (expense), net"
+        },
+        {
+          "doc_id": "NVDA_10K_2025",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+          "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584",
+          "start_char": 207155,
+          "end_char": 207791,
+          "quote": " Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $1.5 billion and $689 million for fiscal years 2026 and 2025, respectively. The net effect on our gross margin was an unfavorable impact of 2.6% and 2.3% in fiscal years 2026 and 2025, respectively.\n\nOperating Expenses\n\nYear Ended\n\nJan 25, 2026\n\nJan 26, 2025\n\nChange\n\nChange\n\n($ in millions)\n\nResearch and development\n18,497\n\n12,914\n\n5,583\n\n43\n\nSales, general and administrative\n4,579\n\n3,491\n\n1,088\n\n31\n\nTotal operating expenses\n23,076\n\n16,405\n\n6,671\n\n41\nThe increases in research and development expense"
+        },
+        {
+          "doc_id": "NVDA_10K_2025",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+          "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584",
+          "start_char": 191033,
+          "end_char": 191670,
+          "quote": " fluctuate with short-term changes in our costs. Within our supply chain, we continuously manage product availability and costs with our vendors.\nRefer to \"Item 1A. Risk Factors - Risks Related to Regulatory, Legal, Our Stock and Other Matters\" for a further discussion of the potential impact of these factors on our business.\nFiscal Year 2026 Summary\n\nYear Ended\n\nJan 25, 2026\n\nJan 26, 2025\n\nChange\n\n($ in millions, except per share data)\n\nRevenue\n215,938\n\n130,497\n\nUp 65%\n\nGross margin\n71.1\n\n75.0\n\n-3.9 pts\n\nOperating expenses\n23,076\n\n16,405\n\nUp 41%\n\nOperating income\n130,387\n\n81,453\n\nUp 60%\n\nNet income\n120,067\n\n72,880\n\nUp 65%\n\nNet i"
+        }
+      ],
+      "calculations": {
+        "AMD_percent": 23.358064609255464,
+        "NVDA_percent": 8.565884652076058
+      }
+    },
+    "q023": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Using the FY2024 comparative figures in their FY2025 10-K filings, did JPMorgan Chase or Bank of America report higher net income?",
+      "previous_question": "Did JPMorgan Chase or Bank of America report higher net income in fiscal year 2024?",
+      "question_changed": true,
+      "answer": "JPMorgan Chase: $58,471 million, versus Bank of America: $26,973 million for FY2024, using the comparative figures in their FY2025 filings. JPMorgan Chase was higher.",
+      "previous_answer": "JPMorgan Chase reported higher net income ($58.5B) vs Bank of America (approximately $27-28B).",
+      "previous_query_evidence_docs": [
+        "JPM_10K_2025",
+        "BAC_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "JPM_10K_2024",
+        "BAC_10K_2024"
+      ],
+      "interpretation": "Pin the reporting vintage because Bank of America revised its FY2024 comparative. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "JPM_10K_2025",
+          "accession_number": "0001628280-26-008131",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+          "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa",
+          "start_char": 195707,
+          "end_char": 196693,
+          "quote": "\n\nSupplementary Information:\n\nDistribution of assets, liabilities and stockholders' equity; interest rates and interest differentials\n315\n\nGlossary of Terms and Acronyms\n320\n\nJPMorgan Chase & Co./2025 Form 10-K\n\n43\n\nFinancial\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\n\nAs of or for the year ended December 31,\n(in millions, except per share, ratio, employee data and where otherwise noted)\n\n2025\n\n2024\n\n2023\n\nSelected income statement data\n\nTotal net revenue\n\n182,447\n\n177,556\n\n(g)\n158,104\n\nTotal noninterest expense\n\n95,640\n\n91,797\n\n(g)\n87,172\n\nPre-provision profit (a)\n\n86,807\n\n85,759\n\n70,932\n\nProvision for credit losses\n\n14,212\n\n(e)\n10,678\n\n9,320\n\nIncome before income tax expense\n\n72,595\n\n75,081\n\n61,612\n\nIncome tax expense\n\n15,547\n\n16,610\n\n12,060\n\nNet income\n\n57,048\n\n58,471\n\n49,552\n\nEarnings per share data\n\nNet income: Basic\n\n20.05\n\n19.79\n\n16.25\n\nDiluted\n\n20.02\n\n19.75\n\n16.23\n\nAverage shares: Basic\n\n2,776.5\n\n2,873.9\n\n2,938.6\n\nDiluted\n\n2,781.5\n\n2,879.0"
+        },
+        {
+          "doc_id": "BAC_10K_2025",
+          "accession_number": "0000070858-26-000157",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000157/0000070858-26-000157-index.html",
+          "text_sha256": "0b1c0bd94c8134d17b3379c89a01a4ab06cfe4e7f1fdcd56677e6591faa52808",
+          "start_char": 180944,
+          "end_char": 182130,
+          "quote": "financial statement presentation with the economic impact of these equity investments. The primary impact of the accounting changes is a reclassification between income statement line items that nets income tax credits and benefits against the investment expense. Certain prior-period information presented herein has been revised to reflect the accounting method changes. For more information, see Note 1 - Summary of Significant Accounting Principles to the Consolidated Financial Statements and Exhibit 18 to this Annual Report on Form 10-K.\n\nTable 1\nSummary Income Statement and Selected Financial Data\n\n(Dollars in millions, except per share information)\n\n2025\n\n2024\n\nIncome statement\n\nNet interest income\n\n60,096\n\n56,060\n\nNoninterest income\n\n53,001\n\n49,796\n\nTotal revenue, net of interest expense\n\n113,097\n\n105,856\n\nProvision for credit losses\n\n5,675\n\n5,821\n\nNoninterest expense\n\n69,727\n\n66,812\n\nIncome before income taxes\n\n37,695\n\n33,223\n\nIncome tax expense\n\n7,186\n\n6,250\n\nNet income\n\n30,509\n\n26,973\n\nPreferred stock dividends and other\n\n1,454\n\n1,629\n\nNet income applicable to common shareholders\n\n29,055\n\n25,344\n\nPer common share information\n\nEarnings\n\n3.86\n\n3.23\n\nDiluted earni"
+        }
+      ]
+    },
+    "q024": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Compare ExxonMobil's cash additions to property, plant and equipment with Chevron's capital expenditures excluding equity affiliates for FY2024. Which amount was higher?",
+      "previous_question": "Compare ExxonMobil and Chevron's capital expenditures for fiscal year 2024. Which company invested more?",
+      "question_changed": true,
+      "answer": "ExxonMobil invested more: $24,306 million in cash additions to property, plant and equipment, versus Chevron capital expenditures of $16,448 million in FY2024.",
+      "previous_answer": "Verify from both 10-Ks. Historically ExxonMobil has higher capex than Chevron.",
+      "previous_query_evidence_docs": [
+        "XOM_10K_2025",
+        "CVX_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "XOM_10K_2024",
+        "CVX_10K_2024"
+      ],
+      "interpretation": "Specify cash-flow investment line items, excluding noncash acquisition additions and separately defined Cash Capex/affiliate capex. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "XOM_10K_2025",
+          "accession_number": "0000034088-26-000045",
+          "filing_date": "2026-02-18",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/0000034088-26-000045-index.html",
+          "text_sha256": "d5cef65982d90a6c025f399858a4c4d3f935c95672837c9f91dc2074f465c3ab",
+          "start_char": 124043,
+          "end_char": 124679,
+          "quote": "ts and advances; and other investing activities including collection of advances; reduced by inflows from noncontrolling interests for major projects, each from the Consolidated Statement of Cash Flows. The Company believes it is a useful measure for investors to understand the cash impact of investments in the business, which is in line with industry practice.\n\n(millions of dollars)\n2025\n2024\n\nAdditions to property, plant, and equipment\n28,358\n\n24,306\n\nAdditional investments and advances\n4,133\n\n3,299\n\nOther investing activities including collection of advances\n(3,406)\n\n(1,926)\n\nInflows from noncontrolling interests for major pr"
+        },
+        {
+          "doc_id": "CVX_10K_2025",
+          "accession_number": "0000093410-26-000078",
+          "filing_date": "2026-02-24",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/0000093410-26-000078-index.html",
+          "text_sha256": "865eaf1760f233d314c96e794995d820ea1cbd5016844377c363928f8705b4a6",
+          "start_char": 210900,
+          "end_char": 211536,
+          "quote": "ancing interest and debt costs\n1,392\n\n773\n\n617\n\nInterest Coverage Ratio\n15.1\n\n36.5\n\n49.0\n\nFree Cash Flow The cash provided by operating activities less capital expenditures, which represents the cash from operations available to creditors and investors after investing in the business.\n\nYear ended December 31\n\nMillions of dollars\n2025\n\n2024\n\n2023\n\nNet cash provided by operating activities\n33,939\n\n31,492\n\n35,609\n\nLess: Capital expenditures\n17,347\n\n16,448\n\n15,829\n\nFree Cash Flow\n16,592\n\n15,044\n\n19,780\n\nAdjusted Free Cash Flow Free cash flow excluding operating working capital impacts, plus proceeds and deposits related to asset sal"
+        }
+      ]
+    },
+    "q025": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Using (revenue minus the reported cost-of-sales line) / revenue, which company had the higher margin in FY2025: Eli Lilly or Pfizer? Exclude Pfizer's separately reported intangible amortization.",
+      "previous_question": "Which company has a higher gross margin percentage: Eli Lilly or Pfizer, based on their most recent fiscal year?",
+      "question_changed": true,
+      "answer": "Eli Lilly had the higher margin: approximately 83.0% ((65,179−11,052)/65,179), versus Pfizer approximately 74.3% ((62,579−16,067)/62,579), for FY2025.",
+      "previous_answer": "Eli Lilly typically has higher gross margins (~80%) compared to Pfizer (~60-65%). Verify from 10-Ks.",
+      "previous_query_evidence_docs": [
+        "LLY_10K_2025",
+        "PFE_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "LLY_10K_2024",
+        "PFE_10K_2024"
+      ],
+      "interpretation": "Pfizer reports intangible amortization separately; define the formula instead of implying accounting treatments are identical. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "LLY_10K_2025",
+          "accession_number": "0000059478-26-000013",
+          "filing_date": "2026-02-12",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/0000059478-26-000013-index.html",
+          "text_sha256": "4f4e4cfbcd2005ec0a451d99c5efbffb3210b64ad322e1e52b8faa5a092872d4",
+          "start_char": 235073,
+          "end_char": 235709,
+          "quote": "Item 7, \"Management's Discussion and Analysis - Financial Condition and Liquidity.\" That information is incorporated by reference herein.\n\n56\n\nItem 8. Financial Statements and Supplementary Data\n\nConsolidated Statements of Operations\nELI LILLY AND COMPANY AND SUBSIDIARIES\n(Dollars and shares in millions, except per-share data)\n\nYear Ended December 31,\n\n2025\n\n2024\n\n2023\n\nRevenue\n\n65,179\n\n45,043\n\n34,124\n\nCosts, expenses, and other:\n\nCost of sales\n\n11,052\n\n8,418\n\n7,082\n\nResearch and development\n\n13,337\n\n10,991\n\n9,313\n\nMarketing, selling, and administrative\n\n11,094\n\n8,594\n\n7,404\n\nAcquired in-process research and development\n\n2,910\n\n"
+        },
+        {
+          "doc_id": "PFE_10K_2025",
+          "accession_number": "0000078003-26-000026",
+          "filing_date": "2026-02-26",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/0000078003-26-000026-index.html",
+          "text_sha256": "4bdcb2f96a149487a72e998d8b9da78bef1fe3a322947e4bae4b6e072ef44c92",
+          "start_char": 321642,
+          "end_char": 322478,
+          "quote": " See the Reconciliations of GAAP Reported to Non-GAAP Adjusted Information--Certain Line Items below for a non-inclusive list of certain significant items.\nReconciliations of GAAP Reported to Non-GAAP Adjusted Information--Certain Line Items\n\nYear Ended December 31, 2025\n\nData presented will not (in all cases) aggregate to totals.\nMILLIONS, EXCEPT PER SHARE DATA\n\nCost of sales (a)\n\nSelling, informational and administrative expenses (a)\n\nOther (income)/deductions--net (a)\n\nNet income attributable to Pfizer Inc. common shareholders (a), (b), (c)\n\nEarnings per common share attributable to Pfizer Inc. common shareholders--diluted\n\nGAAP Reported\n\n16,067\n\n13,794\n\n6,724\n\n7,771\n\n1.36\n\nAmortization of intangible assets\n\n4,874\n\nAcquisition-related items\n\n(708)\n\n(4)\n\n(61)\n\n1,285\n\nDiscontinued operations\n\n(25)\n\nCertain significant items"
+        },
+        {
+          "doc_id": "PFE_10K_2025",
+          "accession_number": "0000078003-26-000026",
+          "filing_date": "2026-02-26",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/0000078003-26-000026-index.html",
+          "text_sha256": "4bdcb2f96a149487a72e998d8b9da78bef1fe3a322947e4bae4b6e072ef44c92",
+          "start_char": 354774,
+          "end_char": 354849,
+          "quote": "Exclusive of amortization of intangible assets.\n(b) See Note 17A .\nSee Acco"
+        }
+      ],
+      "calculations": {
+        "LLY_percent": 83.04361834333143,
+        "PFE_percent": 74.32525288035923
+      }
+    },
+    "q026": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "How did Apple's total revenue change from fiscal year 2023 to fiscal year 2024?",
+      "previous_question": "How did Apple's total revenue change from fiscal year 2023 to fiscal year 2024?",
+      "question_changed": false,
+      "answer": "Apple revenue increased from $383,285 million in FY2023 to $391,035 million in FY2024, up $7,750 million (approximately 2.0%).",
+      "previous_answer": "Revenue increased from $383.3B (FY2023) to $391.0B (FY2024), an increase of approximately $7.7B or 2.0%.",
+      "previous_query_evidence_docs": [
+        "AAPL_10K_2025",
+        "AAPL_10K_2024"
+      ],
+      "previous_gold_evidence_docs": [
+        "AAPL_10K_2024",
+        "AAPL_10K_2023"
+      ],
+      "interpretation": "Use both comparative years in the same filing.",
+      "evidence": [
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 126378,
+          "end_char": 126854,
+          "quote": "ng notes.\n\nApple Inc. | 2025 Form 10-K | 28\n\nApple Inc.\nCONSOLIDATED STATEMENTS OF OPERATIONS\n(In millions, except number of shares, which are reflected in thousands, and per-share amounts)\n\nYears ended\n\nSeptember 27,\n2025\n\nSeptember 28,\n2024\n\nSeptember 30,\n2023\n\nNet sales:\n\nProducts\n307,003\n\n294,866\n\n298,085\n\nServices\n109,158\n\n96,169\n\n85,200\n\nTotal net sales\n416,161\n\n391,035\n\n383,285\n\nCost of sales:\n\nProducts\n194,116\n\n185,233\n\n189,282\n\nServices\n26,844\n\n25,119\n\n24,855\n\nTo"
+        }
+      ],
+      "calculations": {
+        "increase_million_usd": 7750,
+        "growth_percent": 2.021994077514111
+      }
+    },
+    "q027": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Compare Walmart and Costco's net sales for their most recent fiscal years. What is the ratio of Walmart's sales to Costco's?",
+      "previous_question": "Compare Walmart and Costco's net sales for their most recent fiscal years. What is the ratio of Walmart's sales to Costco's?",
+      "question_changed": false,
+      "answer": "Walmart net sales were $706,413 million in fiscal 2026 and Costco net sales were $269,912 million in FY2025. The ratio was approximately 2.62× (706,413/269,912).",
+      "previous_answer": "Walmart revenue (~$648B) is roughly 2.6-2.8x Costco revenue (~$242-254B). Verify exact figures from 10-Ks.",
+      "previous_query_evidence_docs": [
+        "WMT_10K_2025",
+        "COST_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "WMT_10K_2025",
+        "COST_10K_2024"
+      ],
+      "interpretation": "Net sales excludes membership/other revenue; latest company fiscal years differ.",
+      "evidence": [
+        {
+          "doc_id": "WMT_10K_2025",
+          "accession_number": "0000104169-26-000055",
+          "filing_date": "2026-03-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/0000104169-26-000055-index.html",
+          "text_sha256": "2410e6410790c1215e55a9edd01303db60d88570eff6066fb1d27d42aaeeebc6",
+          "start_char": 174966,
+          "end_char": 175603,
+          "quote": "r rate than operating, selling, general and administrative (\"operating\") expenses. Additionally, we focus on our mix of businesses, including expanding our ecosystem in higher margin areas, such as digital advertising. Our objective is to achieve operating income leverage, which we define as growing operating income at a faster rate than net sales.\n\nFiscal Years Ended January 31,\n\n(Amounts in millions, except unit counts)\n\n2026\n\n2025\n\nNet sales\n\n706,413\n\n674,538\n\nPercentage change from comparable period\n\n4.7\n\n5.0\n\nGross profit (1) as a percentage of net sales\n\n24.2\n\n24.1\n\nOperating expenses as a percentage of net sales\n\n20.9\n\n20."
+        },
+        {
+          "doc_id": "COST_10K_2025",
+          "accession_number": "0000909832-25-000101",
+          "filing_date": "2025-10-08",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/0000909832-25-000101-index.html",
+          "text_sha256": "84965e2fec3f0ffae9a3ab0b3b9db8fac6092af685ec3dfcb35694327d1bb0e3",
+          "start_char": 90130,
+          "end_char": 90687,
+          "quote": "to the 53-week fiscal year ended September 3, 2023. Certain percentages presented are calculated using actual results prior to rounding.\nHighlights for 2025 include:\n• We opened 27 new warehouses, including three relocations, for a total of 24 net new warehouses: 15 in the U.S., two in our Canadian segment, and seven in our Other International segment, compared to 30 new warehouses, including one relocation, in 2024;\n• Net sales increased 8% to $269,912, driven by an increase in comparable sales and sales at new warehouses;\n• Membership fee revenue in"
+        }
+      ],
+      "calculations": {
+        "ratio": 2.6171974569489316
+      }
+    },
+    "q028": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Which company reported higher total assets: JPMorgan Chase or Bank of America in fiscal year 2024?",
+      "previous_question": "Which company reported higher total assets: JPMorgan Chase or Bank of America in fiscal year 2024?",
+      "question_changed": false,
+      "answer": "JPMorgan Chase had higher total assets at December 31, 2024: $4,002,814 million, versus Bank of America $3,261,299 million.",
+      "previous_answer": "JPMorgan Chase ($4.0 trillion) reported higher total assets than Bank of America (~$3.3 trillion).",
+      "previous_query_evidence_docs": [
+        "JPM_10K_2025",
+        "BAC_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "JPM_10K_2024",
+        "BAC_10K_2024"
+      ],
+      "interpretation": "Balance-sheet year-end amounts, not average assets.",
+      "evidence": [
+        {
+          "doc_id": "JPM_10K_2025",
+          "accession_number": "0001628280-26-008131",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+          "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa",
+          "start_char": 196642,
+          "end_char": 198131,
+          "quote": ",776.5\n\n2,873.9\n\n2,938.6\n\nDiluted\n\n2,781.5\n\n2,879.0\n\n2,943.1\n\nMarket and per common share data\n\nMarket capitalization\n\n868,793\n\n670,618\n\n489,320\n\nCommon shares at period-end\n\n2,696.2\n\n2,797.6\n\n2,876.6\n\nBook value per share\n\n126.99\n\n116.07\n\n104.45\n\nTangible book value per share (\"TBVPS\") (a)\n\n107.56\n\n97.30\n\n86.08\n\nCash dividends declared per share\n\n5.80\n\n4.80\n\n4.10\n\nSelected ratios and metrics\n\nReturn on common equity (\"ROE\")\n\n17\n\n18\n\n17\n\nReturn on tangible common equity (\"ROTCE\") (a)\n\n20\n\n22\n\n21\n\nReturn on assets (\"ROA\")\n\n1.29\n\n1.43\n\n1.30\n\nOverhead ratio\n\n52\n\n52\n\n55\n\nLoans-to-deposits ratio\n\n58\n\n56\n\n55\n\nFirm Liquidity coverage ratio (\"LCR\") (average) (b)\n\n111\n\n113\n\n113\n\nJPMorgan Chase Bank, N.A. LCR (average) (b)\n\n115\n\n124\n\n129\n\nCommon equity Tier 1 (\"CET1\") capital ratio - Standardized (c)(d)\n\n14.6\n\n(f)\n15.7\n\n15.0\n\nTier 1 capital ratio - Standardized (c)(d)\n\n15.5\n\n(f)\n16.8\n\n16.6\n\nTotal capital ratio - Standardized (c)(d)\n\n17.4\n\n(f)\n18.5\n\n18.5\n\nTier 1 leverage ratio (b)(c)\n\n6.9\n\n7.2\n\n7.2\n\nSupplementary leverage ratio (\"SLR\") (b)(c)\n\n5.8\n\n6.1\n\n6.1\n\nSelected balance sheet data (period-end)\n\nTrading assets\n\n802,873\n\n637,784\n\n540,607\n\nInvestment securities, net of allowance for credit losses\n\n777,332\n\n681,320\n\n571,552\n\nLoans\n\n1,493,429\n\n1,347,988\n\n1,323,706\n\nTotal assets\n\n4,424,900\n\n4,002,814\n\n3,875,393\n\nDeposits\n\n2,559,320\n\n2,406,032\n\n2,400,688\n\nLong-term debt\n\n435,206\n\n401,418\n\n391,825\n\nCommon stockholders' equity\n\n342,393\n\n324,708\n\n300,474\n\nTotal stockholders' equit"
+        },
+        {
+          "doc_id": "BAC_10K_2025",
+          "accession_number": "0000070858-26-000157",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000157/0000070858-26-000157-index.html",
+          "text_sha256": "0b1c0bd94c8134d17b3379c89a01a4ab06cfe4e7f1fdcd56677e6591faa52808",
+          "start_char": 181009,
+          "end_char": 182698,
+          "quote": "e equity investments. The primary impact of the accounting changes is a reclassification between income statement line items that nets income tax credits and benefits against the investment expense. Certain prior-period information presented herein has been revised to reflect the accounting method changes. For more information, see Note 1 - Summary of Significant Accounting Principles to the Consolidated Financial Statements and Exhibit 18 to this Annual Report on Form 10-K.\n\nTable 1\nSummary Income Statement and Selected Financial Data\n\n(Dollars in millions, except per share information)\n\n2025\n\n2024\n\nIncome statement\n\nNet interest income\n\n60,096\n\n56,060\n\nNoninterest income\n\n53,001\n\n49,796\n\nTotal revenue, net of interest expense\n\n113,097\n\n105,856\n\nProvision for credit losses\n\n5,675\n\n5,821\n\nNoninterest expense\n\n69,727\n\n66,812\n\nIncome before income taxes\n\n37,695\n\n33,223\n\nIncome tax expense\n\n7,186\n\n6,250\n\nNet income\n\n30,509\n\n26,973\n\nPreferred stock dividends and other\n\n1,454\n\n1,629\n\nNet income applicable to common shareholders\n\n29,055\n\n25,344\n\nPer common share information\n\nEarnings\n\n3.86\n\n3.23\n\nDiluted earnings\n\n3.81\n\n3.19\n\nDividends paid\n\n1.08\n\n1.00\n\nPerformance ratios\n\nReturn on average assets (1)\n\n0.89\n\n0.82\n\nReturn on average common shareholders' equity (1)\n\n10.59\n\n9.53\n\nReturn on average tangible common shareholders' equity (2)\n\n14.22\n\n12.94\n\nEfficiency ratio (1)\n\n61.65\n\n63.12\n\nBalance sheet at year end\n\nTotal loans and leases\n\n1,185,700\n\n1,095,835\n\nTotal assets\n\n3,411,738\n\n3,261,299\n\nTotal deposits\n\n2,018,729\n\n1,965,467\n\nTotal liabilities\n\n3,108,495\n\n2,967,336\n\nTotal common shareholders' equity\n\n277,251\n\n270,804\n\nTotal shareholders' equity\n\n303,243\n\n293,963\n\n"
+        }
+      ]
+    },
+    "q029": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "How did NVIDIA's revenue growth rate compare to AMD's revenue growth rate in their most recent fiscal years?",
+      "previous_question": "How did NVIDIA's revenue growth rate compare to AMD's revenue growth rate in their most recent fiscal years?",
+      "question_changed": false,
+      "answer": "NVIDIA revenue grew approximately 65.5% ($215,938M versus $130,497M) in fiscal 2026; AMD grew approximately 34.3% ($34,639M versus $25,785M) in FY2025. NVIDIA grew faster.",
+      "previous_answer": "NVIDIA grew 114% YoY (FY2025 vs FY2024). AMD growth was much lower. Verify AMD growth rate from 10-Ks.",
+      "previous_query_evidence_docs": [
+        "NVDA_10K_2025",
+        "NVDA_10K_2025",
+        "AMD_10K_2025",
+        "AMD_10K_2024"
+      ],
+      "previous_gold_evidence_docs": [
+        "NVDA_10K_2025",
+        "NVDA_10K_2024",
+        "AMD_10K_2024",
+        "AMD_10K_2023"
+      ],
+      "interpretation": "Growth is (current/prior − 1) × 100 using each latest company filing; do not use NVIDIA prior-year growth of 114%.",
+      "evidence": [
+        {
+          "doc_id": "NVDA_10K_2025",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+          "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584",
+          "start_char": 191033,
+          "end_char": 191670,
+          "quote": " fluctuate with short-term changes in our costs. Within our supply chain, we continuously manage product availability and costs with our vendors.\nRefer to \"Item 1A. Risk Factors - Risks Related to Regulatory, Legal, Our Stock and Other Matters\" for a further discussion of the potential impact of these factors on our business.\nFiscal Year 2026 Summary\n\nYear Ended\n\nJan 25, 2026\n\nJan 26, 2025\n\nChange\n\n($ in millions, except per share data)\n\nRevenue\n215,938\n\n130,497\n\nUp 65%\n\nGross margin\n71.1\n\n75.0\n\n-3.9 pts\n\nOperating expenses\n23,076\n\n16,405\n\nUp 41%\n\nOperating income\n130,387\n\n81,453\n\nUp 60%\n\nNet income\n120,067\n\n72,880\n\nUp 65%\n\nNet i"
+        },
+        {
+          "doc_id": "AMD_10K_2025",
+          "accession_number": "0000002488-26-000018",
+          "filing_date": "2026-02-04",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html",
+          "text_sha256": "4e54f8fab9ad0c762a9dafc1a2852b9031c23093b790fddedcea6f3bbb141d2b",
+          "start_char": 231772,
+          "end_char": 232407,
+          "quote": "oss Margin, Expenses, Interest Expense, Other Income (expense) and Income Taxes\nThe following is a summary of certain Consolidated Statement of Operations data for 2025 and 2024:\n\nDecember 27, 2025\n\nDecember 28, 2024\n\n(In millions, except for percentages)\n\nNet revenue\n34,639\n\n25,785\n\nCost of sales\n16,456\n\n12,114\n\nAmortization of acquisition-related intangibles\n1,031\n\n946\n\nGross profit\n17,152\n\n12,725\n\nGross margin\n50\n\n49\n\nResearch and development\n8,091\n\n6,456\n\nMarketing, general and administrative\n4,144\n\n2,735\n\nAmortization of acquisition-related intangibles\n1,223\n\n1,448\n\nInterest expense\n(131)\n\n(92)\n\nOther income (expense), net"
+        }
+      ],
+      "calculations": {
+        "NVDA_growth_percent": 65.47353579009479,
+        "AMD_growth_percent": 34.33779329067288
+      }
+    },
+    "q031": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Compare the dividend per share paid by Coca-Cola and Procter & Gamble in their most recent fiscal years.",
+      "previous_question": "Compare the dividend per share paid by Coca-Cola and Procter & Gamble in their most recent fiscal years.",
+      "question_changed": false,
+      "answer": "Procter & Gamble paid approximately $4.08 per common share in its fiscal year ended June 30, 2025, versus Coca-Cola $2.04 per share in the year ended December 31, 2025. P&G was approximately twice as high.",
+      "previous_answer": "Verify from both 10-Ks. Both are Dividend Aristocrats with 60+ year streaks.",
+      "previous_query_evidence_docs": [
+        "KO_10K_2025",
+        "PG_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "KO_10K_2024",
+        "PG_10K_2024"
+      ],
+      "interpretation": "Annual per-share dividends; fiscal periods differ. This is not a comparison of dividend yields.",
+      "evidence": [
+        {
+          "doc_id": "PG_10K_2025",
+          "accession_number": "0000080424-25-000076",
+          "filing_date": "2025-08-04",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000076/0000080424-25-000076-index.html",
+          "text_sha256": "d46bcf94aae877b3c015ccd9205fb056a26a28cd831875b65a7352237bff6adf",
+          "start_char": 73638,
+          "end_char": 74302,
+          "quote": " annual compound average rate of 5%. Nevertheless, as in the past, further dividends will be considered after reviewing dividend yields, profitability and cash flow expectations and financing needs and will be declared at the discretion of the Company's Board of Directors.\n\n(in dollars; split-adjusted)\n1956\n1965\n1975\n1985\n1995\n2005\n2015\n2025\n\nDividends per share\n0.01\n0.03\n0.06\n0.16\n0.35\n1.03\n2.59\n4.08\n\nThe Procter & Gamble Company 13\nCommon Stock Information\nP&G trades on the New York Stock Exchange under the stock symbol PG. As of June 30, 2025, there were approximately 6 million common stock shareowners, including shareowners of record, participants in P"
+        },
+        {
+          "doc_id": "KO_10K_2025",
+          "accession_number": "0001628280-26-010047",
+          "filing_date": "2026-02-20",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/0001628280-26-010047-index.html",
+          "text_sha256": "40a6d0b9d6eca91aec06505d65fe2724d85d3005a7cefac797b70f2246e9619a",
+          "start_char": 324068,
+          "end_char": 324382,
+          "quote": "ning of year\n76,054\n\n73,782\n\n71,019\n\nNet income attributable to shareowners of The Coca-Cola Company\n13,107\n\n10,631\n\n10,714\n\nDividends (per share - $ 2.04 , $ 1.94 and $ 1.84 in 2025, 2024 and 2023, respectively)\n( 8,779 )\n\n( 8,359 )\n\n( 7,951 )\n\nBalance at end of year\n80,382\n\n76,054\n\n73,782\n\nAccumulated Other Com"
+        }
+      ]
+    },
+    "q032": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Which company had a higher return on equity (ROE) in fiscal year 2024: Goldman Sachs or JPMorgan Chase?",
+      "previous_question": "Which company had a higher return on equity (ROE) in fiscal year 2024: Goldman Sachs or JPMorgan Chase?",
+      "question_changed": false,
+      "answer": "JPMorgan Chase had higher FY2024 return on common equity: 18%, versus Goldman Sachs 12.7%.",
+      "previous_answer": "JPMorgan Chase reported ROE of 17-18%. Goldman Sachs typically reports 10-14%. Verify from 10-Ks.",
+      "previous_query_evidence_docs": [
+        "GS_10K_2025",
+        "JPM_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "GS_10K_2024",
+        "JPM_10K_2024"
+      ],
+      "interpretation": "Reported ROE, not return on tangible common equity.",
+      "evidence": [
+        {
+          "doc_id": "JPM_10K_2025",
+          "accession_number": "0001628280-26-008131",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+          "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa",
+          "start_char": 195739,
+          "end_char": 197152,
+          "quote": "stribution of assets, liabilities and stockholders' equity; interest rates and interest differentials\n315\n\nGlossary of Terms and Acronyms\n320\n\nJPMorgan Chase & Co./2025 Form 10-K\n\n43\n\nFinancial\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\n\nAs of or for the year ended December 31,\n(in millions, except per share, ratio, employee data and where otherwise noted)\n\n2025\n\n2024\n\n2023\n\nSelected income statement data\n\nTotal net revenue\n\n182,447\n\n177,556\n\n(g)\n158,104\n\nTotal noninterest expense\n\n95,640\n\n91,797\n\n(g)\n87,172\n\nPre-provision profit (a)\n\n86,807\n\n85,759\n\n70,932\n\nProvision for credit losses\n\n14,212\n\n(e)\n10,678\n\n9,320\n\nIncome before income tax expense\n\n72,595\n\n75,081\n\n61,612\n\nIncome tax expense\n\n15,547\n\n16,610\n\n12,060\n\nNet income\n\n57,048\n\n58,471\n\n49,552\n\nEarnings per share data\n\nNet income: Basic\n\n20.05\n\n19.79\n\n16.25\n\nDiluted\n\n20.02\n\n19.75\n\n16.23\n\nAverage shares: Basic\n\n2,776.5\n\n2,873.9\n\n2,938.6\n\nDiluted\n\n2,781.5\n\n2,879.0\n\n2,943.1\n\nMarket and per common share data\n\nMarket capitalization\n\n868,793\n\n670,618\n\n489,320\n\nCommon shares at period-end\n\n2,696.2\n\n2,797.6\n\n2,876.6\n\nBook value per share\n\n126.99\n\n116.07\n\n104.45\n\nTangible book value per share (\"TBVPS\") (a)\n\n107.56\n\n97.30\n\n86.08\n\nCash dividends declared per share\n\n5.80\n\n4.80\n\n4.10\n\nSelected ratios and metrics\n\nReturn on common equity (\"ROE\")\n\n17\n\n18\n\n17\n\nReturn on tangible common equity (\"ROTCE\") (a)\n\n20\n\n22\n\n21\n\nReturn o"
+        },
+        {
+          "doc_id": "GS_10K_2025",
+          "accession_number": "0000886982-26-000091",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000091/0000886982-26-000091-index.html",
+          "text_sha256": "62e53d8bfadec6c7e21fd3ef763686425a51ffda7a325f58ee859d54328e5e53",
+          "start_char": 315316,
+          "end_char": 315431,
+          "quote": " compared with $40.54 for 2024. ROE was 15.0% for 2025, compared with 12.7% for 2024. Book value per common share w"
+        }
+      ]
+    },
+    "q033": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "How did Meta Platforms' Reality Labs segment operating loss change from fiscal year 2023 to 2024?",
+      "previous_question": "How did Meta Platforms' Reality Labs segment operating loss change from fiscal year 2023 to 2024?",
+      "question_changed": false,
+      "answer": "Reality Labs operating loss increased from $16,120 million in FY2023 to $17,729 million in FY2024, a $1,609 million increase in loss (approximately 10.0%).",
+      "previous_answer": "Reality Labs has been reporting significant operating losses ($13-16B range). Verify trend from both 10-Ks.",
+      "previous_query_evidence_docs": [
+        "META_10K_2025",
+        "META_10K_2024"
+      ],
+      "previous_gold_evidence_docs": [
+        "META_10K_2024",
+        "META_10K_2023"
+      ],
+      "interpretation": "Compare magnitude of losses; operating income became more negative.",
+      "evidence": [
+        {
+          "doc_id": "META_10K_2025",
+          "accession_number": "0001628280-26-003942",
+          "filing_date": "2026-01-29",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.html",
+          "text_sha256": "d5a180ad0f0a655c5a871e3884528357d7930ec48099dbe9f2e2c50bf1871006",
+          "start_char": 332599,
+          "end_char": 333035,
+          "quote": "ding legal-related costs.\n\nSegment profitability\n\nThe following table sets forth income (loss) from operations by segment:\n\nYear Ended December 31,\n\n2025\n\n2024\n\n2023\n\n2025 vs 2024 % change\n\n2024 vs 2023 % change\n\n(in millions, except percentages)\n\nFamily of Apps\n102,469\n\n87,109\n\n62,871\n\n18\n\n39\n\nReality Labs\n(19,193)\n\n(17,729)\n\n(16,120)\n\n(8)\n\n(10)\n\nTotal income from operations\n83,276\n\n69,380\n\n46,751\n\n20\n\n48\n\nFamily of Apps\n\nFoA incom"
+        }
+      ],
+      "calculations": {
+        "loss_increase_million_usd": 1609,
+        "loss_increase_percent": 9.981389578163768
+      }
+    },
+    "q034": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Compare the long-term debt of ExxonMobil and ConocoPhillips as of their most recent fiscal year ends.",
+      "previous_question": "Compare the long-term debt of ExxonMobil and ConocoPhillips as of their most recent fiscal year ends.",
+      "question_changed": false,
+      "answer": "At December 31, 2025, ExxonMobil reported $34,241 million of long-term debt, versus ConocoPhillips $22,424 million. ExxonMobil was higher by $11,817 million.",
+      "previous_answer": "ExxonMobil carries significantly more long-term debt than ConocoPhillips. Verify exact figures from balance sheets.",
+      "previous_query_evidence_docs": [
+        "XOM_10K_2025",
+        "COP_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "XOM_10K_2024",
+        "COP_10K_2024"
+      ],
+      "interpretation": "Use long-term debt balance-sheet line, not total debt including current maturities.",
+      "evidence": [
+        {
+          "doc_id": "XOM_10K_2025",
+          "accession_number": "0000034088-26-000045",
+          "filing_date": "2026-02-18",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/0000034088-26-000045-index.html",
+          "text_sha256": "d5cef65982d90a6c025f399858a4c4d3f935c95672837c9f91dc2074f465c3ab",
+          "start_char": 106729,
+          "end_char": 108415,
+          "quote": "f oil-equivalent barrels daily)\n4,736\n\n4,333\n\nChemical Products sales (2)\n(thousands of metric tons)\n\nUnited States\n6,977\n\n7,038\n\nNon-U.S.\n14,326\n\n12,354\n\nTotal\n21,303\n\n19,392\n\nSpecialty Products sales (2)\n(thousands of metric tons)\n\nUnited States\n1,894\n\n1,922\n\nNon-U.S.\n5,897\n\n5,745\n\nTotal\n7,791\n\n7,666\n\n(1) Natural gas is converted to an oil-equivalent basis at six million cubic feet per one thousand barrels.\n\n(2) Data reported net of purchases/sales contracts with the same counterparty.\n\nDue to rounding, numbers presented may not add up precisely to the totals indicated.\n\n29\n\nTable of Contents\n\nFinancial Table of Contents\nFINANCIAL INFORMATION\n\n(millions of dollars, except where stated otherwise)\n2025\n2024\n2023\n\nSales and other operating revenue\n323,905\n\n339,247\n\n334,697\n\nNet income (loss) attributable to ExxonMobil\n28,844\n\n33,680\n\n36,010\n\nEarnings (loss) per common share (dollars)\n6.70\n\n7.84\n\n8.89\n\nEarnings (loss) per common share - assuming dilution (dollars)\n6.70\n\n7.84\n\n8.89\n\nEarnings (loss) to average ExxonMobil share of equity (percent)\n11.0\n\n14.4\n\n18.0\n\nWorking capital\n11,052\n\n21,683\n\n31,293\n\nRatio of current assets to current liabilities (times)\n1.15\n\n1.31\n\n1.48\n\nAdditions to property, plant, and equipment (1)\n31,476\n\n109,332\n\n29,038\n\nProperty, plant, and equipment, less allowances\n299,373\n\n294,318\n\n214,940\n\nTotal assets\n448,980\n\n453,475\n\n376,317\n\nExploration expenses, including dry holes\n1,007\n\n826\n\n751\n\nResearch and development costs\n1,228\n\n987\n\n879\n\nLong-term debt\n34,241\n\n36,755\n\n37,483\n\nTotal debt\n43,537\n\n41,710\n\n41,573\n\nDebt to capital (percent)\n14.0\n\n13.4\n\n16.4\n\nNet debt to capital (percent) (2)\n11.0\n\n6.5\n\n4.5\n\nExxonMobil share of equity at yea"
+        },
+        {
+          "doc_id": "COP_10K_2025",
+          "accession_number": "0001163165-26-000009",
+          "filing_date": "2026-02-17",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/0001163165-26-000009-index.html",
+          "text_sha256": "e02f9e3540ad17b24e2d833bfa1b9f14881b681a217c4ec6323a205a20142641",
+          "start_char": 243447,
+          "end_char": 245633,
+          "quote": "taxes\n12,656\n\n13,672\n\n16,288\n\nIncome tax provision (benefit)\n4,668\n\n4,427\n\n5,331\n\nNet income (loss)\n7,988\n\n9,245\n\n10,957\n\nNet income (loss) per share of common stock (dollars)\n\nBasic\n6.36\n\n7.82\n\n9.08\n\nDiluted\n6.35\n\n7.81\n\n9.06\n\nWeighted-average common shares outstanding (in thousands)\n\nBasic\n1,252,042\n\n1,178,920\n\n1,202,757\n\nDiluted\n1,253,446\n\n1,180,871\n\n1,205,675\n\nSee Notes to Consolidated Financial Statements.\n\n71\n\nConocoPhillips 2025 10-K\n\nFinancial Statements\n\nTable of Contents\n\nConsolidated Statement of Comprehensive Income\n\nConocoPhillips\n\nYears Ended December 31\nMillions of Dollars\n\n2025\n2024\n2023\n\nNet income (loss)\n7,988\n\n9,245\n\n10,957\n\nOther comprehensive income (loss), net of tax:\n\nDefined benefit plans\n55\n\n3\n\n55\n\nUnrealized holding gain (loss) on securities\n5\n\n1\n\n13\n\nForeign currency translation adjustments\n502\n\n( 760 )\n\n197\n\nUnrealized gain (loss) on hedging activities\n\n( 44 )\n\n62\n\nOther comprehensive income (loss), net of tax\n562\n\n( 800 )\n\n327\n\nComprehensive income (loss)\n8,550\n\n8,445\n\n11,284\n\nSee Notes to Consolidated Financial Statements.\n\nConocoPhillips 2025 10-K\n\n72\n\nFinancial Statements\n\nTable of Contents\n\nConsolidated Balance Sheet\n\nConocoPhillips\n\nAt December 31\nMillions of Dollars\n\n2025\n2024\n\nAssets\n\nCash and cash equivalents\n6,497\n\n5,607\n\nShort-term investments\n484\n\n507\n\nAccounts and notes receivable (net of allowance of $ 4 and $ 7 , respectively)\n5,813\n\n6,695\n\nInventories\n1,873\n\n1,809\n\nPrepaid expenses and other current assets\n865\n\n1,029\n\nTotal current assets\n15,532\n\n15,647\n\nInvestments and long-term receivables\n10,185\n\n9,869\n\nNet properties, plants and equipment (net of accumulated DD&A of $ 90,396 and $ 81,072 , respectively)\n93,239\n\n94,356\n\nOther assets\n2,983\n\n2,908\n\nTotal assets\n121,939\n\n122,780\n\nLiabilities\n\nAccounts payable\n6,218\n\n6,044\n\nShort-term debt\n1,020\n\n1,035\n\nAccrued income and other taxes\n1,835\n\n2,460\n\nEmployee benefit obligations\n1,136\n\n1,087\n\nOther accruals\n1,763\n\n1,498\n\nTotal current liabilities\n11,972\n\n12,124\n\nLong-term debt\n22,424\n\n23,289\n\nAsset retirement obligations and accrued environmental costs\n8,214\n\n8,089\n\nDeferred income taxes\n12,237\n\n11,426\n\nEmployee benefit obligations\n969\n\n1,022\n\nOther liabilitie"
+        }
+      ]
+    },
+    "q035": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Did Linde or Freeport-McMoRan have a higher operating profit margin in their most recent fiscal year?",
+      "previous_question": "Did Linde or Freeport-McMoRan have a higher operating profit margin in their most recent fiscal year?",
+      "question_changed": false,
+      "answer": "Linde had the higher FY2025 reported operating margin: approximately 26.3% ($8,923M/$33,986M), versus Freeport-McMoRan approximately 25.2% ($6,518M/$25,915M).",
+      "previous_answer": "Linde typically has higher and more stable operating margins (~23-25%) vs Freeport's more volatile margins (~20-30% depending on commodity prices). Verify from 10-Ks.",
+      "previous_query_evidence_docs": [
+        "LIN_10K_2025",
+        "FCX_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "LIN_10K_2024",
+        "FCX_10K_2024"
+      ],
+      "interpretation": "Reported operating income divided by reported revenue; do not use adjusted margin.",
+      "evidence": [
+        {
+          "doc_id": "LIN_10K_2025",
+          "accession_number": "0001628280-26-011430",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1707925/000162828026011430/0001628280-26-011430-index.html",
+          "text_sha256": "f113705c518860f6323e18989dd558f9dae2662d4bb6251fbeb26e54a7931ac0",
+          "start_char": 70005,
+          "end_char": 70640,
+          "quote": "005 million. Sales increased 2% from higher price attainment primarily in the Americas and EMEA segments. Acquisitions increased sales by 1% largely in APAC and Americas. Sales from volumes were flat as base volume declines were largely offset by new project start-ups. Currency translation and cost pass-through, representing the contractual billing of energy cost variances primarily to onsite customers, were flat.\n• Reported operating profit of $8,923 million was 3% above 2024 reported operating profit of $8,635 million. Adjusted operating profit of $10,137 million was 4% above 2024 adjusted operating profit of $9,720 million. "
+        },
+        {
+          "doc_id": "LIN_10K_2025",
+          "accession_number": "0001628280-26-011430",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1707925/000162828026011430/0001628280-26-011430-index.html",
+          "text_sha256": "f113705c518860f6323e18989dd558f9dae2662d4bb6251fbeb26e54a7931ac0",
+          "start_char": 9381,
+          "end_char": 9577,
+          "quote": "ctronics.\nLinde's sales were $33,986 million, $33,005 million, and $32,854 million for 2025, 2024, and 2023, respectively. Refer to Item 7 , Management's Discussion and Analysis, for a discussion "
+        },
+        {
+          "doc_id": "FCX_10K_2025",
+          "accession_number": "0000831259-26-000012",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000012/0000831259-26-000012-index.html",
+          "text_sha256": "62cb222e64ea6c1363b3576d0d985b5e598f92f93448090eea4aea87445dccc4",
+          "start_char": 364365,
+          "end_char": 365000,
+          "quote": "d result in future impairment of our long-lived mining assets include, but are not limited to, decreases in estimated recoverable proven and probable mineral reserves and any event that might otherwise have a material adverse effect on mine site production levels or costs.\n\nCONSOLIDATED RESULTS\n\nYears Ended December 31,\n\n2025\n\n2024\n\nSUMMARY FINANCIAL DATA\n\n(in millions, except per share amounts)\n\nRevenues a,b\n25,915\n\n25,455\n\nOperating income a,c\n6,518\n\n6,864\n\nNet income attributable to common stock b,c\n2,204\n\n1,889\n\nDiluted net income per share attributable to common stock b,c\n1.52\n\n1.30\n\nDiluted weighted-average common shares "
+        }
+      ],
+      "calculations": {
+        "LIN_percent": 26.254928499970575,
+        "FCX_percent": 25.151456685317385
+      }
+    },
+    "q036": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Which company had more cash and cash equivalents on hand at the end of their most recent fiscal year: Apple or Alphabet?",
+      "previous_question": "Which company had more cash and cash equivalents on hand at the end of their most recent fiscal year: Apple or Alphabet?",
+      "question_changed": false,
+      "answer": "Apple had more cash and cash equivalents: $35,934 million at September 27, 2025, versus Alphabet $30,708 million at December 31, 2025. Apple was higher by $5,226 million.",
+      "previous_answer": "Verify from balance sheets. Both hold very large cash positions ($60B+ each including short-term investments).",
+      "previous_query_evidence_docs": [
+        "AAPL_10K_2025",
+        "GOOGL_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "AAPL_10K_2024",
+        "GOOGL_10K_2024"
+      ],
+      "interpretation": "Cash and cash equivalents only; exclude marketable securities. Including securities changes the comparison.",
+      "evidence": [
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 128599,
+          "end_char": 129235,
+          "quote": "231\n\n6,054\n\n1,816\n\nTotal other comprehensive income/(loss)\n1,601\n\n4,280\n\n( 343 )\n\nTotal comprehensive income\n113,611\n\n98,016\n\n96,652\n\nSee accompanying Notes to Consolidated Financial Statements.\n\nApple Inc. | 2025 Form 10-K | 30\n\nApple Inc.\nCONSOLIDATED BALANCE SHEETS\n(In millions, except number of shares, which are reflected in thousands, and par value)\n\nSeptember 27,\n2025\n\nSeptember 28,\n2024\n\nASSETS:\n\nCurrent assets:\n\nCash and cash equivalents\n35,934\n\n29,943\n\nMarketable securities\n18,763\n\n35,228\n\nAccounts receivable, net\n39,777\n\n33,410\n\nVendor non-trade receivables\n33,180\n\n32,833\n\nInventories\n5,718\n\n7,286\n\nOther current assets"
+        },
+        {
+          "doc_id": "GOOGL_10K_2025",
+          "accession_number": "0001652044-26-000018",
+          "filing_date": "2026-02-05",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html",
+          "text_sha256": "ad450c62bbcad6fa6faea4b6bab2e798ca808f1fe386350ad6b8447399e2ecf9",
+          "start_char": 199045,
+          "end_char": 199681,
+          "quote": " to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.\n\n/s/ Ernst & Young LLP\n\nSan Jose, California\n\nFebruary 4, 2026\n\n47.\n\nTable of Contents\nAlphabet Inc.\nAlphabet Inc.\nCONSOLIDATED BALANCE SHEETS\n(in millions, except par value per share amounts)\n\nAs of December 31,\n\n2024\n\n2025\n\nAssets\n\nCurrent assets:\n\nCash and cash equivalents\n23,466\n\n30,708\n\nMarketable securities\n72,191\n\n96,135\n\nTotal cash, cash equivalents, and marketable securities\n95,657\n\n126,843\n\nAccounts receivable, net\n52,340\n\n62,886\n\nOther current assets\n15,71"
+        }
+      ]
+    },
+    "q039": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Compare AbbVie and Johnson & Johnson's reported R&D expense as a percentage of revenue in FY2025, excluding separately reported acquired in-process R&D and milestone expense.",
+      "previous_question": "Compare AbbVie's and Johnson & Johnson's R&D spending as a percentage of revenue for their most recent fiscal year.",
+      "question_changed": true,
+      "answer": "Johnson & Johnson spent approximately 15.6% of revenue on R&D ($14,665M/$94,193M), versus AbbVie approximately 14.9% ($9,096M/$61,160M), in FY2025. Johnson & Johnson was slightly higher.",
+      "previous_answer": "Both invest heavily in R&D (~15-25% of revenue). Verify exact percentages from both 10-Ks.",
+      "previous_query_evidence_docs": [
+        "ABBV_10K_2025",
+        "JNJ_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "ABBV_10K_2024",
+        "JNJ_10K_2024"
+      ],
+      "interpretation": "Exclude separately reported acquired in-process R&D and milestones; including these changes the interpretation. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "JNJ_10K_2025",
+          "accession_number": "0000200406-26-000016",
+          "filing_date": "2026-02-11",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/0000200406-26-000016-index.html",
+          "text_sha256": "6e245362290ce65bb51091af459910020457f333d0042796418f88ae9a39d3fc",
+          "start_char": 133768,
+          "end_char": 134404,
+          "quote": "ed leverage in the Innovative Medicine business\npartially offset by\n• Increased investment related to the acquisition of Intra-Cellular (CAPLYTA)\nResearch and Development expense:\nResearch and development expense by segment of business was as follows:\n\n2025\n\n2024\n\n(Dollars in Millions)\nAmount\n% of Sales*\n\nAmount\n% of Sales*\n\nInnovative Medicine\n$11,827\n\n19.6\n\n$13,529\n\n23.8\n\nMedTech\n2,838\n\n8.4\n\n3,703\n\n11.6\n\nTotal research and development expense\n$14,665\n\n15.6\n\n$17,232\n\n19.4\n\nPercent increase/(decrease) over the prior year\n(14.9\n\n14.2\n\n*As a percent to segment sales\n\nResearch and development activities represent a significant part"
+        },
+        {
+          "doc_id": "JNJ_10K_2025",
+          "accession_number": "0000200406-26-000016",
+          "filing_date": "2026-02-11",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/0000200406-26-000016-index.html",
+          "text_sha256": "6e245362290ce65bb51091af459910020457f333d0042796418f88ae9a39d3fc",
+          "start_char": 138908,
+          "end_char": 139544,
+          "quote": "Inc. acquisition which closed on April 2, 2025 and for general corporate purposes.\nIncome before tax by segment\nIncome before tax by segment of business was as follows:\n\nIncome Before Tax\n\nSegment Sales\n\nPercent of Segment\nSales\n\n(Dollars in Millions)\n\n2025\n2024\n\n2025\n2024\n\n2025\n2024\n\nInnovative Medicine\n\n22,266\n\n18,919\n\n60,401\n\n56,964\n\n36.9\n33.2\n\nMedTech\n\n4,113\n\n3,740\n\n33,792\n\n31,857\n\n12.2\n\n11.7\n\nSegment earnings before tax (1)\n\n26,379\n\n22,659\n\n94,193\n\n88,821\n\n28.0\n\n25.5\n\n(Income) Expenses not allocated to segments (2)\n\n(6,202)\n\n5,972\n\nWorldwide income before tax\n\n32,581\n\n16,687\n\n94,193\n\n88,821\n\n34.6\n18.8\n\n(1) See Note 17 to th"
+        },
+        {
+          "doc_id": "ABBV_10K_2025",
+          "accession_number": "0001551152-26-000008",
+          "filing_date": "2026-02-20",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/0001551152-26-000008-index.html",
+          "text_sha256": "db07f04c51b40e71c6dfddcb41420950447acdef72a5bcff6d8ace8403002d2d",
+          "start_char": 188464,
+          "end_char": 189099,
+          "quote": "es\n23\n\n26\n\n24\n\nSelling, general and administrative (SG&A) expenses as a percentage of net revenues decreased in 2025 compared to 2024. SG&A expense percentage for 2025 was favorably impacted by net leverage from revenue growth, lower litigation reserve charges and lower acquisition and integration costs.\n\nResearch and Development\n\nPercent change\n\nyears ended December 31 (dollars in millions)\n2025\n\n2024\n\n2023\n\n2025\n\n2024\n\nResearch and development\n9,096\n\n12,791\n\n7,675\n\n(29)\n\n67\n\nas a % of net revenues\n15\n\n23\n\n14\n\nResearch and development (R&D) expenses as a percentage of net revenues decreased in 2025 compared to 2024. R&D expens"
+        },
+        {
+          "doc_id": "ABBV_10K_2025",
+          "accession_number": "0001551152-26-000008",
+          "filing_date": "2026-02-20",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/0001551152-26-000008-index.html",
+          "text_sha256": "db07f04c51b40e71c6dfddcb41420950447acdef72a5bcff6d8ace8403002d2d",
+          "start_char": 179973,
+          "end_char": 180609,
+          "quote": "rstanding of the company's operations and can facilitate analysis of the company's results of operations, particularly in evaluating performance from one period to another.\n\nPercent change\n\nAt actual currency rates\n\nAt constant currency rates\n\nyears ended (dollars in millions)\n2025\n\n2024\n\n2023\n\n2025\n\n2024\n\n2025\n\n2024\n\nUnited States\n46,603\n\n43,029\n\n41,883\n\n8.3\n\n2.7\n\n8.3\n\n2.7\n\nInternational\n14,557\n\n13,305\n\n12,435\n\n9.4\n\n7.0\n\n9.2\n\n11.1\n\nNet revenues\n61,160\n\n56,334\n\n54,318\n\n8.6\n\n3.7\n\n8.5\n\n4.6\n\n39\n\n| 2025 Form 10-K\n\nThe following table details AbbVie's worldwide net revenues:\n\nPercent change\n\nAt actual currency rates\n\nAt constant curr"
+        }
+      ],
+      "calculations": {
+        "JNJ_percent": 15.56909749132101,
+        "ABBV_percent": 14.872465663832571
+      }
+    },
+    "q040": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct filing-text inspection and explicit arithmetic; no paid API call.",
+      "question": "Using GE Aerospace's FY2024 10-K, how did consolidated revenue from continuing operations (including insurance revenue) change from 2023 to 2024, and what drove the change?",
+      "previous_question": "How did GE Aerospace's revenue change from fiscal year 2023 to 2024, and what drove the change?",
+      "question_changed": true,
+      "answer": "GE Aerospace consolidated revenue increased from $35,348 million in 2023 to $38,702 million in 2024, up $3,354 million (approximately 9.5%). Equipment revenue benefited from pricing and customer/product mix; services grew from spare-parts volume, pricing and internal shop-visit workscope.",
+      "previous_answer": "Verify from both 10-Ks. Note GE completed the Vernova spinoff in 2024, making YoY comparison complex.",
+      "previous_query_evidence_docs": [
+        "GE_10K_2025",
+        "GE_10K_2024"
+      ],
+      "previous_gold_evidence_docs": [
+        "GE_10K_2024",
+        "GE_10K_2023"
+      ],
+      "interpretation": "Use same-report continuing consolidated revenue including insurance; GE Vernova/HealthCare are discontinued operations. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "GE_10K_2024",
+          "accession_number": "0000040545-25-000015",
+          "filing_date": "2025-02-03",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054525000015/0000040545-25-000015-index.html",
+          "text_sha256": "7af7c233a9359866160355ae0a54707c3fd8bf78e75da17e3065af28ec6043e4",
+          "start_char": 41968,
+          "end_char": 42830,
+          "quote": "gnificant impact to our revenue, earnings and cash flows for the year ended December 31, 2024.\n\nCONSOLIDATED RESULTS\n\nREVENUE\n2024\n2023\n2022\n\nEquipment revenue\n10,274\n\n9,318\n\n7,837\n\nServices revenue\n24,847\n\n22,641\n\n18,345\n\nInsurance revenue\n3,581\n\n3,389\n\n2,957\n\nTotal revenue\n38,702\n\n35,348\n\n29,139\n\nFor the year ended December 31, 2024 , total revenue increased $3.4 billion, or 9%, compared to the year ended December 31, 2023. Equipment revenue increased, driven by improved pricing and favorable customer and product mix. Services revenue increased, primarily due to higher spare parts volume, improved pricing and increased internal shop visit workscope .\n\nFor the year ended December 31, 2023, total revenue increased $6.2 billion, or 21%, compared to the year ended December 31, 2022. Equipment revenue increased, driven by higher commercial install and s"
+        },
+        {
+          "doc_id": "GE_10K_2024",
+          "accession_number": "0000040545-25-000015",
+          "filing_date": "2025-02-03",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054525000015/0000040545-25-000015-index.html",
+          "text_sha256": "7af7c233a9359866160355ae0a54707c3fd8bf78e75da17e3065af28ec6043e4",
+          "start_char": 13763,
+          "end_char": 14243,
+          "quote": "lthCare), and on April 2, 2024, the Company completed the separation of its GE Vernova business into an independent publicly traded company, GE Vernova, Inc. (GE Vernova). In connection with these separations, the historical results of GE HealthCare and GE Vernova, and certain assets and liabilities included in the separations, are reported in our consolidated financial statements as discontinued operations. See Note 2 for further information.\n\nWe serve customers in approxima"
+        }
+      ],
+      "calculations": {
+        "increase_million_usd": 3354,
+        "growth_percent": 9.488514201652155
+      }
+    }
+  },
+  "unresolved": {
+    "q030": {
+      "status": "needs_metric_definition",
+      "reason": "Deere presents segment operating profit and consolidated pretax income, rather than the same explicit consolidated operating-income line as Caterpillar. Define a comparable metric before grading.",
+      "evidence_doc": "DE_10K_2025",
+      "anchor": "Income of Consolidated Group before Income Taxes",
+      "quote": "5\n\nInterest expense\n\n3,170\n\n3,348\n\n2,453\n\nOther operating expenses\n\n1,124\n\n1,257\n\n1,292\n\nTotal\n\n39,427\n\n42,510\n\n48,232\n\nIncome of Consolidated Group before Income Taxes\n\n6,257\n\n9,206\n\n13,019\n\nProvision for income taxes\n\n1,259\n\n2,094\n\n2,871\n\nIncome of Consolidated Group\n\n4,998\n\n7,112\n\n10,148\n\nEquity in income (loss) of unconsolidated affiliates\n\n( 24 )\n\n7\n\nNet Income\n\n4,998\n\n7,088\n\n10,155\n\nLess: Net loss attributable to noncontrolling interests\n\n( 29 )\n\n( 12 )\n\n( 11 )\n\nNet Income Attributable to Deere & Company\n\n5,0"
+    },
+    "q037": {
+      "status": "missing_source",
+      "reason": "WFC Item 8 incorporates financial statements from the Annual Report to Shareholders, not present in the processed wrapper filing. Obtain source financials before grading.",
+      "evidence_doc": "WFC_10K_2024",
+      "anchor": "Information in response to this Item 8",
+      "quote": "nt.\" That information is incorporated into this item by reference.\n\nITEM 8.\nFINANCIAL STATEMENTS AND SUPPLEMENTARY DATA\nInformation in response to this Item 8 can be found in the 2024 Annual Report to Shareholders under \"Financial Statements,\" under \"Notes to Financial Statements\" and under \"Quarterly Financial Data.\" That information is incorporated into this item by reference.\n\n9\n\nITEM 9.\nCHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL DISCLOSURE\nNot applicable.\n\nITEM 9A.\nCONTROLS AND PR"
+    },
+    "q038": {
+      "status": "needs_geographic_definition",
+      "reason": "McDonald's International Developmental Licensed Markets & Corporate segment includes corporate activity. Do not equate that full segment with strictly non-US geographic revenue without a supported convention.",
+      "evidence_doc": "MCD_10K_2025",
+      "anchor": "International Developmental Licensed Markets & Corporate includes",
+      "quote": "Significant reportable segments include the United States (\"U.S.\") and International Operated Markets. In addition, the International Developmental Licensed Markets & Corporate includes the results of over 75 countries as well as Corporate activities.\nMcDonald's franchised restaurants are owned and operated under one of the following structures - conventional franchise, developmental license or affiliate. The optimal ownership structure for an individual restaurant, trading area or market (country) is based on a va"
+    }
+  }
+}

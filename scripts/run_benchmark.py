@@ -44,7 +44,7 @@ from evaluation.runner import (
 
 ALL_PIPELINES = ["naive_llm", "vector_rag", "pageindex", "rlm"]
 ALL_SCALES = [10, 25, 50, 100, 150]
-ALL_MODELS = ["gpt-4o-mini", "gemini/gemini-2.5-flash-preview-04-17"]
+ALL_MODELS = ["gpt-4o-mini", "gemini/gemini-3.6-flash"]
 
 DEFAULT_QUERIES = "data/queries/queries.json"
 DEFAULT_GOLD = "data/ground_truth/gold_answers.json"
@@ -228,8 +228,8 @@ def run_judge(
         log.warning("Results file not found, skipping judge: %s", raw_path)
         return 0.0
     judge_model = judge_model_override or get_recommended_judge(pipeline_model)
-    judge = LLMJudge(model=pipeline_model)
-    # Pass judge_model directly; LLMJudge infers the cross-model inside score()
+    log.info("Judging %s with judge=%s", raw_path.name, judge_model)
+    judge = LLMJudge(model=pipeline_model, judge_model=judge_model)
     df = judge.score_results_file(
         str(raw_path),
         gold_path,

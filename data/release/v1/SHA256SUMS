@@ -1,0 +1,5 @@
+5864c59d8afae6f3fe181de1a0beaee237a7f9f4d7ae08985229210690777e12  data/release/v1/queries.json
+b1b8952305e9132b1195acfb03efaa69cc5f94e327a6cfa9e199b6f1b94eb3d9  data/release/v1/gold_answers.json
+d0d148628f4054662996b4e843898457c5e04a248b289a4a04a005e68fb4b08f  data/release/v1/exclusions.json
+f5ea399da19d8799c169b81024061ae67f7ebdc0dd18499f2735bdfc3d063363  data/release/v1/corpus_150.jsonl.gz
+1e76125542e8d870a329981dd38a6eae396ba80615318ac5490fc023a43e9030  data/processed/release_v1/corpus_150.jsonl

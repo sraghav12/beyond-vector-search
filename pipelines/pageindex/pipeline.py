@@ -26,6 +26,7 @@ except ImportError:
     Cache = None
 
 from pipelines.base import (
+    corpus_fingerprint,
     BasePipeline,
     CONTEXT_LIMITS,
     PipelineResult,
@@ -86,6 +87,7 @@ class PageIndexPipeline(BasePipeline):
         self._context_limit = CONTEXT_LIMITS.get(model, 128_000)
 
         self._corpus_scale = 0
+        self._corpus_fp = ""
         self._docs: list[dict[str, Any]] = []
         self._sections: list[dict[str, Any]] = []
         self._sections_by_id: dict[str, dict[str, Any]] = {}
@@ -130,6 +132,7 @@ class PageIndexPipeline(BasePipeline):
             "pipeline": self.name,
             "model": self.model,
             "scale": self._corpus_scale,
+            "corpus_fp": self._corpus_fp,
             "question": question,
             "max_selected_sections": self.max_selected_sections,
             "min_section_tokens": self.min_section_tokens,
@@ -293,6 +296,7 @@ class PageIndexPipeline(BasePipeline):
             self._corpus_scale = int(path.stem.split("_")[-1])
         except ValueError:
             self._corpus_scale = 0
+        self._corpus_fp = corpus_fingerprint(str(path))
 
         self._docs = self._read_corpus(str(path))
         self._sections = []

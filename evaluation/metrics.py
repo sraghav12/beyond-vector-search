@@ -62,6 +62,19 @@ def normalized_exact_match(predicted: str, gold: str) -> bool:
     return normalize_text(predicted) == normalize_text(gold)
 
 
+def normalized_containment_match(predicted: str, gold: str) -> bool:
+    """True when the normalized gold answer appears verbatim inside the prediction.
+
+    Full-string equality (normalized_exact_match) essentially never fires on
+    sentence-length generated answers; containment is the realistic exact-text
+    signal for free-text golds.
+    """
+    gold_norm = normalize_text(gold)
+    if len(gold_norm) < 3:
+        return False
+    return gold_norm in normalize_text(predicted)
+
+
 def _global_multiplier(text: str) -> Optional[Decimal]:
     match = _GLOBAL_SCALE_RE.search(text or "")
     if not match:
@@ -156,23 +169,32 @@ def compute_match_metrics(
 ) -> dict:
     answer_type = (answer_type or "").lower()
     normalized_match = normalized_exact_match(predicted, gold)
+    containment_match = normalized_containment_match(predicted, gold)
 
     numeric_match = None
     numeric_scale_match = None
+    numeric_scale_only = None
     if answer_type == "numeric":
         numeric_match = numeric_exact_match(predicted, gold)
         numeric_scale_match = numeric_scale_invariant_match(predicted, gold)
+        if numeric_scale_match is not None:
+            # right digits at the wrong power-of-1000 magnitude — the
+            # scale-confusion failure mode, isolated from plain correctness
+            numeric_scale_only = bool(numeric_scale_match) and not bool(numeric_match)
 
-    strict_match = normalized_match
-    lenient_match = normalized_match
     if answer_type == "numeric":
         strict_match = bool(numeric_match) or normalized_match
-        lenient_match = strict_match or bool(numeric_scale_match)
+        lenient_match = strict_match or bool(numeric_scale_match) or containment_match
+    else:
+        strict_match = normalized_match
+        lenient_match = normalized_match or containment_match
 
     return {
         "normalized_exact_match": normalized_match,
+        "normalized_containment_match": containment_match,
         "numeric_exact_match": numeric_match,
         "numeric_scale_invariant_match": numeric_scale_match,
+        "numeric_scale_only_match": numeric_scale_only,
         "strict_match": strict_match,
         "lenient_match": lenient_match,
     }
@@ -222,9 +244,11 @@ Predicted Answer: {predicted}
 Respond with ONLY a JSON object: {{"score": <float>, "reasoning": "<brief explanation>"}}\
 """
 
+# Values must be litellm-callable model ids (gemini needs the provider prefix).
 _JUDGE_OPPOSITE = {
-    "gpt-4o-mini": "gemini-2.5-flash",
-    "gpt-4o": "gemini-2.5-flash",
+    "gpt-4o-mini": "gemini/gemini-3.6-flash",
+    "gpt-4o": "gemini/gemini-3.6-flash",
+    "gemini-3.6-flash": "gpt-4o-mini",
     "gemini-2.5-flash": "gpt-4o-mini",
     "gemini-2.0-flash": "gpt-4o-mini",
     "gemini-1.5-flash": "gpt-4o-mini",
@@ -339,8 +363,10 @@ def score_results_file(
             if record.get("status") != "ok":
                 m: dict = {
                     "normalized_exact_match": False,
+                    "normalized_containment_match": False,
                     "numeric_exact_match": None,
                     "numeric_scale_invariant_match": None,
+                    "numeric_scale_only_match": None,
                     "strict_match": False,
                     "lenient_match": False,
                     "f1": 0.0,

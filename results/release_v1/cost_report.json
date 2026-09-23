@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-09-14T02:06:24.238491+00:00",
+  "by_run": [
+    {
+      "pipeline": "naive_llm",
+      "model": "gpt-4o-mini",
+      "scale": 150,
+      "pipeline_cost_usd": 0.0,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "pipeline": "vector_rag",
+      "model": "gpt-4o-mini",
+      "scale": 150,
+      "pipeline_cost_usd": 0.031056,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "pipeline": "pageindex",
+      "model": "gpt-4o-mini",
+      "scale": 150,
+      "pipeline_cost_usd": 0.52084,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "pipeline": "rlm",
+      "model": "gpt-4o-mini",
+      "scale": 150,
+      "pipeline_cost_usd": 0.670524,
+      "judge_cost_usd": 0.0
+    }
+  ],
+  "totals": {
+    "pipeline_cost_usd": 1.22242,
+    "judge_cost_usd": 0.0
+  }
+}

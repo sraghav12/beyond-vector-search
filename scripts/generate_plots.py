@@ -286,7 +286,7 @@ def chart_latency_distribution(df, output_dir: Path, dpi: int, no_svg: bool) -> 
     fig, ax = plt.subplots(figsize=(10, 6))
     bp = ax.boxplot(
         data,
-        labels=labels,
+        tick_labels=labels,
         patch_artist=True,
         medianprops={"color": "black", "linewidth": 2},
     )

@@ -1,0 +1,391 @@
+{
+  "review_date": "2026-09-13",
+  "reviewer": "agent_second_pass",
+  "method": "Check original locally saved SEC HTML; validate inline XBRL concept, period, units and dimensions for numeric facts; inspect original narrative/table text for other answers. Same agent, not an independent human reviewer; no fresh SEC download.",
+  "reviewed_count": 20,
+  "confirmed_count": 20,
+  "human_verification_flags_changed": false,
+  "api_spend_usd": 0,
+  "records": {
+    "q001": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$391,035 million ($391.035 billion).",
+      "question": "What was Apple's total net sales (revenue) for fiscal year 2024?",
+      "raw_file": "data/raw/AAPL_10K_2025.html",
+      "raw_sha256": "548ae59778cf08ee0f2ee088e7ece20d947076c3c01f74d2d65db4c2777e436a",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "391,035",
+          "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "context": "0000320193 2023-10-01 2024-09-28",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 391035000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "FY2024 ended September 28, 2024; comparative income-statement column."
+    },
+    "q002": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$18,497 million ($18.497 billion) in fiscal 2026, ended January 25, 2026.",
+      "question": "How much did NVIDIA spend on research and development in its most recent fiscal year reported in its 10-K?",
+      "raw_file": "data/raw/NVDA_10K_2025.html",
+      "raw_sha256": "73d81f5a111abcf72426c840871e76f5f5edc9631f436d495a86b6f87306d58b",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "18,497",
+          "concept": "us-gaap:ResearchAndDevelopmentExpense",
+          "context": "0001045810 2025-01-27 2026-01-25",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 18497000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "Latest NVIDIA filing in frozen corpus is FY2026 despite legacy doc_id ending 2025."
+    },
+    "q003": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$177,556 million ($177.556 billion), reported total net revenue for FY2024.",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "raw_file": "data/raw/JPM_10K_2025.html",
+      "raw_sha256": "4d9febdbc2038dcdca8726053286df4cbbfd48885051cbd781efcc3becb66a23",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "177,556",
+          "concept": "us-gaap:RevenuesNetOfInterestExpense",
+          "context": "0000019617 2024-01-01 2024-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 177556000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "FY2024 reported basis; do not substitute managed-basis revenue."
+    },
+    "q004": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$349,585 million ($349.585 billion).",
+      "question": "What was ExxonMobil's total revenues and other income for fiscal year 2024?",
+      "raw_file": "data/raw/XOM_10K_2025.html",
+      "raw_sha256": "3591db2246ab14c52465d32f69b459b000919c141a5656c81cf59acf0a805be8",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/0000034088-26-000045-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "349,585",
+          "concept": "us-gaap:Revenues",
+          "context": "0000034088 2024-01-01 2024-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 349585000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "Explicitly use total revenues and other income, including affiliate and other income; sales and other operating revenue alone is $339,247 million. Question changed; rerun required."
+    },
+    "q005": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$58,496 million ($58.496 billion).",
+      "question": "What was Pfizer's total revenue for fiscal year 2023, as originally reported in its fiscal 2023 10-K?",
+      "raw_file": "data/raw/PFE_10K_2023.html",
+      "raw_sha256": "6d4ccadf0cb5a1e0f716c8f39c300adbbe5587372bf89459fa8a0ea34cdee15c",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/0000078003-24-000039-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "58,496",
+          "concept": "us-gaap:Revenues",
+          "context": "0000078003 2023-01-01 2023-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 58496000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "Use the original FY2023 statement, not a recast comparative in a later filing. Question changed; rerun required."
+    },
+    "q006": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "Approximately 2.1 million associates worldwide as of January 31, 2026.",
+      "question": "How many employees did Walmart report in its most recent 10-K filing?",
+      "raw_file": "data/raw/WMT_10K_2025.html",
+      "raw_sha256": "276a6accff6066f00342ba03b390c6c2bd51aa7246f0346df22df0b839a5bf5c",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/0000104169-26-000055-index.html",
+      "xbrl_facts": [],
+      "raw_text_excerpts": [
+        "2.1 million associates as of January 31, 2026, to better serve our customers. Our strategies increasingly include the use of AI-powered tools to support customer and member-facing experiences, associate productivity and operational efficiency across our ecosystem. Together, these elements produce a global retail ecosys"
+      ],
+      "scope_note": "Latest Walmart filing in frozen corpus covers fiscal 2026 despite legacy doc_id ending 2025."
+    },
+    "q007": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$66,517 million ($66.517 billion).",
+      "question": "What was Boeing's total revenue for fiscal year 2024?",
+      "raw_file": "data/raw/BA_10K_2025.html",
+      "raw_sha256": "5e6dd009813c7851c73c30eb8a1117eab36e86a8c64bde61ad3af5444b052501",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/0001628280-26-004357-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "66,517",
+          "concept": "us-gaap:Revenues",
+          "context": "0000012927 2024-01-01 2024-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 66517000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "FY2024 comparative column; dollars in millions."
+    },
+    "q008": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "Advertising placements on its family of apps are its primary source of revenue.",
+      "question": "What is Meta Platforms' primary source of revenue according to its most recent 10-K?",
+      "raw_file": "data/raw/META_10K_2025.html",
+      "raw_sha256": "97d1a65e8f28c8d2878a1f73218b89f8da3be83e6517c5cffdd81845c8ce40be",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.html",
+      "xbrl_facts": [],
+      "raw_text_excerpts": [
+        "Currently, we generate substantially all of our revenue from selling advertising placements on our family of apps to marketers, which is reflected in FoA. Ads on our platform enable marketers to reach people across a range of marketing objectives, such as generating leads or driving awareness. Marketers purchase ads th"
+      ],
+      "scope_note": "Latest Meta filing in frozen corpus; business description directly answers the question."
+    },
+    "q009": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "20.2% reported operating profit margin for FY2024.",
+      "question": "What was Caterpillar's operating profit margin for fiscal year 2024?",
+      "raw_file": "data/raw/CAT_10K_2025.html",
+      "raw_sha256": "090ce2bd6d7dd1e85d4397ab152d3c3c3fb059fd4af0eb9aa979c1eb2ff92f15",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/0000018230-26-000008-index.html",
+      "xbrl_facts": [],
+      "raw_text_excerpts": [
+        "Operating profit as a percent of sales and revenues was 16.5 percent in 2025, compared with 20.2 percent in 2024. Adjusted operating profit margin was 17.2 percent in 2025, compared with 20.7 percent in 2024. • Profit per share for 2025 was $18.81, and excluding the items in the table below, adjusted profit per share w"
+      ],
+      "scope_note": "Reported operating margin; 20.7% is adjusted and is not the requested metric."
+    },
+    "q010": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$1,348 million ($1.348 billion).",
+      "question": "What was Goldman Sachs' provision for credit losses in fiscal year 2024?",
+      "raw_file": "data/raw/GS_10K_2025.html",
+      "raw_sha256": "49dcc48291d906b8a8786671afb4bf9e96c280befc46605adc7ea8656b2d49db",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000091/0000886982-26-000091-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "1,348",
+          "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+          "context": "0000886982 2024-01-01 2024-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 1348000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "FY2024 provision, not FY2025 net benefit; table units millions."
+    },
+    "q011": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "Innovative Medicine and MedTech.",
+      "question": "What are the main business segments reported by Johnson & Johnson in its most recent 10-K?",
+      "raw_file": "data/raw/JNJ_10K_2025.html",
+      "raw_sha256": "082f4e489d4c19f585cae4c8b62acea92bd6727576f7b0e450b9dfe8ecd42694",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/0000200406-26-000016-index.html",
+      "xbrl_facts": [],
+      "raw_text_excerpts": [
+        "The Company is organized into two business segments: Innovative Medicine and MedTech. Additional information required by this item is incorporated herein by reference to the narrative and tabular descriptions of segments and operating results under: Item 7. Management’s discussion and analysis of results of operations "
+      ],
+      "scope_note": "Latest Johnson & Johnson filing in the frozen corpus."
+    },
+    "q012": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$16,448 million ($16.448 billion).",
+      "question": "What were Chevron's capital expenditures (Capex), excluding equity affiliate capital expenditures, for fiscal year 2024?",
+      "raw_file": "data/raw/CVX_10K_2025.html",
+      "raw_sha256": "eba2b2a9b395e555114d1aa5f7e0048b03d6d49665b10e48cb9f3c23da4e1f07",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/0000093410-26-000078-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "16,448",
+          "concept": "us-gaap:PaymentsToAcquireProductiveAssets",
+          "context": "0000093410 2024-01-01 2024-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 16448000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "Company Capex excludes separately disclosed equity affiliate Capex. Replaced ambiguous legacy capital-and-exploratory wording; rerun required."
+    },
+    "q013": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "Approximately $10.0 trillion in assets under management as of December 31, 2023.",
+      "question": "What was BlackRock's total assets under management (AUM) as reported in its most recent 10-K?",
+      "raw_file": "data/raw/BLK_10K_2023.html",
+      "raw_sha256": "2debace85ac4945d4b87f174132e21c18bcf7a5c4381982b329bc3bed05695a0",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/1364742/000095017024019271/0000950170-24-019271-index.html",
+      "xbrl_facts": [],
+      "raw_text_excerpts": [
+        "$10.0 trillion of assets under management (“AUM”) at December 31, 2023. With approximately 19,800 employees in more than 30 countries who serve clients in over 100 countries across the globe, BlackRock provides a broad range of investment management and technology services to institutional and retail clients worldwide."
+      ],
+      "scope_note": "Latest available BlackRock filing is FY2023; BLK_10K_2024 is absent."
+    },
+    "q014": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "Comparable sales decreased 1.8% (growth rate −1.8%) in fiscal 2024.",
+      "question": "What was Home Depot's comparable sales (comp sales) growth rate for fiscal year 2024?",
+      "raw_file": "data/raw/HD_10K_2024.html",
+      "raw_sha256": "b787e5ef05e77d39b9dd9c039cf16a9883a7a6220cd4ec878049618edcb14f85",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/0000354950-25-000085-index.html",
+      "xbrl_facts": [],
+      "raw_text_excerpts": [
+        "Total comparable sales decreased 1.8% in fiscal 2024, reflecting a 1.0% decrease in comparable customer transactions and a 0.9% decrease in comparable average ticket compared to fiscal 2023. The decrease in comparable customer transactions primarily reflects the impact of heightened macroeconomic uncertainties and othe"
+      ],
+      "scope_note": "Company-wide comparable sales, not U.S.-only or total net sales. Required passage is in FY2024 filing; smaller corpora need evidence revalidation."
+    },
+    "q015": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$47,061 million ($47.061 billion).",
+      "question": "What was Coca-Cola's net revenue for fiscal year 2024?",
+      "raw_file": "data/raw/KO_10K_2025.html",
+      "raw_sha256": "22dd41f1aab4928f94a5f80e9497cf6203f27baa7c3f4e9088a6dd0aee929c66",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/0001628280-26-010047-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "47,061",
+          "concept": "us-gaap:Revenues",
+          "context": "0000021344 2024-01-01 2024-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 47061000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "Narrative explicitly identifies FY2024 net operating revenues."
+    },
+    "q016": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "Google Services, Google Cloud, and Other Bets. Other Bets combines multiple operating segments that are not individually material.",
+      "question": "Under which three categories does Alphabet report its segment results in its most recent 10-K?",
+      "raw_file": "data/raw/GOOGL_10K_2025.html",
+      "raw_sha256": "c2f6301004f35411a20611c14ff01d80a85c0bcbab6053c80d8cc7f6fc747161",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html",
+      "xbrl_facts": [],
+      "raw_text_excerpts": [
+        "We report our segment results as Google Services, Google Cloud, and Other Bets. Additionally, certain costs are not allocated to our segments because they represent Alphabet-level activities. For further details on our segments, see Part I, Item 1 Business and Note 15 of the Notes to Consolidated Financial Statements i",
+        "Other Bets is a combination of multiple operating segments that are not individually material. Revenues from Other Bets are generated primarily from the sale of autonomous transportation services and internet services. Revenues, certain costs, such as costs associated with content and traffic acquisition, certain engin"
+      ],
+      "scope_note": "Distinguish three segment-results categories from the underlying operating-segment count. Question changed; rerun required."
+    },
+    "q017": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "49% reported gross margin for FY2024.",
+      "question": "What was AMD's gross margin percentage for fiscal year 2024?",
+      "raw_file": "data/raw/AMD_10K_2025.html",
+      "raw_sha256": "247b08e661e15f3c3a18a77ea40c0fa8702d23c4b05e2d5303e305840c45b111",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "12,725",
+          "concept": "us-gaap:GrossProfit",
+          "context": "0000002488 2023-12-31 2024-12-28",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 12725000000
+        },
+        {
+          "displayed_value": "25,785",
+          "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "context": "0000002488 2023-12-31 2024-12-28",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 25785000000
+        }
+      ],
+      "raw_text_excerpts": [
+        "Comparison of Gross Margin, Expenses, Interest Expense, Other Income (expense) and Income Taxes The following is a summary of certain Consolidated Statement of Operations data for 2025 and 2024: December 27, 2025 December 28, 2024 (In millions, except for percentages) Net revenue $ 34,639 $ 25,785 Cost of sales 16,456 12,114 Amortization of acquisition-related intangibles 1,031 946 Gross profit 17,152 12,725 Gross margin 50 % 49 % Research and development 8,091 6,456 Marketing, general and administrative 4,144 2,735 Amortization of acquisition-related intangibles 1,223 1,448 Interest expense (131) (92) Other income (expense), net 577 181 Income tax provision (benefit) (103) 381 Income from discontinued operations, net of tax 66 — Gross Marg"
+      ],
+      "scope_note": "FY2024 comparative gross margin; GAAP gross profit divided by revenue rounds to reported 49%.",
+      "calculation": {
+        "expression": "12725 / 25785 * 100",
+        "unrounded_percent": 49.350397517936784,
+        "reported_whole_percent": 49
+      }
+    },
+    "q018": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$84,039 million ($84.039 billion), for the fiscal year ended June 30, 2024.",
+      "question": "What was Procter & Gamble's net sales for fiscal year 2024?",
+      "raw_file": "data/raw/PG_10K_2025.html",
+      "raw_sha256": "771cbdd953a63a343f4ddb4e09a90d81cca8b9209730ae27db63461e1562336f",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000076/0000080424-25-000076-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "84,039",
+          "concept": "us-gaap:Revenues",
+          "context": "0000080424 2023-07-01 2024-06-30",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 84039000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "Consolidated earnings statement, FY2024 column, units millions."
+    },
+    "q019": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "Approximately 24.6% ($96,169 million / $391,035 million × 100).",
+      "question": "What percentage of Apple's total net sales came from the Services segment in fiscal year 2024?",
+      "raw_file": "data/raw/AAPL_10K_2025.html",
+      "raw_sha256": "548ae59778cf08ee0f2ee088e7ece20d947076c3c01f74d2d65db4c2777e436a",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "96,169",
+          "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "context": "0000320193 us-gaap:ServiceMember 2023-10-01 2024-09-28",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 96169000000
+        },
+        {
+          "displayed_value": "391,035",
+          "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "context": "0000320193 2023-10-01 2024-09-28",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 391035000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "FY2024 Services net sales divided by FY2024 total net sales; 24.593458...%.",
+      "calculation": {
+        "expression": "96169 / 391035 * 100",
+        "unrounded_percent": 24.593450714130448,
+        "rounded_percent": 24.6
+      }
+    },
+    "q020": {
+      "verdict": "confirmed_for_stated_scope",
+      "answer": "$344,758 million ($344.758 billion).",
+      "question": "What was the total stockholders' equity for JPMorgan Chase as of December 31, 2024?",
+      "raw_file": "data/raw/JPM_10K_2025.html",
+      "raw_sha256": "4d9febdbc2038dcdca8726053286df4cbbfd48885051cbd781efcc3becb66a23",
+      "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+      "xbrl_facts": [
+        {
+          "displayed_value": "344,758",
+          "concept": "us-gaap:StockholdersEquity",
+          "context": "0000019617 2024-12-31",
+          "unit": "USD",
+          "scale": 6,
+          "signed_value_usd": 344758000000
+        }
+      ],
+      "raw_text_excerpts": [],
+      "scope_note": "Total stockholders equity at December 31, 2024, including preferred equity."
+    }
+  }
+}

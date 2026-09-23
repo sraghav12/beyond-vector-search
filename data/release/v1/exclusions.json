@@ -1,0 +1,194 @@
+[
+  {
+    "query_id": "q030",
+    "question": "Did Caterpillar or Deere & Company report higher operating income in their most recent fiscal years?",
+    "reason": "No harmonized consolidated operating-income definition across these two issuers.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q037",
+    "question": "How did Wells Fargo's net interest income change from fiscal year 2023 to 2024? Was the trend the same as JPMorgan Chase's?",
+    "reason": "WFC financial statements are incorporated by reference and absent from corpus.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q038",
+    "question": "Which company reported higher international revenue as a percentage of total revenue: McDonald's or Home Depot?",
+    "reason": "International segment contains corporate activity; geographic numerator is not harmonized.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q042",
+    "question": "Among all the financial sector companies in the corpus (JPM, BAC, GS, WFC, BLK), which had the highest net income in their most recent fiscal year?",
+    "reason": "WFC source financials missing; cannot establish a full ranking.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q043",
+    "question": "Which three companies in the corpus have the highest gross margin percentage in their most recent fiscal year?",
+    "reason": "Gross margin not consistently meaningful for banks and insurers; no harmonized eligible universe.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q045",
+    "question": "Rank the three energy companies (XOM, CVX, COP) by their total proved reserves of oil and gas as reported in their most recent 10-Ks.",
+    "reason": "Reserve comparison requires reconciled scope and oil-equivalent conversion, not certified in v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q046",
+    "question": "How much total R&D spending did the five healthcare companies (JNJ, UNH, LLY, PFE, ABBV) report collectively in their most recent fiscal years?",
+    "reason": "Missing separately disclosed R&D is not zero (UNH); aggregate undefined.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q047",
+    "question": "Which company in the entire corpus had the largest year-over-year revenue growth (in percentage terms) between their two most recent fiscal years?",
+    "reason": "Full-company growth ranking lacks exhaustive, period-consistent source verification.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q048",
+    "question": "Among all consumer-facing companies in the corpus (WMT, PG, KO, HD, MCD, COST), what is the average operating margin?",
+    "reason": "Average margin weighting and reporting-period convention not specified.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q049",
+    "question": "Rank all five financial sector companies by their total deposits as of the most recent fiscal year end.",
+    "reason": "Deposits not meaningful for all named companies; WFC financials absent.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q050",
+    "question": "Which company in the corpus has the most cash and short-term investments on its balance sheet in its most recent fiscal year?",
+    "reason": "Bank liquidity and industrial cash/short-term-investment scopes not harmonized; WFC missing.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q051",
+    "question": "How many companies in the corpus reported a net loss (negative net income) in any of their fiscal years covered by the corpus?",
+    "reason": "Full 150-filing loss census not certified; WFC statements missing.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q053",
+    "question": "What is the total market capitalization implied by the total stockholders' equity across all 5 financial companies?",
+    "reason": "Book equity does not imply market capitalization; question has an invalid premise.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q054",
+    "question": "Among all companies in the corpus, which five paid the highest total dividends (in dollar terms) in their most recent fiscal year?",
+    "reason": "Full-company dividend ranking not exhaustively certified.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q055",
+    "question": "What percentage of total corpus revenue (sum of all companies' most recent FY revenue) comes from the healthcare sector?",
+    "reason": "Revenue universe includes missing WFC figures and incompatible financial-industry definitions.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q056",
+    "question": "Both Apple and NVIDIA discuss supply chain concentration risk in their 10-Ks. Compare the specific risks each company highlights regarding their dependence on manufacturing partners.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q057",
+    "question": "Compare how ExxonMobil and Chevron discuss climate change and energy transition risks in their most recent 10-K filings.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q058",
+    "question": "Which pairs of companies among JPM, BAC, GS, and WFC share the most similar risk factor language regarding interest rate risk?",
+    "reason": "No defined text-similarity metric/rubric; missing WFC evidence.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q059",
+    "question": "Compare how Walmart and Costco describe their competitive advantages and business strategies in their most recent 10-K filings.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q060",
+    "question": "Both NVIDIA and AMD compete in the GPU market. Compare how each company describes the competitive landscape in their most recent 10-K filings.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q061",
+    "question": "Compare the regulatory risk disclosures of UnitedHealth Group and Pfizer. What regulatory bodies and frameworks does each company highlight as posing the greatest risk?",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q062",
+    "question": "Compare how Boeing and GE Aerospace discuss their commercial aviation backlog in their most recent 10-K filings.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q063",
+    "question": "Compare how Caterpillar and Deere & Company discuss the impact of commodity prices on their businesses in their most recent 10-Ks.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q064",
+    "question": "Compare the revenue recognition policies of Alphabet (Google) and Meta Platforms as described in their most recent 10-Ks. Are there significant differences?",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q065",
+    "question": "Both Eli Lilly and AbbVie face patent expiration risks on key drugs. Compare the specific drugs and timelines each company discloses as patent expiration risks in their most recent 10-Ks.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q066",
+    "question": "Compare how Coca-Cola and Procter & Gamble discuss foreign currency exchange rate risks in their most recent 10-Ks. Which company has greater exposure?",
+    "reason": "Greater FX exposure needs a common quantitative sensitivity metric.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q068",
+    "question": "Identify which pairs of companies in the corpus mention 'artificial intelligence' or 'AI' as both a risk factor AND a growth opportunity in their most recent 10-Ks.",
+    "reason": "Corpus-wide AI risk/opportunity pairs lack an exhaustive coding rubric.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q069",
+    "question": "Compare how Freeport-McMoRan and Linde discuss their environmental liabilities and remediation obligations in their most recent 10-Ks.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q070",
+    "question": "Compare how BlackRock and Goldman Sachs describe their ESG/sustainable investing strategies in their most recent 10-Ks.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q071",
+    "question": "Compare how Walmart and Home Depot discuss their e-commerce and digital transformation strategies in their most recent 10-Ks.",
+    "reason": "Open-ended disclosure comparison lacks an independently reviewed, claim-level grading rubric; excluded from quantitative v1.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q072",
+    "question": "Compare the effective tax rates reported by Apple and NVIDIA in their most recent fiscal years. What explains any difference?",
+    "reason": "Tax-rate attribution needs a reconciled jurisdiction/one-off-item rubric.",
+    "status": "excluded_from_v1"
+  },
+  {
+    "query_id": "q075",
+    "question": "Compare the debt maturity profiles of Meta Platforms and Alphabet as disclosed in their most recent 10-Ks. Which company faces higher near-term debt maturities?",
+    "reason": "Near-term horizon and debt maturity scope are unspecified.",
+    "status": "excluded_from_v1"
+  }
+]

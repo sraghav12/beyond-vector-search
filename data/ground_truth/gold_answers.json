@@ -1,17 +1,19 @@
 {
   "q001": {
-    "answer": "$391.0 billion ($391,035 million)",
+    "answer": "$391,035 million ($391.035 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "AAPL_10K_2024"
+      "AAPL_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q002": {
-    "answer": "R&D was part of $16.4 billion total operating expenses for FY2025 (ending Jan 26, 2025). NVIDIA reported $12.893 billion in R&D specifically.",
+    "answer": "$18,497 million ($18.497 billion) in fiscal 2026, ended January 25, 2026.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
@@ -19,32 +21,38 @@
     "evidence_docs": [
       "NVDA_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q003": {
-    "answer": "$177.6 billion ($177,556 million)",
+    "answer": "$177,556 million ($177.556 billion), reported total net revenue for FY2024.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "JPM_10K_2024"
+      "JPM_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q004": {
-    "answer": "Approximately $339.2 billion. Verify from 10-K Consolidated Statements of Income.",
+    "answer": "$349,585 million ($349.585 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "XOM_10K_2024"
+      "XOM_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q005": {
-    "answer": "$58.496 billion ($58,496 million)",
+    "answer": "$58,496 million ($58.496 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
@@ -52,10 +60,12 @@
     "evidence_docs": [
       "PFE_10K_2023"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q006": {
-    "answer": "Approximately 2.1 million associates worldwide. Verify exact number from Item 1 of 10-K.",
+    "answer": "Approximately 2.1 million associates worldwide as of January 31, 2026.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
@@ -63,87 +73,103 @@
     "evidence_docs": [
       "WMT_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q007": {
-    "answer": "Approximately $66.5 billion. Verify from Consolidated Statements of Operations.",
+    "answer": "$66,517 million ($66.517 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "BA_10K_2024"
+      "BA_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q008": {
-    "answer": "Advertising revenue, which constitutes the vast majority of Meta's total revenue (approximately 96-98%).",
+    "answer": "Advertising placements on its family of apps are its primary source of revenue.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "descriptive",
     "evidence_docs": [
-      "META_10K_2024"
+      "META_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q009": {
-    "answer": "Verify from 10-K. Calculate as operating income / total revenue. Historically ~20%.",
+    "answer": "20.2% reported operating profit margin for FY2024.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "medium",
     "answer_type": "numeric",
     "evidence_docs": [
-      "CAT_10K_2024"
+      "CAT_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q010": {
-    "answer": "Verify from 10-K Consolidated Statements of Earnings.",
+    "answer": "$1,348 million ($1.348 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "medium",
     "answer_type": "numeric",
     "evidence_docs": [
-      "GS_10K_2024"
+      "GS_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q011": {
-    "answer": "After the Kenvue consumer health spinoff, JNJ reports two segments: Innovative Medicine and MedTech.",
+    "answer": "Innovative Medicine and MedTech.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "descriptive",
     "evidence_docs": [
-      "JNJ_10K_2024"
+      "JNJ_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q012": {
-    "answer": "Verify from 10-K. Historically ~$15-17 billion range.",
+    "answer": "$16,448 million ($16.448 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "medium",
     "answer_type": "numeric",
     "evidence_docs": [
-      "CVX_10K_2024"
+      "CVX_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q013": {
-    "answer": "Over $11.5 trillion in AUM as of December 31, 2024. Verify exact figure from 10-K.",
+    "answer": "Approximately $10.0 trillion in assets under management as of December 31, 2023.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "BLK_10K_2024"
+      "BLK_10K_2023"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q014": {
-    "answer": "Verify from 10-K MD&A section. Comp sales have been slightly negative in recent periods.",
+    "answer": "Comparable sales decreased 1.8% (growth rate −1.8%) in fiscal 2024.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "medium",
@@ -151,183 +177,212 @@
     "evidence_docs": [
       "HD_10K_2024"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q015": {
-    "answer": "Approximately $46-47 billion. Verify from Consolidated Statements of Income.",
+    "answer": "$47,061 million ($47.061 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "KO_10K_2024"
+      "KO_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q016": {
-    "answer": "Three segments: Google Services, Google Cloud, and Other Bets.",
+    "answer": "Google Services, Google Cloud, and Other Bets. Other Bets combines multiple operating segments that are not individually material.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "descriptive",
     "evidence_docs": [
-      "GOOGL_10K_2024"
+      "GOOGL_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q017": {
-    "answer": "Approximately 49-52%. Verify from 10-K income statement.",
+    "answer": "49% reported gross margin for FY2024.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "medium",
     "answer_type": "numeric",
     "evidence_docs": [
-      "AMD_10K_2024"
+      "AMD_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q018": {
-    "answer": "Approximately $84 billion. Verify from 10-K. Note: P&G FY2024 ends June 30, 2024.",
+    "answer": "$84,039 million ($84.039 billion), for the fiscal year ended June 30, 2024.",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "PG_10K_2024"
+      "PG_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q019": {
-    "answer": "Services revenue was $96,169M out of $391,035M total = approximately 24.6%.",
+    "answer": "Approximately 24.6% ($96,169 million / $391,035 million × 100).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "medium",
     "answer_type": "numeric",
     "evidence_docs": [
-      "AAPL_10K_2024"
+      "AAPL_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q020": {
-    "answer": "$344.8 billion (approximately $345 billion)",
+    "answer": "$344,758 million ($344.758 billion).",
     "tier": 1,
     "tier_name": "single_hop",
     "difficulty": "easy",
     "answer_type": "numeric",
     "evidence_docs": [
-      "JPM_10K_2024"
+      "JPM_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_single_hop.json"
   },
   "q021": {
-    "answer": "Apple had higher revenue ($391.0B) compared to NVIDIA ($130.5B). Note: different fiscal year end dates.",
+    "answer": "Apple: $416,161 million in FY2025, versus NVIDIA: $215,938 million in fiscal 2026. Apple had higher revenue.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "easy",
     "answer_type": "comparative",
     "evidence_docs": [
-      "AAPL_10K_2024",
+      "AAPL_10K_2025",
       "NVDA_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q022": {
-    "answer": "Verify from both 10-Ks. NVIDIA R&D ~10% of revenue; AMD R&D typically ~22-25% of revenue. AMD likely spends more as a percentage.",
+    "answer": "AMD spent approximately 23.4% of revenue on R&D ($8,091M / $34,639M) in FY2025, versus NVIDIA approximately 8.6% ($18,497M / $215,938M) in fiscal 2026. AMD was higher.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "NVDA_10K_2025",
-      "AMD_10K_2024"
+      "AMD_10K_2025",
+      "NVDA_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q023": {
-    "answer": "JPMorgan Chase reported higher net income ($58.5B) vs Bank of America (approximately $27-28B).",
+    "answer": "JPMorgan Chase: $58,471 million, versus Bank of America: $26,973 million for FY2024, using the comparative figures in their FY2025 filings. JPMorgan Chase was higher.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "easy",
     "answer_type": "comparative",
     "evidence_docs": [
-      "JPM_10K_2024",
-      "BAC_10K_2024"
+      "JPM_10K_2025",
+      "BAC_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q024": {
-    "answer": "Verify from both 10-Ks. Historically ExxonMobil has higher capex than Chevron.",
+    "answer": "ExxonMobil invested more: $24,306 million in cash additions to property, plant and equipment, versus Chevron capital expenditures of $16,448 million in FY2024.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "XOM_10K_2024",
-      "CVX_10K_2024"
+      "XOM_10K_2025",
+      "CVX_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q025": {
-    "answer": "Eli Lilly typically has higher gross margins (~80%) compared to Pfizer (~60-65%). Verify from 10-Ks.",
+    "answer": "Eli Lilly had the higher margin: approximately 83.0% ((65,179−11,052)/65,179), versus Pfizer approximately 74.3% ((62,579−16,067)/62,579), for FY2025.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "LLY_10K_2024",
-      "PFE_10K_2024"
+      "LLY_10K_2025",
+      "PFE_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q026": {
-    "answer": "Revenue increased from $383.3B (FY2023) to $391.0B (FY2024), an increase of approximately $7.7B or 2.0%.",
+    "answer": "Apple revenue increased from $383,285 million in FY2023 to $391,035 million in FY2024, up $7,750 million (approximately 2.0%).",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "numeric",
     "evidence_docs": [
-      "AAPL_10K_2024",
-      "AAPL_10K_2023"
+      "AAPL_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q027": {
-    "answer": "Walmart revenue (~$648B) is roughly 2.6-2.8x Costco revenue (~$242-254B). Verify exact figures from 10-Ks.",
+    "answer": "Walmart net sales were $706,413 million in fiscal 2026 and Costco net sales were $269,912 million in FY2025. The ratio was approximately 2.62× (706,413/269,912).",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "numeric",
     "evidence_docs": [
       "WMT_10K_2025",
-      "COST_10K_2024"
+      "COST_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q028": {
-    "answer": "JPMorgan Chase ($4.0 trillion) reported higher total assets than Bank of America (~$3.3 trillion).",
+    "answer": "JPMorgan Chase had higher total assets at December 31, 2024: $4,002,814 million, versus Bank of America $3,261,299 million.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "easy",
     "answer_type": "comparative",
     "evidence_docs": [
-      "JPM_10K_2024",
-      "BAC_10K_2024"
+      "JPM_10K_2025",
+      "BAC_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q029": {
-    "answer": "NVIDIA grew 114% YoY (FY2025 vs FY2024). AMD growth was much lower. Verify AMD growth rate from 10-Ks.",
+    "answer": "NVIDIA revenue grew approximately 65.5% ($215,938M versus $130,497M) in fiscal 2026; AMD grew approximately 34.3% ($34,639M versus $25,785M) in FY2025. NVIDIA grew faster.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "hard",
     "answer_type": "comparative",
     "evidence_docs": [
       "NVDA_10K_2025",
-      "NVDA_10K_2024",
-      "AMD_10K_2024",
-      "AMD_10K_2023"
+      "AMD_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q030": {
     "answer": "Verify from both 10-Ks. Note: Deere FY ends Oct 31.",
@@ -339,79 +394,92 @@
       "CAT_10K_2024",
       "DE_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "needs_metric_definition",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q031": {
-    "answer": "Verify from both 10-Ks. Both are Dividend Aristocrats with 60+ year streaks.",
+    "answer": "Procter & Gamble paid approximately $4.08 per common share in its fiscal year ended June 30, 2025, versus Coca-Cola $2.04 per share in the year ended December 31, 2025. P&G was approximately twice as high.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "KO_10K_2024",
-      "PG_10K_2024"
+      "PG_10K_2025",
+      "KO_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q032": {
-    "answer": "JPMorgan Chase reported ROE of 17-18%. Goldman Sachs typically reports 10-14%. Verify from 10-Ks.",
+    "answer": "JPMorgan Chase had higher FY2024 return on common equity: 18%, versus Goldman Sachs 12.7%.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "hard",
     "answer_type": "comparative",
     "evidence_docs": [
-      "GS_10K_2024",
-      "JPM_10K_2024"
+      "JPM_10K_2025",
+      "GS_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q033": {
-    "answer": "Reality Labs has been reporting significant operating losses ($13-16B range). Verify trend from both 10-Ks.",
+    "answer": "Reality Labs operating loss increased from $16,120 million in FY2023 to $17,729 million in FY2024, a $1,609 million increase in loss (approximately 10.0%).",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "hard",
     "answer_type": "numeric",
     "evidence_docs": [
-      "META_10K_2024",
-      "META_10K_2023"
+      "META_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q034": {
-    "answer": "ExxonMobil carries significantly more long-term debt than ConocoPhillips. Verify exact figures from balance sheets.",
+    "answer": "At December 31, 2025, ExxonMobil reported $34,241 million of long-term debt, versus ConocoPhillips $22,424 million. ExxonMobil was higher by $11,817 million.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "XOM_10K_2024",
-      "COP_10K_2024"
+      "XOM_10K_2025",
+      "COP_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q035": {
-    "answer": "Linde typically has higher and more stable operating margins (~23-25%) vs Freeport's more volatile margins (~20-30% depending on commodity prices). Verify from 10-Ks.",
+    "answer": "Linde had the higher FY2025 reported operating margin: approximately 26.3% ($8,923M/$33,986M), versus Freeport-McMoRan approximately 25.2% ($6,518M/$25,915M).",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "LIN_10K_2024",
-      "FCX_10K_2024"
+      "LIN_10K_2025",
+      "FCX_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q036": {
-    "answer": "Verify from balance sheets. Both hold very large cash positions ($60B+ each including short-term investments).",
+    "answer": "Apple had more cash and cash equivalents: $35,934 million at September 27, 2025, versus Alphabet $30,708 million at December 31, 2025. Apple was higher by $5,226 million.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "AAPL_10K_2024",
-      "GOOGL_10K_2024"
+      "AAPL_10K_2025",
+      "GOOGL_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q037": {
     "answer": "JPM's net interest income went from $89.3B (2023) to $92.6B (2024), up 4%. Verify WFC's trend from 10-Ks.",
@@ -425,7 +493,9 @@
       "JPM_10K_2024",
       "JPM_10K_2023"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "missing_source",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q038": {
     "answer": "McDonald's has significantly higher international revenue (~60%+ from outside US) vs Home Depot (~8-10% from international). Verify from 10-Ks.",
@@ -437,46 +507,53 @@
       "MCD_10K_2024",
       "HD_10K_2024"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "needs_geographic_definition",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q039": {
-    "answer": "Both invest heavily in R&D (~15-25% of revenue). Verify exact percentages from both 10-Ks.",
+    "answer": "Johnson & Johnson spent approximately 15.6% of revenue on R&D ($14,665M/$94,193M), versus AbbVie approximately 14.9% ($9,096M/$61,160M), in FY2025. Johnson & Johnson was slightly higher.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "medium",
     "answer_type": "comparative",
     "evidence_docs": [
-      "ABBV_10K_2024",
-      "JNJ_10K_2024"
+      "JNJ_10K_2025",
+      "ABBV_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q040": {
-    "answer": "Verify from both 10-Ks. Note GE completed the Vernova spinoff in 2024, making YoY comparison complex.",
+    "answer": "GE Aerospace consolidated revenue increased from $35,348 million in 2023 to $38,702 million in 2024, up $3,354 million (approximately 9.5%). Equipment revenue benefited from pricing and customer/product mix; services grew from spare-parts volume, pricing and internal shop-visit workscope.",
     "tier": 2,
     "tier_name": "multi_hop",
     "difficulty": "hard",
     "answer_type": "descriptive",
     "evidence_docs": [
-      "GE_10K_2024",
-      "GE_10K_2023"
+      "GE_10K_2024"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_multi_hop.json"
   },
   "q041": {
-    "answer": "1. Walmart (~$648B), 2. ExxonMobil (~$339B), 3. Apple ($391.0B), 4. JPMorgan Chase ($177.6B), 5. NVIDIA ($130.5B). Note: Walmart and Apple ordering may vary depending on exact figures.",
+    "answer": "Walmart $713,163M > Apple $416,161M > ExxonMobil $332,238M > NVIDIA $215,938M > JPMorgan Chase $182,447M. Walmart and NVIDIA report fiscal 2026; the other figures are FY2025.",
     "tier": 3,
     "tier_name": "aggregation",
     "difficulty": "hard",
     "answer_type": "ranking",
     "evidence_docs": [
-      "AAPL_10K_2024",
+      "WMT_10K_2025",
+      "AAPL_10K_2025",
+      "XOM_10K_2025",
       "NVDA_10K_2025",
-      "JPM_10K_2024",
-      "XOM_10K_2024",
-      "WMT_10K_2025"
+      "JPM_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_release_additions.json"
   },
   "q042": {
     "answer": "JPMorgan Chase with $58.5 billion net income. Verify others from their 10-Ks.",
@@ -505,19 +582,21 @@
     "verified": false
   },
   "q044": {
-    "answer": "AAPL $391.0B + NVDA $130.5B + GOOGL ~$350B + META ~$161B + AMD ~$23B = approximately $1.06 trillion. Verify from 10-Ks.",
+    "answer": "Combined revenue was $1,270,540 million ($1.270540 trillion): Apple 416,161M + NVIDIA 215,938M + Alphabet 402,836M + Meta 200,966M + AMD 34,639M.",
     "tier": 3,
     "tier_name": "aggregation",
     "difficulty": "hard",
     "answer_type": "numeric",
     "evidence_docs": [
-      "AAPL_10K_2024",
+      "AAPL_10K_2025",
       "NVDA_10K_2025",
-      "GOOGL_10K_2024",
-      "META_10K_2024",
-      "AMD_10K_2024"
+      "GOOGL_10K_2025",
+      "META_10K_2025",
+      "AMD_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_release_additions.json"
   },
   "q045": {
     "answer": "ExxonMobil typically has the largest proved reserves, followed by Chevron, then ConocoPhillips. Verify from supplementary oil and gas disclosures in each 10-K.",
@@ -612,21 +691,23 @@
     "verified": false
   },
   "q052": {
-    "answer": "Verify from all four 10-Ks. Note different fiscal year ends for DE (Oct) and GE's recent restructuring.",
+    "answer": "Boeing $89,463M > Caterpillar $67,589M > GE Aerospace $45,855M > Deere $45,684M, for their respective FY2025 periods.",
     "tier": 3,
     "tier_name": "aggregation",
     "difficulty": "hard",
     "answer_type": "ranking",
     "evidence_docs": [
-      "CAT_10K_2024",
-      "BA_10K_2024",
-      "DE_10K_2025",
-      "GE_10K_2024"
+      "BA_10K_2025",
+      "CAT_10K_2025",
+      "GE_10K_2025",
+      "DE_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_release_additions.json"
   },
   "q053": {
-    "answer": "Note: stockholders' equity \u2260 market cap. Sum the book equity from all five balance sheets. JPM alone is ~$345B. Total likely $700B+.",
+    "answer": "Note: stockholders' equity ≠ market cap. Sum the book equity from all five balance sheets. JPM alone is ~$345B. Total likely $700B+.",
     "tier": 3,
     "tier_name": "aggregation",
     "difficulty": "hard",
@@ -797,16 +878,18 @@
     "verified": false
   },
   "q067": {
-    "answer": "Apple typically returns $90B+ annually through buybacks + dividends. JPM returns ~$20-25B. Apple likely returned more. Verify from cash flow statements.",
+    "answer": "Apple returned $106,132M ($90,711M buybacks + $15,421M dividends/dividend equivalents), versus JPMorgan $48,216M ($31,591M treasury stock repurchased + $16,625M dividends paid). Apple returned approximately 2.20 times as much.",
     "tier": 4,
     "tier_name": "pairwise",
     "difficulty": "hard",
     "answer_type": "comparative",
     "evidence_docs": [
-      "AAPL_10K_2024",
-      "JPM_10K_2024"
+      "AAPL_10K_2025",
+      "JPM_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_release_additions.json"
   },
   "q068": {
     "answer": "NVDA, GOOGL, META, AMD certainly discuss AI as opportunity. Most companies now mention AI risks. Verify which specific companies discuss it as BOTH risk and opportunity.",
@@ -868,28 +951,32 @@
     "verified": false
   },
   "q073": {
-    "answer": "AbbVie carries very high goodwill (~$67B+) due to the Allergan acquisition. JNJ also has significant goodwill. Verify from balance sheets and calculate as % of total assets.",
+    "answer": "AbbVie was higher as a percentage of assets: ($35,640M goodwill + $52,641M net intangibles)/$133,960M = 65.9%, versus Johnson & Johnson ($48,772M + $50,403M)/$199,210M = 49.8%. J&J was larger in absolute dollars.",
     "tier": 4,
     "tier_name": "pairwise",
     "difficulty": "hard",
     "answer_type": "comparative",
     "evidence_docs": [
-      "ABBV_10K_2024",
-      "JNJ_10K_2024"
+      "ABBV_10K_2025",
+      "JNJ_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_release_additions.json"
   },
   "q074": {
-    "answer": "ExxonMobil produces significantly more than ConocoPhillips (approximately 3.7M+ BOE/d vs ~1.7M BOE/d). Verify from production disclosures in the 10-Ks.",
+    "answer": "ExxonMobil averaged approximately 4.7 million oil-equivalent barrels per day in 2025, versus ConocoPhillips 2,375 MBOED (2.375 million BOE/day). ExxonMobil produced approximately 1.98 times as much.",
     "tier": 4,
     "tier_name": "pairwise",
     "difficulty": "hard",
     "answer_type": "comparative",
     "evidence_docs": [
-      "COP_10K_2024",
-      "XOM_10K_2024"
+      "XOM_10K_2025",
+      "COP_10K_2025"
     ],
-    "verified": false
+    "verified": false,
+    "verification_status": "agent_verified",
+    "provenance_file": "data/ground_truth/provenance/2026-09-13_release_additions.json"
   },
   "q075": {
     "answer": "Both carry relatively moderate debt compared to their cash positions. Verify specific maturity schedules from the long-term debt footnotes.",

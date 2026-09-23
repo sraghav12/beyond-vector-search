@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "scope": "First source-checked batch; human review remains pending. Most recent means latest filing present for that company in the frozen corpus. Legacy document IDs preserved.",
+  "records": {
+    "q001": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Apple's total net sales (revenue) for fiscal year 2024?",
+      "answer": "$391,035 million ($391.035 billion).",
+      "previous_answer": "$391.0 billion ($391,035 million)",
+      "previous_query_evidence_docs": [
+        "AAPL_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "AAPL_10K_2024"
+      ],
+      "interpretation": "FY2024 ended September 28, 2024; comparative income-statement column.",
+      "evidence": [
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 126378,
+          "end_char": 126854,
+          "quote": "ng notes.\n\nApple Inc. | 2025 Form 10-K | 28\n\nApple Inc.\nCONSOLIDATED STATEMENTS OF OPERATIONS\n(In millions, except number of shares, which are reflected in thousands, and per-share amounts)\n\nYears ended\n\nSeptember 27,\n2025\n\nSeptember 28,\n2024\n\nSeptember 30,\n2023\n\nNet sales:\n\nProducts\n307,003\n\n294,866\n\n298,085\n\nServices\n109,158\n\n96,169\n\n85,200\n\nTotal net sales\n416,161\n\n391,035\n\n383,285\n\nCost of sales:\n\nProducts\n194,116\n\n185,233\n\n189,282\n\nServices\n26,844\n\n25,119\n\n24,855\n\nTo"
+        }
+      ]
+    },
+    "q002": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "How much did NVIDIA spend on research and development in its most recent fiscal year reported in its 10-K?",
+      "answer": "$18,497 million ($18.497 billion) in fiscal 2026, ended January 25, 2026.",
+      "previous_answer": "R&D was part of $16.4 billion total operating expenses for FY2025 (ending Jan 26, 2025). NVIDIA reported $12.893 billion in R&D specifically.",
+      "previous_query_evidence_docs": [
+        "NVDA_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "NVDA_10K_2025"
+      ],
+      "interpretation": "Latest NVIDIA filing in frozen corpus is FY2026 despite legacy doc_id ending 2025.",
+      "evidence": [
+        {
+          "doc_id": "NVDA_10K_2025",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+          "text_sha256": "a234e4b00ced76b52e7cb48146bba21e567306be21cc70350fa60c1f246da584",
+          "start_char": 207385,
+          "end_char": 207751,
+          "quote": "gross margin was an unfavorable impact of 2.6% and 2.3% in fiscal years 2026 and 2025, respectively.\n\nOperating Expenses\n\nYear Ended\n\nJan 25, 2026\n\nJan 26, 2025\n\nChange\n\nChange\n\n($ in millions)\n\nResearch and development\n18,497\n\n12,914\n\n5,583\n\n43\n\nSales, general and administrative\n4,579\n\n3,491\n\n1,088\n\n31\n\nTotal operating expenses\n23,076\n\n16,405\n\n6,671\n\n41\nThe incre"
+        }
+      ]
+    },
+    "q003": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "answer": "$177,556 million ($177.556 billion), reported total net revenue for FY2024.",
+      "previous_answer": "$177.6 billion ($177,556 million)",
+      "previous_query_evidence_docs": [
+        "JPM_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "JPM_10K_2024"
+      ],
+      "interpretation": "FY2024 reported basis; do not substitute managed-basis revenue.",
+      "evidence": [
+        {
+          "doc_id": "JPM_10K_2025",
+          "accession_number": "0001628280-26-008131",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+          "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa",
+          "start_char": 195922,
+          "end_char": 196289,
+          "quote": "\nFinancial\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\n\nAs of or for the year ended December 31,\n(in millions, except per share, ratio, employee data and where otherwise noted)\n\n2025\n\n2024\n\n2023\n\nSelected income statement data\n\nTotal net revenue\n\n182,447\n\n177,556\n\n(g)\n158,104\n\nTotal noninterest expense\n\n95,640\n\n91,797\n\n(g)\n87,172\n\nPre-provis"
+        }
+      ]
+    },
+    "q004": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was ExxonMobil's total revenues and other income for fiscal year 2024?",
+      "previous_question": "What was ExxonMobil's total revenue for fiscal year 2024?",
+      "question_changed": true,
+      "answer": "$349,585 million ($349.585 billion).",
+      "previous_answer": "Approximately $339.2 billion. Verify from 10-K Consolidated Statements of Income.",
+      "previous_query_evidence_docs": [
+        "XOM_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "XOM_10K_2024"
+      ],
+      "interpretation": "Explicitly use total revenues and other income, including affiliate and other income; sales and other operating revenue alone is $339,247 million. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "XOM_10K_2025",
+          "accession_number": "0000034088-26-000045",
+          "filing_date": "2026-02-18",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/0000034088-26-000045-index.html",
+          "text_sha256": "d5cef65982d90a6c025f399858a4c4d3f935c95672837c9f91dc2074f465c3ab",
+          "start_char": 256736,
+          "end_char": 257223,
+          "quote": "able of Contents\nThe information in the Notes to Consolidated Financial Statements is an integral part of these statements.\nCONSOLIDATED STATEMENT OF INCOME\n\n(millions of dollars)\nNote\nReference\nNumber\n2025\n2024\n2023\n\nRevenues and other income\n\nSales and other operating revenue\n\n3\n323,905\n\n339,247\n\n334,697\n\nIncome from equity affiliates\n\n8\n5,064\n\n6,194\n\n6,385\n\nOther income\n\n3,269\n\n4,144\n\n3,500\n\nTotal revenues and other income\n\n332,238\n\n349,585\n\n344,582\n\nCosts and other deductions\n\nC"
+        }
+      ]
+    },
+    "q005": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Pfizer's total revenue for fiscal year 2023, as originally reported in its fiscal 2023 10-K?",
+      "previous_question": "What was Pfizer's total revenue for fiscal year 2023?",
+      "question_changed": true,
+      "answer": "$58,496 million ($58.496 billion).",
+      "previous_answer": "$58.496 billion ($58,496 million)",
+      "previous_query_evidence_docs": [
+        "PFE_10K_2024"
+      ],
+      "previous_gold_evidence_docs": [
+        "PFE_10K_2023"
+      ],
+      "interpretation": "Use the original FY2023 statement, not a recast comparative in a later filing. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "PFE_10K_2023",
+          "accession_number": "0000078003-24-000039",
+          "filing_date": "2024-02-22",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/0000078003-24-000039-index.html",
+          "text_sha256": "929fa3574d39c5e54b921ab6d7790f889f6f777a7ae164ccc2a422d9117afcf7",
+          "start_char": 343675,
+          "end_char": 344071,
+          "quote": " New York\n\nFebruary 22, 2024\n\nPfizer Inc.\n\n2023 Form 10-K\n\n51\n\nConsolidated Statements of Income\nPfizer Inc. and Subsidiary Companies\n\nYear Ended December 31,\n\n(MILLIONS, EXCEPT PER SHARE DATA)\n\n2023\n\n2022\n\n2021\n\nRevenues:\n\nProduct revenues (a)\n\n50,914\n\n91,793\n\n73,636\n\nAlliance revenues (a)\n\n7,582\n\n8,537\n\n7,652\n\nTotal revenues\n\n58,496\n\n100,330\n\n81,288\n\nCosts and expenses:\n\nCost of sales (b), ("
+        }
+      ]
+    },
+    "q006": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "How many employees did Walmart report in its most recent 10-K filing?",
+      "answer": "Approximately 2.1 million associates worldwide as of January 31, 2026.",
+      "previous_answer": "Approximately 2.1 million associates worldwide. Verify exact number from Item 1 of 10-K.",
+      "previous_query_evidence_docs": [
+        "WMT_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "WMT_10K_2025"
+      ],
+      "interpretation": "Latest Walmart filing in frozen corpus covers fiscal 2026 despite legacy doc_id ending 2025.",
+      "evidence": [
+        {
+          "doc_id": "WMT_10K_2025",
+          "accession_number": "0000104169-26-000055",
+          "filing_date": "2026-03-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/0000104169-26-000055-index.html",
+          "text_sha256": "2410e6410790c1215e55a9edd01303db60d88570eff6066fb1d27d42aaeeebc6",
+          "start_char": 19405,
+          "end_char": 19666,
+          "quote": "mobile applications and service offerings, as well as our supply chain, combined with approximately 2.1 million associates as of January 31, 2026, to better serve our customers. Our strategies increasingly include the use of AI-powered tools to support customer"
+        }
+      ]
+    },
+    "q007": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Boeing's total revenue for fiscal year 2024?",
+      "answer": "$66,517 million ($66.517 billion).",
+      "previous_answer": "Approximately $66.5 billion. Verify from Consolidated Statements of Operations.",
+      "previous_query_evidence_docs": [
+        "BA_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "BA_10K_2024"
+      ],
+      "interpretation": "FY2024 comparative column; dollars in millions.",
+      "evidence": [
+        {
+          "doc_id": "BA_10K_2025",
+          "accession_number": "0001628280-26-004357",
+          "filing_date": "2026-01-30",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/0001628280-26-004357-index.html",
+          "text_sha256": "1b032d755d97b8ed4f6e005b97c1ecfcf43360489610c417ac2ed56778ff4d71",
+          "start_char": 103124,
+          "end_char": 103470,
+          "quote": " our government services business remains stable.\n\nConsolidated Results of Operations\nThe following table summarizes key indicators of consolidated results of operations:\n\n(Dollars in millions, except per share data)\n\nYears ended December 31,\n2025\n\n2024\n\n2023\n\nRevenues\n$89,463\n\n$66,517\n\n$77,794\n\nGAAP\n\nEarnings/(loss) from operations\n$4,281\n\n($1"
+        }
+      ]
+    },
+    "q008": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What is Meta Platforms' primary source of revenue according to its most recent 10-K?",
+      "answer": "Advertising placements on its family of apps are its primary source of revenue.",
+      "previous_answer": "Advertising revenue, which constitutes the vast majority of Meta's total revenue (approximately 96-98%).",
+      "previous_query_evidence_docs": [
+        "META_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "META_10K_2024"
+      ],
+      "interpretation": "Latest Meta filing in frozen corpus; business description directly answers the question.",
+      "evidence": [
+        {
+          "doc_id": "META_10K_2025",
+          "accession_number": "0001628280-26-003942",
+          "filing_date": "2026-01-29",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.html",
+          "text_sha256": "d5a180ad0f0a655c5a871e3884528357d7930ec48099dbe9f2e2c50bf1871006",
+          "start_char": 25364,
+          "end_char": 25639,
+          "quote": "Currently, we generate substantially all of our revenue from selling advertising placements on our family of apps to marketers, which is reflected in FoA. Ads on our platform enable marketers to reach people across a range of marketing objectives, such as generating leads or"
+        }
+      ]
+    },
+    "q009": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Caterpillar's operating profit margin for fiscal year 2024?",
+      "answer": "20.2% reported operating profit margin for FY2024.",
+      "previous_answer": "Verify from 10-K. Calculate as operating income / total revenue. Historically ~20%.",
+      "previous_query_evidence_docs": [
+        "CAT_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "CAT_10K_2024"
+      ],
+      "interpretation": "Reported operating margin; 20.7% is adjusted and is not the requested metric.",
+      "evidence": [
+        {
+          "doc_id": "CAT_10K_2025",
+          "accession_number": "0000018230-26-000008",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/0000018230-26-000008-index.html",
+          "text_sha256": "79a0e80357f21baccc19cccfab3636e622c674d0cc1c65cdb2d2cc942d2a2de5",
+          "start_char": 119632,
+          "end_char": 119923,
+          "quote": "Operating profit as a percent of sales and revenues was 16.5 percent in 2025, compared with 20.2 percent in 2024. Adjusted operating profit margin was 17.2 percent in 2025, compared with 20.7 percent in 2024.\n• Profit per share for 2025 was $18.81, and excluding the items in the table below"
+        }
+      ]
+    },
+    "q010": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Goldman Sachs' provision for credit losses in fiscal year 2024?",
+      "answer": "$1,348 million ($1.348 billion).",
+      "previous_answer": "Verify from 10-K Consolidated Statements of Earnings.",
+      "previous_query_evidence_docs": [
+        "GS_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "GS_10K_2024"
+      ],
+      "interpretation": "FY2024 provision, not FY2025 net benefit; table units millions.",
+      "evidence": [
+        {
+          "doc_id": "GS_10K_2025",
+          "accession_number": "0000886982-26-000091",
+          "filing_date": "2026-02-25",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000091/0000886982-26-000091-index.html",
+          "text_sha256": "62e53d8bfadec6c7e21fd3ef763686425a51ffda7a325f58ee859d54328e5e53",
+          "start_char": 353106,
+          "end_char": 353396,
+          "quote": "sion for credit losses on loans and lending commitments.\nThe table below presents our provision for credit losses.\n\nYear Ended December\n\n$ in millions\n2025\n2024\n\n2023\n\nProvision for credit losses\n(1,113)\n\n1,348\n\n1,028\n\nGoldman Sachs 2025 Form 10-K\n\n71\n\nTHE GOLDMAN SACHS GROUP, INC. AND SUB"
+        }
+      ]
+    },
+    "q011": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What are the main business segments reported by Johnson & Johnson in its most recent 10-K?",
+      "answer": "Innovative Medicine and MedTech.",
+      "previous_answer": "After the Kenvue consumer health spinoff, JNJ reports two segments: Innovative Medicine and MedTech.",
+      "previous_query_evidence_docs": [
+        "JNJ_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "JNJ_10K_2024"
+      ],
+      "interpretation": "Latest Johnson & Johnson filing in the frozen corpus.",
+      "evidence": [
+        {
+          "doc_id": "JNJ_10K_2025",
+          "accession_number": "0000200406-26-000016",
+          "filing_date": "2026-02-11",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/0000200406-26-000016-index.html",
+          "text_sha256": "6e245362290ce65bb51091af459910020457f333d0042796418f88ae9a39d3fc",
+          "start_char": 19282,
+          "end_char": 19448,
+          "quote": "The Company is organized into two business segments: Innovative Medicine and MedTech. Additional information required by this item is incorporated herein by reference"
+        }
+      ]
+    },
+    "q012": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What were Chevron's capital expenditures (Capex), excluding equity affiliate capital expenditures, for fiscal year 2024?",
+      "previous_question": "What was Chevron's capital and exploratory expenditures for fiscal year 2024?",
+      "question_changed": true,
+      "answer": "$16,448 million ($16.448 billion).",
+      "previous_answer": "Verify from 10-K. Historically ~$15-17 billion range.",
+      "previous_query_evidence_docs": [
+        "CVX_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "CVX_10K_2024"
+      ],
+      "interpretation": "Company Capex excludes separately disclosed equity affiliate Capex. Replaced ambiguous legacy capital-and-exploratory wording; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "CVX_10K_2025",
+          "accession_number": "0000093410-26-000078",
+          "filing_date": "2026-02-24",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/0000093410-26-000078-index.html",
+          "text_sha256": "865eaf1760f233d314c96e794995d820ea1cbd5016844377c363928f8705b4a6",
+          "start_char": 211070,
+          "end_char": 211421,
+          "quote": "es, which represents the cash from operations available to creditors and investors after investing in the business.\n\nYear ended December 31\n\nMillions of dollars\n2025\n\n2024\n\n2023\n\nNet cash provided by operating activities\n33,939\n\n31,492\n\n35,609\n\nLess: Capital expenditures\n17,347\n\n16,448\n\n15,829\n\nFree Cash Flow\n16,592\n\n15,044\n\n19,780\n\nAdjusted Free Ca"
+        }
+      ]
+    },
+    "q013": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was BlackRock's total assets under management (AUM) as reported in its most recent 10-K?",
+      "answer": "Approximately $10.0 trillion in assets under management as of December 31, 2023.",
+      "previous_answer": "Over $11.5 trillion in AUM as of December 31, 2024. Verify exact figure from 10-K.",
+      "previous_query_evidence_docs": [
+        "BLK_10K_2023"
+      ],
+      "previous_gold_evidence_docs": [
+        "BLK_10K_2024"
+      ],
+      "interpretation": "Latest available BlackRock filing is FY2023; BLK_10K_2024 is absent.",
+      "evidence": [
+        {
+          "doc_id": "BLK_10K_2023",
+          "accession_number": "0000950170-24-019271",
+          "filing_date": "2024-02-23",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1364742/000095017024019271/0000950170-24-019271-index.html",
+          "text_sha256": "f2d08be23eebb8b5c6fe764a6e121a3dcc59b6f352419a03c2e0738e075c33de",
+          "start_char": 5943,
+          "end_char": 6084,
+          "quote": "$10.0 trillion of assets under management (\"AUM\") at December 31, 2023. With approximately 19,800 employees in more than 30 countries who ser"
+        }
+      ]
+    },
+    "q014": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Home Depot's comparable sales (comp sales) growth rate for fiscal year 2024?",
+      "previous_question": "What was Home Depot's comparable sales (comp sales) growth rate for fiscal year 2024?",
+      "question_changed": false,
+      "answer": "Comparable sales decreased 1.8% (growth rate −1.8%) in fiscal 2024.",
+      "previous_answer": "Verify from 10-K MD&A section. Comp sales have been slightly negative in recent periods.",
+      "previous_query_evidence_docs": [
+        "HD_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "HD_10K_2024"
+      ],
+      "interpretation": "Company-wide comparable sales, not U.S.-only or total net sales. Required passage is in FY2024 filing; smaller corpora need evidence revalidation.",
+      "evidence": [
+        {
+          "doc_id": "HD_10K_2024",
+          "accession_number": "0000354950-25-000085",
+          "filing_date": "2025-03-21",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/0000354950-25-000085-index.html",
+          "text_sha256": "56961837b6740956807b88a18873192d7ddd83ce3924976c14d833a429ee541b",
+          "start_char": 152281,
+          "end_char": 152533,
+          "quote": "Total comparable sales decreased 1.8% in fiscal 2024, reflecting a 1.0% decrease in comparable customer transactions and a 0.9% decrease in comparable average ticket compared to fiscal 2023. The decrease in comparable customer transactions primarily re"
+        }
+      ]
+    },
+    "q015": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Coca-Cola's net revenue for fiscal year 2024?",
+      "answer": "$47,061 million ($47.061 billion).",
+      "previous_answer": "Approximately $46-47 billion. Verify from Consolidated Statements of Income.",
+      "previous_query_evidence_docs": [
+        "KO_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "KO_10K_2024"
+      ],
+      "interpretation": "Narrative explicitly identifies FY2024 net operating revenues.",
+      "evidence": [
+        {
+          "doc_id": "KO_10K_2025",
+          "accession_number": "0001628280-26-010047",
+          "filing_date": "2026-02-20",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/0001628280-26-010047-index.html",
+          "text_sha256": "40a6d0b9d6eca91aec06505d65fe2724d85d3005a7cefac797b70f2246e9619a",
+          "start_char": 250621,
+          "end_char": 250796,
+          "quote": "Net operating revenues were $47,941 million in 2025, compared to $47,061 million in 2024, an increase of $880 million, or 2%.\nThe following table illustrates, on a percentage "
+        }
+      ]
+    },
+    "q016": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "Under which three categories does Alphabet report its segment results in its most recent 10-K?",
+      "previous_question": "How many operating segments does Alphabet (Google) report in its most recent 10-K?",
+      "question_changed": true,
+      "answer": "Google Services, Google Cloud, and Other Bets. Other Bets combines multiple operating segments that are not individually material.",
+      "previous_answer": "Three segments: Google Services, Google Cloud, and Other Bets.",
+      "previous_query_evidence_docs": [
+        "GOOGL_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "GOOGL_10K_2024"
+      ],
+      "interpretation": "Distinguish three segment-results categories from the underlying operating-segment count. Question changed; rerun required.",
+      "evidence": [
+        {
+          "doc_id": "GOOGL_10K_2025",
+          "accession_number": "0001652044-26-000018",
+          "filing_date": "2026-02-05",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html",
+          "text_sha256": "ad450c62bbcad6fa6faea4b6bab2e798ca808f1fe386350ad6b8447399e2ecf9",
+          "start_char": 316774,
+          "end_char": 316923,
+          "quote": "We report our segment results as Google Services, Google Cloud, and Other Bets:\n• Google Services includes products and services such as ads, Android"
+        },
+        {
+          "doc_id": "GOOGL_10K_2025",
+          "accession_number": "0001652044-26-000018",
+          "filing_date": "2026-02-05",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html",
+          "text_sha256": "ad450c62bbcad6fa6faea4b6bab2e798ca808f1fe386350ad6b8447399e2ecf9",
+          "start_char": 317633,
+          "end_char": 317743,
+          "quote": "Other Bets is a combination of multiple operating segments that are not individually material. Revenues from O"
+        }
+      ]
+    },
+    "q017": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was AMD's gross margin percentage for fiscal year 2024?",
+      "answer": "49% reported gross margin for FY2024.",
+      "previous_answer": "Approximately 49-52%. Verify from 10-K income statement.",
+      "previous_query_evidence_docs": [
+        "AMD_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "AMD_10K_2024"
+      ],
+      "interpretation": "FY2024 comparative gross margin; GAAP gross profit divided by revenue rounds to reported 49%.",
+      "evidence": [
+        {
+          "doc_id": "AMD_10K_2025",
+          "accession_number": "0000002488-26-000018",
+          "filing_date": "2026-02-04",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html",
+          "text_sha256": "4e54f8fab9ad0c762a9dafc1a2852b9031c23093b790fddedcea6f3bbb141d2b",
+          "start_char": 231668,
+          "end_char": 232229,
+          "quote": "e future. Substantially all of our sales transactions are denominated in U.S. dollars.\n\nComparison of Gross Margin, Expenses, Interest Expense, Other Income (expense) and Income Taxes\nThe following is a summary of certain Consolidated Statement of Operations data for 2025 and 2024:\n\nDecember 27, 2025\n\nDecember 28, 2024\n\n(In millions, except for percentages)\n\nNet revenue\n34,639\n\n25,785\n\nCost of sales\n16,456\n\n12,114\n\nAmortization of acquisition-related intangibles\n1,031\n\n946\n\nGross profit\n17,152\n\n12,725\n\nGross margin\n50\n\n49\n\nResearch and development\n8,091\n\n"
+        }
+      ]
+    },
+    "q018": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was Procter & Gamble's net sales for fiscal year 2024?",
+      "answer": "$84,039 million ($84.039 billion), for the fiscal year ended June 30, 2024.",
+      "previous_answer": "Approximately $84 billion. Verify from 10-K. Note: P&G FY2024 ends June 30, 2024.",
+      "previous_query_evidence_docs": [
+        "PG_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "PG_10K_2024"
+      ],
+      "interpretation": "Consolidated earnings statement, FY2024 column, units millions.",
+      "evidence": [
+        {
+          "doc_id": "PG_10K_2025",
+          "accession_number": "0000080424-25-000076",
+          "filing_date": "2025-08-04",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000076/0000080424-25-000076-index.html",
+          "text_sha256": "d46bcf94aae877b3c015ccd9205fb056a26a28cd831875b65a7352237bff6adf",
+          "start_char": 182006,
+          "end_char": 182322,
+          "quote": "eriorate.\n\n/s/ Deloitte & Touche LLP\n\nCincinnati, Ohio\n\nAugust 4, 2025\n\n36 The Procter & Gamble Company\nConsolidated Statements of Earnings\n\nAmounts in millions except per share amounts; fiscal years ended June 30\n2025\n\n2024\n\n2023\n\nNET SALES\n84,284\n\n84,039\n\n82,006\n\nCost of products sold\n41,164\n\n40,848\n\n42,760\n\nSell"
+        }
+      ]
+    },
+    "q019": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What percentage of Apple's total net sales came from the Services segment in fiscal year 2024?",
+      "answer": "Approximately 24.6% ($96,169 million / $391,035 million × 100).",
+      "previous_answer": "Services revenue was $96,169M out of $391,035M total = approximately 24.6%.",
+      "previous_query_evidence_docs": [
+        "AAPL_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "AAPL_10K_2024"
+      ],
+      "interpretation": "FY2024 Services net sales divided by FY2024 total net sales; 24.593458...%.",
+      "evidence": [
+        {
+          "doc_id": "AAPL_10K_2025",
+          "accession_number": "0000320193-25-000079",
+          "filing_date": "2025-10-31",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+          "text_sha256": "53c69210f28eddae61c09a71097b586b891cf9120635015886b085d8cd3da40a",
+          "start_char": 126378,
+          "end_char": 126854,
+          "quote": "ng notes.\n\nApple Inc. | 2025 Form 10-K | 28\n\nApple Inc.\nCONSOLIDATED STATEMENTS OF OPERATIONS\n(In millions, except number of shares, which are reflected in thousands, and per-share amounts)\n\nYears ended\n\nSeptember 27,\n2025\n\nSeptember 28,\n2024\n\nSeptember 30,\n2023\n\nNet sales:\n\nProducts\n307,003\n\n294,866\n\n298,085\n\nServices\n109,158\n\n96,169\n\n85,200\n\nTotal net sales\n416,161\n\n391,035\n\n383,285\n\nCost of sales:\n\nProducts\n194,116\n\n185,233\n\n189,282\n\nServices\n26,844\n\n25,119\n\n24,855\n\nTo"
+        }
+      ],
+      "calculation": {
+        "operation": "percentage",
+        "numerator": 96169,
+        "denominator": 391035,
+        "result": 24.593450714130448,
+        "rounded_result": 24.6
+      }
+    },
+    "q020": {
+      "status": "agent_verified",
+      "human_reviewed": false,
+      "reviewed_on": "2026-09-13",
+      "method": "Direct inspection of local SEC filing text; no paid model call.",
+      "question": "What was the total stockholders' equity for JPMorgan Chase as of December 31, 2024?",
+      "answer": "$344,758 million ($344.758 billion).",
+      "previous_answer": "$344.8 billion (approximately $345 billion)",
+      "previous_query_evidence_docs": [
+        "JPM_10K_2025"
+      ],
+      "previous_gold_evidence_docs": [
+        "JPM_10K_2024"
+      ],
+      "interpretation": "Total stockholders equity at December 31, 2024, including preferred equity.",
+      "evidence": [
+        {
+          "doc_id": "JPM_10K_2025",
+          "accession_number": "0001628280-26-008131",
+          "filing_date": "2026-02-13",
+          "source_index_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/0001628280-26-008131-index.html",
+          "text_sha256": "db72a773a36b410de7a5e2e0220b1eadb799c65bae5debbe01a0439c2a0222aa",
+          "start_char": 197843,
+          "end_char": 198210,
+          "quote": "osses\n\n777,332\n\n681,320\n\n571,552\n\nLoans\n\n1,493,429\n\n1,347,988\n\n1,323,706\n\nTotal assets\n\n4,424,900\n\n4,002,814\n\n3,875,393\n\nDeposits\n\n2,559,320\n\n2,406,032\n\n2,400,688\n\nLong-term debt\n\n435,206\n\n401,418\n\n391,825\n\nCommon stockholders' equity\n\n342,393\n\n324,708\n\n300,474\n\nTotal stockholders' equity\n\n362,438\n\n344,758\n\n327,878\n\nEmployees\n\n318,512\n\n317,233\n\n309,926\n\nCredit qual"
+        }
+      ]
+    }
+  }
+}

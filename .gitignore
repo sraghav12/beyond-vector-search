@@ -17,6 +17,8 @@ build/
 # Virtual environments
 venv/
 .venv/
+.venv-release-check/
+artifacts/
 env/
 .env/
 
@@ -49,6 +51,10 @@ results/plots/
 results/raw_claude/
 results/raw_v2/
 
+# Release artifacts are versioned; transient run logs/review detail stay local.
+results/release_v1/run.log
+results/release_v1/review_records.json
+
 # Configs with secrets
 configs/secrets.yaml
 
@@ -70,3 +76,9 @@ logs/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Local agent state
+NOW.md
+SOUL.md
+USER.md
+LOG_ARCHIVE.md

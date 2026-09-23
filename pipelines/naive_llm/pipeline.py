@@ -122,9 +122,11 @@ class NaiveLLMPipeline(BasePipeline):
         # Reserve ~2K tokens for system prompt + question + output
         OVERHEAD = 2_048
         if self._corpus_tokens + OVERHEAD > self._context_limit:
+            # No API call is made on this path — tokens_in must stay 0 (billed
+            # tokens); the corpus size estimate lives in the trace.
             return PipelineResult(
                 answer="EXCEEDS_CONTEXT",
-                tokens_in=self._corpus_tokens,
+                tokens_in=0,
                 tokens_out=0,
                 cost_usd=0.0,
                 corpus_scale=self._corpus_scale,

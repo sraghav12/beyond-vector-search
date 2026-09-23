@@ -37,7 +37,7 @@ except ImportError:
     TimeoutExceededError = None
     TokenLimitExceededError = None
 
-from pipelines.base import BasePipeline, PipelineResult, TokenCounter, compute_cost
+from pipelines.base import BasePipeline, PipelineResult, TokenCounter, compute_cost, corpus_fingerprint
 
 RLM_QUERY_TEMPLATE = """You are answering a question over a corpus of SEC 10-K filings.
 
@@ -184,6 +184,7 @@ class RLMPipeline(BasePipeline):
         log_dir: str = ".cache/rlm_logs",
         cache_dir: str = ".cache/rlm",
         verbose: bool = False,
+        enable_logging: bool = False,
     ):
         self.model = model
         self.backend = backend
@@ -193,13 +194,19 @@ class RLMPipeline(BasePipeline):
         self.token_budget = token_budget
         self.max_timeout = max_timeout
         self.verbose = verbose
+        # RLMLogger re-serializes the full REPL locals (including the corpus)
+        # every iteration — ~2.9 GB of JSONL per query at scale 150. Off by
+        # default; enable only for debugging single queries.
+        self.enable_logging = enable_logging
 
         self._cache = Cache(cache_dir) if Cache is not None else None
         self._log_dir = Path(log_dir)
-        self._log_dir.mkdir(parents=True, exist_ok=True)
+        if self.enable_logging:
+            self._log_dir.mkdir(parents=True, exist_ok=True)
 
         self._token_counter = TokenCounter(model)
         self._corpus_scale = 0
+        self._corpus_fp = ""
         self._corpus_docs: list[str] = []
         self._corpus_text = ""
         self._corpus_tokens = 0
@@ -253,7 +260,7 @@ class RLMPipeline(BasePipeline):
             "verbose": self.verbose,
         }
 
-        if RLMLogger is not None:
+        if RLMLogger is not None and self.enable_logging:
             kwargs["logger"] = RLMLogger(log_dir=str(self._log_dir))
 
         return RLM(**kwargs)
@@ -264,6 +271,7 @@ class RLMPipeline(BasePipeline):
             "model": self.model,
             "backend": self._backend_name,
             "scale": self._corpus_scale,
+            "corpus_fp": self._corpus_fp,
             "question": question,
             "max_depth": self.max_depth,
             "max_subcalls": self.max_subcalls,
@@ -280,6 +288,7 @@ class RLMPipeline(BasePipeline):
             self._corpus_scale = int(path.stem.split("_")[-1])
         except ValueError:
             self._corpus_scale = 0
+        self._corpus_fp = corpus_fingerprint(str(path))
 
         docs = []
         with open(path, encoding="utf-8") as f:

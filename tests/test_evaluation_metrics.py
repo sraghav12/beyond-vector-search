@@ -32,3 +32,43 @@ def test_numeric_metrics_treat_explicit_in_thousands_as_exact_match():
 
     assert metrics["numeric_exact_match"] is True
     assert metrics["strict_match"] is True
+
+
+def test_containment_fires_when_gold_appears_inside_free_text():
+    metrics = compute_match_metrics(
+        "The company's headquarters are in Cupertino, California.",
+        "Cupertino, California",
+        answer_type="descriptive",
+    )
+
+    assert metrics["normalized_exact_match"] is False
+    assert metrics["normalized_containment_match"] is True
+    assert metrics["strict_match"] is False
+    assert metrics["lenient_match"] is True
+
+
+def test_numeric_scale_only_match_isolates_magnitude_errors():
+    wrong_scale = compute_match_metrics(
+        "Revenue was $391 million.", "$391 billion", answer_type="numeric",
+    )
+    assert wrong_scale["numeric_exact_match"] is False
+    assert wrong_scale["numeric_scale_only_match"] is True
+
+    right_scale = compute_match_metrics(
+        "Revenue was $391.0 billion.", "$391 billion", answer_type="numeric",
+    )
+    assert right_scale["numeric_exact_match"] is True
+    assert right_scale["numeric_scale_only_match"] is False
+
+
+def test_free_text_sentence_with_correct_number_scores_numeric_not_exact():
+    # Realistic pipeline output: a full sentence carrying the correct figure.
+    metrics = compute_match_metrics(
+        "Apple's total net sales (revenue) for fiscal year 2024 is $391,035 million.",
+        "$391.0 billion ($391,035 million)",
+        answer_type="numeric",
+    )
+
+    assert metrics["normalized_exact_match"] is False
+    assert metrics["numeric_exact_match"] is True
+    assert metrics["strict_match"] is True

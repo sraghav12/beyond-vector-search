@@ -81,10 +81,14 @@ def _resolve_gold_entry(
     }
 
 
+# Answers that indicate a transient failure worth re-running on resume.
+# EXCEEDS_CONTEXT is deliberately NOT here: it is a deterministic structural
+# outcome (corpus larger than the model's context window) — re-running can
+# never change it, and treating it as retriable made every resumed naive_llm
+# run re-append all 75 identical rows.
 _RETRIABLE_ANSWERS = (
     "tokenlimitexceedederror",
     "cancellationerror",
-    "exceeds_context",
     "error:",
 )
 
@@ -255,11 +259,22 @@ def run_pipeline(
                     }
                 )
             except Exception as exc:
+                # tenacity's RetryError stringifies to an opaque Future repr;
+                # unwrap it so the record carries the real exception.
+                err: BaseException = exc
+                last_attempt = getattr(exc, "last_attempt", None)
+                if last_attempt is not None:
+                    try:
+                        inner = last_attempt.exception()
+                        if inner is not None:
+                            err = inner
+                    except Exception:
+                        pass
                 record.update(
                     {
                         "status": "error",
-                        "error_type": type(exc).__name__,
-                        "error_message": str(exc),
+                        "error_type": type(err).__name__,
+                        "error_message": str(err) or repr(err),
                     }
                 )
 
@@ -318,7 +333,7 @@ def run_benchmark(
 
 _ALL_PIPELINES = ["naive_llm", "vector_rag", "pageindex", "rlm"]
 _ALL_SCALES = [10, 25, 50, 100, 150]
-_ALL_MODELS = ["gpt-4o-mini", "gemini-2.5-flash", "claude-haiku-4-5-20251001", "claude-sonnet-4-6"]
+_ALL_MODELS = ["gpt-4o-mini", "gemini-3.6-flash", "claude-haiku-4-5-20251001", "claude-sonnet-4-6"]
 
 _DEFAULT_QUERIES = "data/queries/queries.json"
 _DEFAULT_GOLD = "data/ground_truth/gold_answers.json"

@@ -1,0 +1,779 @@
+{
+  "budget_usd": 25,
+  "pipeline_reported_usage_cost_usd": 1.22241922,
+  "estimated_index_embedding_cost_usd": 0.32083078000000004,
+  "estimated_judge_cost_usd": 0.1842375,
+  "generation_probe_cost_usd": 2.6999999999999996e-06,
+  "estimated_total_usd": 1.7274902,
+  "historical_judge_cost_note": "Original judge usage counts were not persisted and dated model names produced zero prices. Estimate reconstructed from exact stored prompts and score/reasoning JSON at uncached rates; output whitespace/token framing can differ. This is not provider billing reconciliation. Snapshot alias pricing bug fixed for future calls.",
+  "judge_estimate_by_call": {
+    "naive_llm_gpt-4o-mini_150": [],
+    "vector_rag_gpt-4o-mini_150": [
+      {
+        "query_id": "q001",
+        "estimated_prompt_tokens": 358,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.001305
+      },
+      {
+        "query_id": "q002",
+        "estimated_prompt_tokens": 387,
+        "estimated_completion_tokens": 29,
+        "estimated_cost_usd": 0.0012575
+      },
+      {
+        "query_id": "q003",
+        "estimated_prompt_tokens": 365,
+        "estimated_completion_tokens": 60,
+        "estimated_cost_usd": 0.0015125
+      },
+      {
+        "query_id": "q004",
+        "estimated_prompt_tokens": 358,
+        "estimated_completion_tokens": 54,
+        "estimated_cost_usd": 0.001435
+      },
+      {
+        "query_id": "q005",
+        "estimated_prompt_tokens": 376,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.00135
+      },
+      {
+        "query_id": "q006",
+        "estimated_prompt_tokens": 390,
+        "estimated_completion_tokens": 53,
+        "estimated_cost_usd": 0.001505
+      },
+      {
+        "query_id": "q007",
+        "estimated_prompt_tokens": 350,
+        "estimated_completion_tokens": 36,
+        "estimated_cost_usd": 0.001235
+      },
+      {
+        "query_id": "q008",
+        "estimated_prompt_tokens": 402,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.001395
+      },
+      {
+        "query_id": "q009",
+        "estimated_prompt_tokens": 356,
+        "estimated_completion_tokens": 34,
+        "estimated_cost_usd": 0.00123
+      },
+      {
+        "query_id": "q010",
+        "estimated_prompt_tokens": 356,
+        "estimated_completion_tokens": 45,
+        "estimated_cost_usd": 0.00134
+      },
+      {
+        "query_id": "q011",
+        "estimated_prompt_tokens": 378,
+        "estimated_completion_tokens": 44,
+        "estimated_cost_usd": 0.001385
+      },
+      {
+        "query_id": "q012",
+        "estimated_prompt_tokens": 372,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.00132
+      },
+      {
+        "query_id": "q013",
+        "estimated_prompt_tokens": 391,
+        "estimated_completion_tokens": 37,
+        "estimated_cost_usd": 0.0013475000000000002
+      },
+      {
+        "query_id": "q014",
+        "estimated_prompt_tokens": 377,
+        "estimated_completion_tokens": 47,
+        "estimated_cost_usd": 0.0014125
+      },
+      {
+        "query_id": "q015",
+        "estimated_prompt_tokens": 352,
+        "estimated_completion_tokens": 36,
+        "estimated_cost_usd": 0.0012399999999999998
+      },
+      {
+        "query_id": "q016",
+        "estimated_prompt_tokens": 368,
+        "estimated_completion_tokens": 40,
+        "estimated_cost_usd": 0.00132
+      },
+      {
+        "query_id": "q017",
+        "estimated_prompt_tokens": 349,
+        "estimated_completion_tokens": 32,
+        "estimated_cost_usd": 0.0011925
+      },
+      {
+        "query_id": "q018",
+        "estimated_prompt_tokens": 376,
+        "estimated_completion_tokens": 47,
+        "estimated_cost_usd": 0.00141
+      },
+      {
+        "query_id": "q019",
+        "estimated_prompt_tokens": 488,
+        "estimated_completion_tokens": 44,
+        "estimated_cost_usd": 0.00166
+      },
+      {
+        "query_id": "q020",
+        "estimated_prompt_tokens": 369,
+        "estimated_completion_tokens": 37,
+        "estimated_cost_usd": 0.0012925
+      },
+      {
+        "query_id": "q021",
+        "estimated_prompt_tokens": 441,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.0014525
+      },
+      {
+        "query_id": "q022",
+        "estimated_prompt_tokens": 568,
+        "estimated_completion_tokens": 45,
+        "estimated_cost_usd": 0.0018699999999999997
+      },
+      {
+        "query_id": "q023",
+        "estimated_prompt_tokens": 451,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.0015375
+      },
+      {
+        "query_id": "q024",
+        "estimated_prompt_tokens": 426,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.001415
+      },
+      {
+        "query_id": "q025",
+        "estimated_prompt_tokens": 467,
+        "estimated_completion_tokens": 32,
+        "estimated_cost_usd": 0.0014875
+      },
+      {
+        "query_id": "q026",
+        "estimated_prompt_tokens": 403,
+        "estimated_completion_tokens": 48,
+        "estimated_cost_usd": 0.0014875
+      },
+      {
+        "query_id": "q027",
+        "estimated_prompt_tokens": 507,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.0016175
+      },
+      {
+        "query_id": "q028",
+        "estimated_prompt_tokens": 408,
+        "estimated_completion_tokens": 42,
+        "estimated_cost_usd": 0.0014399999999999999
+      },
+      {
+        "query_id": "q029",
+        "estimated_prompt_tokens": 484,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0015999999999999999
+      },
+      {
+        "query_id": "q031",
+        "estimated_prompt_tokens": 465,
+        "estimated_completion_tokens": 44,
+        "estimated_cost_usd": 0.0016025000000000002
+      },
+      {
+        "query_id": "q032",
+        "estimated_prompt_tokens": 428,
+        "estimated_completion_tokens": 43,
+        "estimated_cost_usd": 0.0015
+      },
+      {
+        "query_id": "q033",
+        "estimated_prompt_tokens": 435,
+        "estimated_completion_tokens": 42,
+        "estimated_cost_usd": 0.0015075
+      },
+      {
+        "query_id": "q034",
+        "estimated_prompt_tokens": 476,
+        "estimated_completion_tokens": 43,
+        "estimated_cost_usd": 0.00162
+      },
+      {
+        "query_id": "q035",
+        "estimated_prompt_tokens": 434,
+        "estimated_completion_tokens": 47,
+        "estimated_cost_usd": 0.001555
+      },
+      {
+        "query_id": "q036",
+        "estimated_prompt_tokens": 427,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0014575
+      },
+      {
+        "query_id": "q039",
+        "estimated_prompt_tokens": 443,
+        "estimated_completion_tokens": 31,
+        "estimated_cost_usd": 0.0014175
+      },
+      {
+        "query_id": "q040",
+        "estimated_prompt_tokens": 466,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.001545
+      },
+      {
+        "query_id": "q041",
+        "estimated_prompt_tokens": 484,
+        "estimated_completion_tokens": 34,
+        "estimated_cost_usd": 0.00155
+      },
+      {
+        "query_id": "q044",
+        "estimated_prompt_tokens": 570,
+        "estimated_completion_tokens": 45,
+        "estimated_cost_usd": 0.001875
+      },
+      {
+        "query_id": "q052",
+        "estimated_prompt_tokens": 429,
+        "estimated_completion_tokens": 37,
+        "estimated_cost_usd": 0.0014425000000000002
+      },
+      {
+        "query_id": "q067",
+        "estimated_prompt_tokens": 581,
+        "estimated_completion_tokens": 32,
+        "estimated_cost_usd": 0.0017725
+      },
+      {
+        "query_id": "q073",
+        "estimated_prompt_tokens": 584,
+        "estimated_completion_tokens": 43,
+        "estimated_cost_usd": 0.00189
+      },
+      {
+        "query_id": "q074",
+        "estimated_prompt_tokens": 467,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.0015775000000000001
+      }
+    ],
+    "rlm_gpt-4o-mini_150": [
+      {
+        "query_id": "q001",
+        "estimated_prompt_tokens": 342,
+        "estimated_completion_tokens": 30,
+        "estimated_cost_usd": 0.001155
+      },
+      {
+        "query_id": "q002",
+        "estimated_prompt_tokens": 362,
+        "estimated_completion_tokens": 33,
+        "estimated_cost_usd": 0.001235
+      },
+      {
+        "query_id": "q003",
+        "estimated_prompt_tokens": 349,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0012525000000000001
+      },
+      {
+        "query_id": "q004",
+        "estimated_prompt_tokens": 342,
+        "estimated_completion_tokens": 29,
+        "estimated_cost_usd": 0.0011450000000000002
+      },
+      {
+        "query_id": "q005",
+        "estimated_prompt_tokens": 351,
+        "estimated_completion_tokens": 29,
+        "estimated_cost_usd": 0.0011675
+      },
+      {
+        "query_id": "q006",
+        "estimated_prompt_tokens": 348,
+        "estimated_completion_tokens": 44,
+        "estimated_cost_usd": 0.00131
+      },
+      {
+        "query_id": "q007",
+        "estimated_prompt_tokens": 338,
+        "estimated_completion_tokens": 30,
+        "estimated_cost_usd": 0.001145
+      },
+      {
+        "query_id": "q008",
+        "estimated_prompt_tokens": 346,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.001215
+      },
+      {
+        "query_id": "q009",
+        "estimated_prompt_tokens": 343,
+        "estimated_completion_tokens": 36,
+        "estimated_cost_usd": 0.0012175
+      },
+      {
+        "query_id": "q010",
+        "estimated_prompt_tokens": 341,
+        "estimated_completion_tokens": 50,
+        "estimated_cost_usd": 0.0013525
+      },
+      {
+        "query_id": "q011",
+        "estimated_prompt_tokens": 338,
+        "estimated_completion_tokens": 30,
+        "estimated_cost_usd": 0.001145
+      },
+      {
+        "query_id": "q012",
+        "estimated_prompt_tokens": 348,
+        "estimated_completion_tokens": 28,
+        "estimated_cost_usd": 0.00115
+      },
+      {
+        "query_id": "q013",
+        "estimated_prompt_tokens": 356,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0012699999999999999
+      },
+      {
+        "query_id": "q014",
+        "estimated_prompt_tokens": 355,
+        "estimated_completion_tokens": 37,
+        "estimated_cost_usd": 0.0012575
+      },
+      {
+        "query_id": "q015",
+        "estimated_prompt_tokens": 339,
+        "estimated_completion_tokens": 30,
+        "estimated_cost_usd": 0.0011475
+      },
+      {
+        "query_id": "q016",
+        "estimated_prompt_tokens": 366,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0012950000000000001
+      },
+      {
+        "query_id": "q017",
+        "estimated_prompt_tokens": 337,
+        "estimated_completion_tokens": 32,
+        "estimated_cost_usd": 0.0011625000000000001
+      },
+      {
+        "query_id": "q018",
+        "estimated_prompt_tokens": 354,
+        "estimated_completion_tokens": 36,
+        "estimated_cost_usd": 0.001245
+      },
+      {
+        "query_id": "q019",
+        "estimated_prompt_tokens": 354,
+        "estimated_completion_tokens": 32,
+        "estimated_cost_usd": 0.001205
+      },
+      {
+        "query_id": "q020",
+        "estimated_prompt_tokens": 346,
+        "estimated_completion_tokens": 29,
+        "estimated_cost_usd": 0.001155
+      },
+      {
+        "query_id": "q021",
+        "estimated_prompt_tokens": 362,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0012850000000000001
+      },
+      {
+        "query_id": "q022",
+        "estimated_prompt_tokens": 396,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0013700000000000001
+      },
+      {
+        "query_id": "q023",
+        "estimated_prompt_tokens": 386,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.0013750000000000001
+      },
+      {
+        "query_id": "q024",
+        "estimated_prompt_tokens": 379,
+        "estimated_completion_tokens": 40,
+        "estimated_cost_usd": 0.0013475
+      },
+      {
+        "query_id": "q025",
+        "estimated_prompt_tokens": 413,
+        "estimated_completion_tokens": 33,
+        "estimated_cost_usd": 0.0013625
+      },
+      {
+        "query_id": "q026",
+        "estimated_prompt_tokens": 370,
+        "estimated_completion_tokens": 36,
+        "estimated_cost_usd": 0.0012850000000000001
+      },
+      {
+        "query_id": "q027",
+        "estimated_prompt_tokens": 387,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.0013775
+      },
+      {
+        "query_id": "q028",
+        "estimated_prompt_tokens": 373,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.0012825000000000002
+      },
+      {
+        "query_id": "q029",
+        "estimated_prompt_tokens": 391,
+        "estimated_completion_tokens": 33,
+        "estimated_cost_usd": 0.0013075
+      },
+      {
+        "query_id": "q031",
+        "estimated_prompt_tokens": 389,
+        "estimated_completion_tokens": 48,
+        "estimated_cost_usd": 0.0014525
+      },
+      {
+        "query_id": "q032",
+        "estimated_prompt_tokens": 364,
+        "estimated_completion_tokens": 28,
+        "estimated_cost_usd": 0.00119
+      },
+      {
+        "query_id": "q033",
+        "estimated_prompt_tokens": 378,
+        "estimated_completion_tokens": 42,
+        "estimated_cost_usd": 0.001365
+      },
+      {
+        "query_id": "q034",
+        "estimated_prompt_tokens": 380,
+        "estimated_completion_tokens": 43,
+        "estimated_cost_usd": 0.00138
+      },
+      {
+        "query_id": "q035",
+        "estimated_prompt_tokens": 389,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0013525
+      },
+      {
+        "query_id": "q036",
+        "estimated_prompt_tokens": 386,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.001345
+      },
+      {
+        "query_id": "q039",
+        "estimated_prompt_tokens": 407,
+        "estimated_completion_tokens": 40,
+        "estimated_cost_usd": 0.0014175
+      },
+      {
+        "query_id": "q040",
+        "estimated_prompt_tokens": 419,
+        "estimated_completion_tokens": 40,
+        "estimated_cost_usd": 0.0014475
+      },
+      {
+        "query_id": "q041",
+        "estimated_prompt_tokens": 412,
+        "estimated_completion_tokens": 31,
+        "estimated_cost_usd": 0.0013399999999999998
+      },
+      {
+        "query_id": "q044",
+        "estimated_prompt_tokens": 405,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0014025
+      },
+      {
+        "query_id": "q052",
+        "estimated_prompt_tokens": 383,
+        "estimated_completion_tokens": 31,
+        "estimated_cost_usd": 0.0012675
+      },
+      {
+        "query_id": "q067",
+        "estimated_prompt_tokens": 419,
+        "estimated_completion_tokens": 51,
+        "estimated_cost_usd": 0.0015574999999999999
+      },
+      {
+        "query_id": "q073",
+        "estimated_prompt_tokens": 417,
+        "estimated_completion_tokens": 43,
+        "estimated_cost_usd": 0.0014725
+      },
+      {
+        "query_id": "q074",
+        "estimated_prompt_tokens": 407,
+        "estimated_completion_tokens": 46,
+        "estimated_cost_usd": 0.0014775
+      }
+    ],
+    "pageindex_gpt-4o-mini_150": [
+      {
+        "query_id": "q001",
+        "estimated_prompt_tokens": 358,
+        "estimated_completion_tokens": 30,
+        "estimated_cost_usd": 0.0011949999999999999
+      },
+      {
+        "query_id": "q002",
+        "estimated_prompt_tokens": 395,
+        "estimated_completion_tokens": 60,
+        "estimated_cost_usd": 0.0015875
+      },
+      {
+        "query_id": "q003",
+        "estimated_prompt_tokens": 379,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0013275000000000001
+      },
+      {
+        "query_id": "q004",
+        "estimated_prompt_tokens": 373,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0013225
+      },
+      {
+        "query_id": "q005",
+        "estimated_prompt_tokens": 377,
+        "estimated_completion_tokens": 45,
+        "estimated_cost_usd": 0.0013925
+      },
+      {
+        "query_id": "q006",
+        "estimated_prompt_tokens": 379,
+        "estimated_completion_tokens": 37,
+        "estimated_cost_usd": 0.0013175
+      },
+      {
+        "query_id": "q008",
+        "estimated_prompt_tokens": 430,
+        "estimated_completion_tokens": 44,
+        "estimated_cost_usd": 0.0015149999999999999
+      },
+      {
+        "query_id": "q009",
+        "estimated_prompt_tokens": 397,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0013825
+      },
+      {
+        "query_id": "q010",
+        "estimated_prompt_tokens": 371,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0013075
+      },
+      {
+        "query_id": "q011",
+        "estimated_prompt_tokens": 527,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.0016675000000000001
+      },
+      {
+        "query_id": "q012",
+        "estimated_prompt_tokens": 385,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.0013125
+      },
+      {
+        "query_id": "q013",
+        "estimated_prompt_tokens": 381,
+        "estimated_completion_tokens": 45,
+        "estimated_cost_usd": 0.0014025
+      },
+      {
+        "query_id": "q014",
+        "estimated_prompt_tokens": 409,
+        "estimated_completion_tokens": 47,
+        "estimated_cost_usd": 0.0014925
+      },
+      {
+        "query_id": "q016",
+        "estimated_prompt_tokens": 458,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0015249999999999999
+      },
+      {
+        "query_id": "q018",
+        "estimated_prompt_tokens": 383,
+        "estimated_completion_tokens": 52,
+        "estimated_cost_usd": 0.0014775
+      },
+      {
+        "query_id": "q019",
+        "estimated_prompt_tokens": 514,
+        "estimated_completion_tokens": 44,
+        "estimated_cost_usd": 0.001725
+      },
+      {
+        "query_id": "q020",
+        "estimated_prompt_tokens": 381,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0013425
+      },
+      {
+        "query_id": "q021",
+        "estimated_prompt_tokens": 445,
+        "estimated_completion_tokens": 35,
+        "estimated_cost_usd": 0.0014625
+      },
+      {
+        "query_id": "q022",
+        "estimated_prompt_tokens": 614,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.001945
+      },
+      {
+        "query_id": "q023",
+        "estimated_prompt_tokens": 429,
+        "estimated_completion_tokens": 45,
+        "estimated_cost_usd": 0.0015225
+      },
+      {
+        "query_id": "q024",
+        "estimated_prompt_tokens": 427,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0014475
+      },
+      {
+        "query_id": "q025",
+        "estimated_prompt_tokens": 680,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0020900000000000003
+      },
+      {
+        "query_id": "q026",
+        "estimated_prompt_tokens": 450,
+        "estimated_completion_tokens": 44,
+        "estimated_cost_usd": 0.001565
+      },
+      {
+        "query_id": "q027",
+        "estimated_prompt_tokens": 517,
+        "estimated_completion_tokens": 41,
+        "estimated_cost_usd": 0.0017025
+      },
+      {
+        "query_id": "q028",
+        "estimated_prompt_tokens": 461,
+        "estimated_completion_tokens": 40,
+        "estimated_cost_usd": 0.0015525
+      },
+      {
+        "query_id": "q029",
+        "estimated_prompt_tokens": 565,
+        "estimated_completion_tokens": 47,
+        "estimated_cost_usd": 0.0018824999999999998
+      },
+      {
+        "query_id": "q031",
+        "estimated_prompt_tokens": 553,
+        "estimated_completion_tokens": 54,
+        "estimated_cost_usd": 0.0019225000000000002
+      },
+      {
+        "query_id": "q032",
+        "estimated_prompt_tokens": 410,
+        "estimated_completion_tokens": 39,
+        "estimated_cost_usd": 0.0014149999999999998
+      },
+      {
+        "query_id": "q033",
+        "estimated_prompt_tokens": 462,
+        "estimated_completion_tokens": 64,
+        "estimated_cost_usd": 0.0017950000000000002
+      },
+      {
+        "query_id": "q034",
+        "estimated_prompt_tokens": 496,
+        "estimated_completion_tokens": 47,
+        "estimated_cost_usd": 0.00171
+      },
+      {
+        "query_id": "q035",
+        "estimated_prompt_tokens": 461,
+        "estimated_completion_tokens": 48,
+        "estimated_cost_usd": 0.0016325
+      },
+      {
+        "query_id": "q036",
+        "estimated_prompt_tokens": 462,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.001535
+      },
+      {
+        "query_id": "q039",
+        "estimated_prompt_tokens": 629,
+        "estimated_completion_tokens": 42,
+        "estimated_cost_usd": 0.0019925000000000003
+      },
+      {
+        "query_id": "q040",
+        "estimated_prompt_tokens": 464,
+        "estimated_completion_tokens": 46,
+        "estimated_cost_usd": 0.00162
+      },
+      {
+        "query_id": "q041",
+        "estimated_prompt_tokens": 731,
+        "estimated_completion_tokens": 46,
+        "estimated_cost_usd": 0.0022875
+      },
+      {
+        "query_id": "q044",
+        "estimated_prompt_tokens": 629,
+        "estimated_completion_tokens": 52,
+        "estimated_cost_usd": 0.0020925
+      },
+      {
+        "query_id": "q052",
+        "estimated_prompt_tokens": 570,
+        "estimated_completion_tokens": 42,
+        "estimated_cost_usd": 0.0018449999999999999
+      },
+      {
+        "query_id": "q067",
+        "estimated_prompt_tokens": 675,
+        "estimated_completion_tokens": 38,
+        "estimated_cost_usd": 0.0020675000000000003
+      },
+      {
+        "query_id": "q073",
+        "estimated_prompt_tokens": 712,
+        "estimated_completion_tokens": 53,
+        "estimated_cost_usd": 0.00231
+      },
+      {
+        "query_id": "q074",
+        "estimated_prompt_tokens": 455,
+        "estimated_completion_tokens": 36,
+        "estimated_cost_usd": 0.0014975000000000001
+      }
+    ]
+  },
+  "pricing_sources": [
+    "https://developers.openai.com/api/docs/models/gpt-4o",
+    "https://developers.openai.com/api/docs/models/gpt-4o-mini"
+  ],
+  "source_run": "results/release_v1"
+}
